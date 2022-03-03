@@ -21,10 +21,12 @@ $time-4: 600s;
    box-shadow: particles($max);
 }
 
+
 /* Styles */
 
 
-body {
+.section__details{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
