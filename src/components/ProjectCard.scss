@@ -5,14 +5,13 @@
     margin: 10px;
     background-color: black;
     border: 2px solid white;
-    article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     h3 {
-        color: white
+        color: white;
+        text-align: center;
     }
 }
 

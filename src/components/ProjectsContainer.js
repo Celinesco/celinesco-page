@@ -10,11 +10,11 @@ const ProjectsContainer = () => {
             <h2 data-aos="flip-down" data-aos-duration="1000">Projects</h2>
             <div className="container__cards-projects">
               {datosProyecto.map((project)=> (
-                  <ProjectCard 
+                  <ProjectCard key={project.id}
+                  id={project.id}
                   img={project.img}
                   alt={project.alt}
                   title={project.title} />
-
               ))}
             </div>
 
