@@ -1,0 +1,80 @@
+.section__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    h2 {
+        color:white;
+    }
+}
+
+.container__main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__img-signature {
+    width: 150px;
+    img {
+        width: 100%
+    }
+}
+
+.container__img-cat {
+    width: 550px;
+    img {
+        width: 100%
+    }
+}
+
+.section_technologys {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container__technology {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px;
+    h3 {
+        height: 40px;
+    }
+}
+
+.container__svg-technology {
+    width: 150px;
+    svg {
+        padding: 10px;
+        width: 100%
+    }
+}
+
+.container__cards-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+}
+
+.section__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.container__cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+}
