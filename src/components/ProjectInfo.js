@@ -1,13 +1,17 @@
 import './DetailSection.scss'
 
-const ProjectInfo = ({title, description, technologies, link, code}) => {
+const ProjectInfo = ({ title, description, technologies, link, code }) => {
     return (
         <article className='info__projects'>
             <h2>{title}</h2>
             <p>{description}</p>
-            <p>The project was built using: {technologies}</p>
-            <p>You can take a look at the project </p><a href={link} target="_blank" rel="noopener noreferrer">Clicking HERE!</a>
-            <p>If you are interested in the code, <a href={code} target="_blank" rel="noopener noreferrer">here is also the repository</a></p>
+            <div className='paragraph'>
+                <p>The project was built using: {technologies}.</p>
+            </div>
+            <div className='paragraph'>
+                <p><a href={link} target="_blank" rel="noopener noreferrer">_Click HERE! </a>to see the project.</p>
+            </div>
+            <p>_If you are interested in the code, <a href={code} target="_blank" rel="noopener noreferrer">you can also take a look at the repository.</a></p>
         </article>
     )
 }

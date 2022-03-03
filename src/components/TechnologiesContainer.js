@@ -7,7 +7,7 @@ const TechnologiesContainer = () => {
 
     return (
         <section className='section_technologys'>
-               <h2 data-aos="flip-down" data-aos-duration="1000">Technologies I'm familiar with</h2>
+               <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">Technologies I'm familiar with</h2>
             <div className='container__cards-technologies'>
                 <article data-aos="flip-right" data-aos-duration="1000" className='container__technology'>
                     <div className='container__svg-technology'>
@@ -93,11 +93,7 @@ const TechnologiesContainer = () => {
                     </div>
                     <h3>Materialui</h3>
                 </article>
-
-
             </div>
-
-
         </section>
     )
 };

@@ -35,7 +35,7 @@ export const datosProyecto = [
         img: "https://blogger.googleusercontent.com/img/a/AVvXsEjvvYItYKdgI-8jDOJJTmnqgeEcnZyAer7eBFwDVJIl1uEo3voUNf7k2GeAIvIkReNTkA--PNiZo8gficbgv0pXyRQIYKMoKN3xLxZ9dBZO3Dezde5cH2Vrry5xky6BPff8COKs_DGGHED8876GDMEcAQbbTGqO-1hJTgNff9lonFSY_TgXwUv0bFYdhA=s320",
         alt: "Statistics graph",
         link: "https://celinesco.github.io/AhorrAdas/",
-        description: "3rd Project of the bootcamp ADA. This was also a group assignment. It's a tracker for your incomes and expenses. We learnt here, how to store the information user, on Local Storage.",
+        description: "3rd project of the bootcamp ADA. This was also a group assignment. It's a tracker for your incomes and expenses. We learnt here, how to store the information user, on Local Storage.",
         technologies: "HTML5, BULMA, JS",
         repository: "https://github.com/Celinesco/AhorrAdas",
     },
@@ -45,7 +45,7 @@ export const datosProyecto = [
         img: "https://blogger.googleusercontent.com/img/a/AVvXsEg2_0yrTTO2xuQm7hrMKIJNCELT70jXypEOW6NXhySMSqGgkLDJvnjPP4qQnbD_-yrLZP1qw8hIInAKinZamEVdIC3lc9EkAZJkJoAurRqAw0gvC-R6NPHt5gVmnrGMWYA3chptGvCn6OlL5XICv17iBbYIrW_f4Q5TKJQgc7XdMS4Hfi4RysF6ZdnPIg=s320",
         alt: "Kapow exclamation",
         link: "https://celinesco.github.io/buscador_de_comics_2/",
-        description: "Fourth poyect of the Bootcamp ADA. We learnt how to use publics APIs. I chose Marvel and Superhero APIs.",
+        description: "Fourth proyect of the Bootcamp ADA. We learnt how to use publics APIs. I chose Marvel and Superhero APIs.",
         technologies: "HMTL, SASS, JS",
         repository: "https://github.com/Celinesco/buscador_de_comics_2"
     },

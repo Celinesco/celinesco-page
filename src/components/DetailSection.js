@@ -14,14 +14,17 @@ const DetailSection = () => {
     return (
         <section className="section__details">
             <BackgroundParticles />
-            <ProjectCard img={prueba[0].img}
+            <ProjectCard 
+            id={prueba[0].id}
+            img={prueba[0].img}
             alt={prueba[0].alt}
             title={prueba[0].title} />
            <ProjectInfo 
-           description={prueba[0].description}
-           title={prueba[0].title} 
-           code={prueba[0].repository}
-           link={prueba[0].link}/>
+            description={prueba[0].description}
+            title={prueba[0].title} 
+            code={prueba[0].repository}
+            link={prueba[0].link}
+            technologies={prueba[0].technologies}/>
         </section>
     )
 }
