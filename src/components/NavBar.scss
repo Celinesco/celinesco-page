@@ -5,13 +5,13 @@
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
     min-height: 10vh;
     background-color: rgb(0, 0, 0);
     border-bottom: 2px solid $main-color-dark-mode;
     box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
-    padding: 20px;
+    padding: 0 60px;
 }
 
 .navbar__list {
