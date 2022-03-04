@@ -2,8 +2,8 @@ export const datosProyecto = [
     {
         id: "1_first_portfolio",
         title: "First Portfolio",
-        img: "",
-        alt: "",
+        img: "https://blogger.googleusercontent.com/img/a/AVvXsEjiy93dYLcllgGSHXnsr_4WMOkjBfz9fP8octsENo1KW7A3l1ejF7Im-Ns8wJRM-l44nG7X6DBC0INPaanNjvAoOoB85DVEURnoKBNu40BZtYZCUr0izz7k785Sw6vehAJtB7LTdG8peKDhEjcEeqZ-eoXOQPpNhpopo9VNJABWrE-VigtYZsMXFiCYLw=s320",
+        alt: "code with many errors",
         link: "https://celinesco.github.io/Portafolio/",
         description: "This is the first assignment of the Bootcamp ADA. The porftolio originally had only CSS and HTML, because those where the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the dropwdown menu for mobile. ",
         technologies: "HTML5, CSS3, JS",
