@@ -25,6 +25,8 @@ $time-4: 600s;
 /* Styles */
 
 
+
+
 .section__details{
     min-height: 100vh;
     display: flex;
@@ -32,6 +34,10 @@ $time-4: 600s;
     align-items: center;
     font-size: 2rem;
     overflow: hidden;
+}
+
+.prueba_container {
+  height: 100px;
 }
 
 .page-bg,
