@@ -52,7 +52,7 @@ export const datosProyecto = [
     {
         id: "6_rick&morty",
         title: "Rick & Morty",
-        img: "",
+        img: "https://blogger.googleusercontent.com/img/a/AVvXsEjelRjxXPLIpTBBUeEUQcnlbZ3R5n7mSBUeZr1zQXfH8EIxndWlDpRrhPSr5n_ENVJrSCyZhLxRjO-84AOOWRF52-0X_Blr0aONvLxbz4BXx3h-cvhuhBNXZFnm1GB2ftKryDzz7g9Udgo92doqXQz5l0z8Csdal_zt7KESMXCTbZO9HC6PMxzh8NGgHA=s320",
         alt: "Rick and Morty silhouette",
         link: "https://morty-and-rick-page.netlify.app/RickAndMortyPage",
         description: "This page(SPA) was the result of an excercise. We were taught how to use APIs with React and to make pages more navigables with React-router-dom.",
