@@ -16,24 +16,21 @@ const MainSection = () => {
     }, [])
 
     return (
-        <>
-            <section className="section__main">
-                <div className='container__main-section'>
-                    <div className='secret-container'>
-                        <p>This is me and one of the best cats in the world.</p>
-                        <div className='container_img-profile'>
-                            <img src={ArnoldyYo} alt="Celina Ines Alsina"></img>
-                        </div>
+
+        <div className="sections">
+            <section className='section__main'>
+                <div className='secret-container'>
+                    <p>This is me and one of the best cats in the world.</p>
+                    <div className='container_img-profile'>
+                        <img src={ArnoldyYo} alt="Celina Ines Alsina"></img>
                     </div>
-
-                    <AnimacionPortada />
-
                 </div>
+                <AnimacionPortada />
             </section>
-
             <TechnologiesContainer />
             <ProjectsContainer />
-        </>
+        </div>
+
     )
 }
 

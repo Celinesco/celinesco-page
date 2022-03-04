@@ -1,16 +1,21 @@
-.section__main {
+.sections{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    h2 {
-        color:white;
-    }
+ 
 }
 
-.container__main-section {
+h2 {
+    color:white;
+    font-size: calc(3em + 1vw)
+}
+
+.section__main {
     display: flex;
     position: relative;
+    padding: 450px 0;
 }
 
 .secret-container {
