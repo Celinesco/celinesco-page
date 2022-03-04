@@ -5,7 +5,6 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import ProjectsContainer from './ProjectsContainer';
 import AnimacionPortada from './AnimacionPortada';
-import profileImg from '../assets/profile.jpg';
 import ArnoldyYo from '../assets/ArnoldyYo.jpg'
 
 
