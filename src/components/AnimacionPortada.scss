@@ -1,4 +1,6 @@
 
+
+
 .contenedor_rectangulos {
     display: flex
   }
@@ -9,11 +11,6 @@
     position: relative;
     perspective: 1000px;
   }
-  
-//   .carta-box:hover .carta {
-//       transform: rotateY(180deg);
-      
-//   }
   
   .carta {
     transform-style: preserve-3d;
@@ -45,7 +42,7 @@
     justify-content: center;
     transform: rotateY(180deg);
     p {
-        font-size: 60px;
+        font-size: calc(2.3em + 1vw);
         font-weight: bold;
         color: black
     }
@@ -59,3 +56,6 @@
           transform: rotateY(180deg);
       }
   }
+
+
+  @import '../styles/breakpoints';

@@ -12,22 +12,23 @@ h2 {
     font-size: calc(3em + 1vw)
 }
 
+
 .section__main {
     display: flex;
     position: relative;
-    padding: 450px 0;
+    padding: 420px 0;
 }
 
 .secret-container {
     opacity: 0;
     position: absolute;
     left: -450px;
-    top:100px;
+    bottom:540px;
     transition: opacity 1s;
     p {
        text-align: center;
        font-size: bold;
-       font-size: 30px;
+       font-size: calc(0.1em + 1vw);
        margin-bottom: 20px;
        width: 300px;
      }
@@ -46,6 +47,7 @@ h2 {
 
 .section_technologys {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
