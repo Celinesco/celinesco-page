@@ -4,6 +4,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import ProjectsContainer from './ProjectsContainer';
+import AnimacionPortada from './AnimacionPortada';
 
 
 
@@ -18,12 +19,8 @@ const MainSection = () => {
         <>
             <section className="section__main">
                 <div className='container__main-section'>
-                    <div className=''>
-                    
-                    </div>
-                    <div className='container__img-signature'>
-                   
-                    </div>
+                    <AnimacionPortada />
+        
                 </div>
             </section>
          

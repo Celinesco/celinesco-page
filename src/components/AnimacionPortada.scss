@@ -1,0 +1,61 @@
+
+.contenedor_rectangulos {
+    display: flex
+  }
+  
+  .carta-box {
+    width: 80px;
+    height: 600px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+//   .carta-box:hover .carta {
+//       transform: rotateY(180deg);
+      
+//   }
+  
+  .carta {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+    animation: rotacion 4s cubic-bezier(0.275, 2, 0.02, 1) 0s infinite alternate-reverse ;
+  }
+  
+  .cara {
+    height: 600px;
+    width: 80px;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;  
+  }
+
+  .cara-frontal {
+    border: 1px solid white;
+    box-shadow:  0px 0px 20px 1px white;
+  }
+
+  .detras {
+      background-color: white;
+  }
+  
+  .cara.detras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    p {
+        font-size: 60px;
+        font-weight: bold;
+        color: black
+    }
+  }
+
+  @keyframes rotacion {
+      from {
+          transform: rotateY(0deg);
+      }
+      to {
+          transform: rotateY(180deg);
+      }
+  }
