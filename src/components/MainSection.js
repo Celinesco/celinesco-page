@@ -22,7 +22,7 @@ const MainSection = () => {
                     <div className='secret-container'>
                         <p>This is me and one of the best cats in the world.</p>
                         <div className='container_img-profile'>
-                            <img src={ArnoldyYo}></img>
+                            <img src={ArnoldyYo} alt="my profile picture"></img>
                         </div>
                     </div>
 

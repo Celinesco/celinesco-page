@@ -1,7 +1,7 @@
 import './App.scss';
 import MainSection from './components/MainSection';
 import NavBar from './components/NavBar';
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DetailSection from './components/DetailSection';
 import Footer from './components/Footer';
 
