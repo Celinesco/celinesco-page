@@ -1,4 +1,5 @@
-import './DetailSection.scss'
+import './DetailSection.scss';
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 const ProjectInfo = ({ title, description, technologies, link, code }) => {
     return (
@@ -9,9 +10,9 @@ const ProjectInfo = ({ title, description, technologies, link, code }) => {
                 <p>The project was built using: {technologies}.</p>
             </div>
             <div className='paragraph'>
-                <p><a href={link} target="_blank" rel="noopener noreferrer">_Click HERE! </a>to see the project.</p>
+                <p><a href={link} target="_blank" rel="noopener noreferrer"><HiOutlineExternalLink />Click HERE! </a>to see the project.</p>
             </div>
-            <p>_If you are interested in the code, <a href={code} target="_blank" rel="noopener noreferrer">you can also take a look at the repository.</a></p>
+            <p><HiOutlineExternalLink />If you are interested in the code, <a href={code} target="_blank" rel="noopener noreferrer">you can also take a look at the repository.</a></p>
         </article>
     )
 }
