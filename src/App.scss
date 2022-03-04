@@ -1,6 +1,7 @@
-.App {
-  min-height: 100vh;
+
+html, .App {
   background-color: black;
+  width: 100vw;
 }
 
 * {
@@ -11,14 +12,12 @@
 }
 
 
-
 ul {
   list-style: none;
 }
 
 .title__section {
   text-align: center;
-  width: 600px;
   color: white;
   font-size: 70px;
   margin: 60px 0;
