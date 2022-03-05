@@ -14,9 +14,9 @@
     padding: 0 60px;
 }
 
-.container__hamurguer-menu {
+.container__hamburguer-menu {
     color: white;
-    font-size: calc(2rem - 1vw)
+    font-size: calc(2rem - 1vw);
 }
 
 .navbar__list {
@@ -26,3 +26,6 @@
         color: $main-color-dark-mode;
     }
 }
+
+
+@import '../styles/breakpoints'
