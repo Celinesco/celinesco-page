@@ -1,5 +1,7 @@
 import './NavBar.scss';
 import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 const NavBar = () => {
     return (
@@ -13,6 +15,11 @@ const NavBar = () => {
                 <li>Projects</li>
                 <li>About</li>
             </ul>
+            <div className='container__hamurguer-menu'>
+                <GiHamburgerMenu />
+            </div>
+
+
         </nav>
     )
 }
