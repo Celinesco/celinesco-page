@@ -15,11 +15,12 @@
     z-index: 10;
     padding: 40px;
     p {
-        font-size: 25px;
+        font-size: calc(1.2rem - 1vw);
     }
     h2 {
         color: white;
         margin-bottom: 25px;
+        font-size: calc(2rem - 1vw);
     }
     a{
         color: white;
@@ -36,3 +37,6 @@
     margin: 25px 0;
    
 }
+
+
+@import '../styles/breakpoints'
