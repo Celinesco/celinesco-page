@@ -15,7 +15,7 @@ const NavBar = () => {
                 <li>Projects</li>
                 <li>About</li>
             </ul>
-            <div className='container__hamurguer-menu'>
+            <div className='container__hamburguer-menu'>
                 <GiHamburgerMenu />
             </div>
 
