@@ -14,6 +14,11 @@
     padding: 0 60px;
 }
 
+.container__hamurguer-menu {
+    color: white;
+    font-size: calc(2rem - 1vw)
+}
+
 .navbar__list {
     display: flex;
     li {

@@ -10,6 +10,9 @@
     box-shadow:  0px 0px 20px 1px white;
     border-top: 2px solid white;
     font-size: 20px;
+    p{
+        text-align: center;
+    }
     ul {
         margin-top: 20px;
         display: flex;
@@ -20,3 +23,5 @@
         }
     }
 }
+
+@import '../styles/breakpoints'
