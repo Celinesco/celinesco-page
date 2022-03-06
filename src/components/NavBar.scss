@@ -17,6 +17,8 @@
 .container__hamburguer-menu {
     color: white;
     font-size: calc(2rem - 1vw);
+    display: flex;
+    align-items: center;
 }
 
 .navbar__list {
