@@ -25,7 +25,7 @@ export const datosProyecto = [
         img: "https://blogger.googleusercontent.com/img/a/AVvXsEiq822jcy76XX9xUD5vVqneksee2EbKYJ1zGJ8fH1bhaqT9yRTFh_Q97QaghXcUD5TzbIe4_2yX7Nd7VbIgjmbzAX18bV_Rg5OU7TuA8hyqt74yPyEP-h1pEbFtpUtF7SzRKKijQCplPKwIcRbU0aW6Du154r10i1SaimyE16a7yIW1Xz0lBTPdSuShzQ=w323-h399",
         alt: "tic-tac-toe game",
         link: "https://celinesco.github.io/MatcheADAs/",
-        description: "This was an optional project of the Bootcamp ADA. It is 3-match game. Althought it has many things to improve(cleaning code,  it needs some extra functionalities, the responsive design and some bugs), it was really challenging and I'm happy with the results.",
+        description: "This was an optional project of the Bootcamp ADA. It is 3-match game. Although it has many things to improve(cleaning code,  it needs some extra functionalities, the responsive design and some bugs), it was really challenging and I'm happy with the results.",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/MatcheADAs"
     },
