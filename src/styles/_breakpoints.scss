@@ -68,8 +68,6 @@
         margin-bottom: 130px;
         margin-top: 30px;
     }
-
-
     .info__projects {
         padding: 30px;
         margin-top: 0px;
@@ -224,10 +222,12 @@
 @media (max-width: 575.98px) { 
     .section__main {
         min-height: 80vh;
+        margin-top: 50px;
     }
+
     .carta-box, .cara {
         width: 35px;
-        height: 320px;
+        height: 280px;
     }
 
     .card__skill {
