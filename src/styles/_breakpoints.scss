@@ -220,14 +220,23 @@
 
 
 @media (max-width: 575.98px) { 
+    .sections {
+        h2 {
+            font-size: calc(3.2rem - 1vw);
+        }
+    }
     .section__main {
         min-height: 80vh;
         margin-top: 50px;
     }
 
+    .contenedor_rectangulos {
+        max-width: 320px;
+    }
     .carta-box, .cara {
-        width: 35px;
+        max-width: 35px;
         height: 280px;
+        font-size: calc(1rem - 1vw);
     }
 
     .card__skill {
