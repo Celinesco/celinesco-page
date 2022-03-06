@@ -1,7 +1,74 @@
 // X-Small devices (portrait phones, less than 576px)
 
 
-// Small devices (landscape phones, less than 768px)
+@media (min-width: 1400px) {
+    .section__details {
+        max-width: 2200px;
+    }
+    .info__projects {
+        padding: 30px;
+        margin-top: 0px;
+        h2 {
+            font-size: calc(3.9rem - 1vw);
+        }
+        p {
+            font-size: calc(2.6rem - 1vw);
+        }
+    }
+}
+
+@media (max-width: 1399.98px) { 
+    .info__projects {
+        padding: 30px;
+        margin-top: 0px;
+        h2 {
+            font-size: calc(3rem - 1vw);
+        }
+        p {
+            font-size: calc(2.2rem - 1vw);
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .section__details {
+        flex-direction: column;
+    }
+    .info__projects {
+        margin-top: 30px;
+        h2 {
+            font-size: calc(3rem - 1vw);
+        }
+        p {
+            font-size: calc(2rem - 1vw);
+        }
+    }
+ }
+
+
+@media (max-width: 991.98px) { 
+    .container__cards-projects {
+        max-width: 950px;
+    }
+
+    .section__details {
+        padding: 200px 100px;
+        max-width: 950px;
+        .card__project {
+            width: 250px;
+            h3 {
+                font-size: calc(2.5rem - 1vw);
+            }
+        }
+    }
+    .info__projects {
+    
+        p {
+            font-size: calc(1.6rem - 1vw);
+        }
+    }
+ }
+
 @media (max-width: 767.98px) { 
     .navbar__list {
         display: none;
@@ -107,7 +174,7 @@
         }
     }
     .info__projects {
-        width: 300px;
+        max-width: 330px;
     }
  }
 
@@ -119,46 +186,9 @@
  }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { 
-    .container__cards-projects {
-        max-width: 950px;
-    }
 
-    .section__details {
-        padding: 200px 100px;
-        max-width: 950px;
-        .card__project {
-            width: 250px;
-            h3 {
-                font-size: calc(2.5rem - 1vw);
-            }
-        }
-    }
-    .info__projects {
-    
-        p {
-            font-size: calc(1.6rem - 1vw);
-        }
-    }
-
-
- }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-    .section__details {
-        flex-direction: column;
-    }
-    .info__projects {
-        margin-top: 30px;
-        h2 {
-            font-size: calc(3rem - 1vw);
-        }
-        p {
-            font-size: calc(2rem - 1vw);
-        }
-    }
- }
 
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { }
+
+
