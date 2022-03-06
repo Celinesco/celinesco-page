@@ -17,7 +17,6 @@
         width: 45px;
         height: 350px;
     }
-
     .container__cards-technologies  {
         width: 350px;
         justify-content: center;
@@ -57,7 +56,6 @@
             display: none;
         }
     }
-
  }
 
 
@@ -69,11 +67,10 @@
         width: 35px;
         height: 350px;
     }
-
     .section_technologys {
         margin-top: 200px;
     }
-  
+
     .card__skill {
         width: calc(100% / 2 - 5em);
         margin: 10px 5px;
@@ -83,7 +80,6 @@
             width: 65%;
         }
     }
-
     .container__cards-projects{
         width: 300px;
     }
@@ -113,10 +109,7 @@
     .info__projects {
         width: 300px;
     }
-   
  }
-
-
 
 
  @media (min-width: 767.99px) {
@@ -126,7 +119,32 @@
  }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {  }
+@media (max-width: 991.98px) { 
+    .container__cards-projects {
+        max-width: 950px;
+    }
+
+    .section__details {
+        padding: 200px 100px;
+        max-width: 950px;
+        .card__project {
+            width: 250px;
+            h3 {
+                font-size: calc(2.5rem - 1vw);
+            }
+        }
+    }
+    .info__projects {
+        h2 {
+            font-size: calc(3rem - 1vw);
+        }
+        p {
+            font-size: calc(1.6rem - 1vw);
+        }
+    }
+
+
+ }
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) { }
