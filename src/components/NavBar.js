@@ -30,7 +30,7 @@ const NavBar = () => {
             <button className='container__hamburguer-menu-button' onClick={handleClickOpenMenu}>
                 <GiHamburgerMenu />
             </button>
-            <div className={'container__nav-menu ' + " " + `${hamburguerMenu && 'desplazar-menu'}`}>
+            <div className={'container__nav-menu ' + `${hamburguerMenu && 'desplazar-menu'}`}>
                 <button className="close-nav-menu" onClick={handleClickCloseMenu}><ImCross /></button>
                 <ul>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
