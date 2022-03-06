@@ -1,5 +1,11 @@
 // X-Small devices (portrait phones, less than 576px)
 
+@media (min-width: 767.99px) {
+    .container__hamburguer-menu-button {
+        display: none;
+    }
+}
+
 
 @media (min-width: 1400px) {
     .section__details {
@@ -16,6 +22,7 @@
         }
     }
 }
+
 
 @media (max-width: 1399.98px) { 
     .info__projects {
@@ -179,11 +186,6 @@
  }
 
 
- @media (min-width: 767.99px) {
-     .container__hamburguer-menu-button {
-         display: none;
-     }
- }
 
 // Medium devices (tablets, less than 992px)
 

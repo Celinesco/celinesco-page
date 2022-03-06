@@ -1,6 +1,7 @@
 
 html, .App {
-  background-color: black;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(23,23,22,1) 47%, rgba(38,38,35,1) 76%, rgba(64,64,59,1) 100%);
   width: 100vw;
 }
 

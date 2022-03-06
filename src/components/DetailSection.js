@@ -9,7 +9,7 @@ import ProjectInfo from './ProjectInfo';
 const DetailSection = () => {
     const tarjetaClickeada = useParams();
     const prueba = datosProyecto.filter( proyecto => proyecto.id === tarjetaClickeada.project);
-    
+    window.scrollTo(0, 0);
 
     return (
         <section className="section__details">

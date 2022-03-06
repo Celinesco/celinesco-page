@@ -23,7 +23,7 @@ const NavBar = () => {
                 <p>Front-end Developer</p>
             </div>
             <ul className="navbar__list">
-                <Link to="/home"><li>Home</li></Link>
+                <Link to="/"><li>Home</li></Link>
                 <Link to="/projects"><li>Projects</li></Link>
                 <li>About</li>
             </ul>
@@ -33,7 +33,7 @@ const NavBar = () => {
             <div className={'container__nav-menu ' + `${hamburguerMenu && 'desplazar-menu'}`}>
                 <button className="close-nav-menu" onClick={handleClickCloseMenu}><ImCross /></button>
                 <ul>
-                    <Link to="/home" onClick={handleClickCloseMenu}><li>Home</li></Link>
+                    <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>Projects</li></Link>
                     <li>About</li>
                 </ul>
