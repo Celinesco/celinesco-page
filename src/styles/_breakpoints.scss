@@ -4,6 +4,20 @@
     .container__hamburguer-menu-button {
         display: none;
     }
+
+    .container__steps {
+        margin-bottom: 180px;
+        margin-top: 30px;
+    }
+
+    .step-1, .step-3 {
+        right: 49%
+    }
+
+    .step-2, .step-4 {
+        right: 46%
+    }
+
 }
 
 
@@ -11,6 +25,12 @@
     .section__details {
         max-width: 2200px;
     }
+    .section__main {
+        padding: 200px 0;
+        min-height: 100vh;
+    }
+    
+
     .info__projects {
         padding: 30px;
         margin-top: 0px;
@@ -25,6 +45,13 @@
 
 
 @media (max-width: 1399.98px) { 
+  
+    .container__steps {
+        margin-bottom: 130px;
+        margin-top: 30px;
+    }
+
+
     .info__projects {
         padding: 30px;
         margin-top: 0px;
@@ -38,6 +65,21 @@
 }
 
 @media (max-width: 1199.98px) {
+    .section__main {
+        padding: 150px 0;
+        min-height: 100vh;
+    }
+
+    .container__steps {
+        margin-bottom: 130px;
+        margin-top: 30px;
+    }
+
+    .carta-box, .cara {
+        width: 70px;
+        height: 400px;
+    }
+
     .section__details {
         flex-direction: column;
     }
@@ -54,8 +96,29 @@
 
 
 @media (max-width: 991.98px) { 
+
+    .section__main {
+        margin-top: 230px;
+        padding-top: 100px;
+        padding-bottom: 0;
+        min-height: 80vh;
+    }
+
     .container__cards-projects {
         max-width: 950px;
+    }
+
+    .container__cards-technologies  {
+        max-width: 700px;
+        justify-content: center;
+    }
+
+    .card__skill {
+        width: calc(100% / 3 - 1.9em);
+        margin: 10px 5px;
+        h3 {
+            font-size: 15px;
+        }
     }
 
     .section__details {
@@ -87,6 +150,13 @@
             font-size: calc(1.2rem - 1vw);
         }
     }
+
+    .section__main {
+        margin-top: 80px;
+        padding: 150px 0;
+        min-height: 100vh;
+    }
+
     .carta-box, .cara {
         width: 45px;
         height: 350px;
@@ -135,14 +205,11 @@
 
 @media (max-width: 575.98px) { 
     .section__main {
-        padding: 300px 0;
+        min-height: 80vh;
     }
     .carta-box, .cara {
         width: 35px;
-        height: 350px;
-    }
-    .section_technologys {
-        margin-top: 200px;
+        height: 320px;
     }
 
     .card__skill {

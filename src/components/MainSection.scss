@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 90vh;
- 
+    min-height: 100vh;
 }
 
 h2 {
@@ -15,8 +14,11 @@ h2 {
 
 .section__main {
     display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
     position: relative;
-    padding: 420px 0;
+    padding-top: 350px;
 }
 
 .secret-container {
@@ -46,10 +48,9 @@ h2 {
 }
 
 .section_technologys {
-    min-height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     flex-direction: column;
 }
@@ -101,4 +102,60 @@ h2 {
 
 .secret-container:hover {
     opacity: 1;
+}
+
+.container__steps {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    position: relative;
+    top: 300px
+}
+
+.container__step {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    animation-name: desvanecer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.step-1 {
+    bottom: 100px;
+    transform: rotateZ(198deg);
+    right: 50%;
+    animation-delay: 2.5s;
+}
+
+.step-2 {
+    bottom: 160px;
+    transform:  rotateZ(-198deg);
+    animation-delay: 1.8s;
+    right: 40%;
+}
+
+.step-3 {
+    bottom: 205px;
+    transform:  rotateZ(198deg);
+    right: 50%;
+    animation-delay: 1s;
+}
+
+.step-4 {
+    bottom: 245px;
+    transform:  rotateZ(-198deg);
+    right:40%;
+}
+
+
+@keyframes desvanecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity:  0;
+    }
+    
 }
