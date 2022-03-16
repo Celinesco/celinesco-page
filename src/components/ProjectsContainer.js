@@ -1,10 +1,17 @@
 import ProjectCard from "./ProjectCard";
 import "./MainSection.scss";
 import { datosProyecto } from "./datos_proyectos";
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 
 
 const ProjectsContainer = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
+
     return (
         <section className="section__projects">
             <h2 className="title__section"  data-aos="flip-down" data-aos-duration="1000">Projects</h2>
