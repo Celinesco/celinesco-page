@@ -1,9 +1,15 @@
+@import '../styles/variables';
+
 .sections {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 70vh;
+    h2 {
+        color:white;
+        font-size: calc(3em + 1vw)
+    }
     .section__main {
         display: flex;
         width: 100%;
@@ -12,20 +18,7 @@
         position: relative;
         padding-top: 200px;
     }
-    .secret-container {
-        opacity: 0;
-        position: absolute;
-        left: -450px;
-        bottom:540px;
-        transition: opacity 1s;
-        p {
-           text-align: center;
-           font-size: bold;
-           font-size: calc(0.1em + 1vw);
-           margin-bottom: 20px;
-           width: 300px;
-         }
-    }
+  
     .container__steps {
         width: 100%;
         margin-bottom: 40px;
@@ -39,9 +32,10 @@
     position: absolute;
     color: rgb(255, 255, 255);
     font-size: 30px;
+    opacity: 0;
     animation-name: desvanecer;
-    animation-delay: 4s;
     animation-duration: 4s;
+   
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -49,13 +43,13 @@
     bottom: 100px;
     transform: rotateZ(198deg);
     right: 50%;
-    animation-delay: 2.5s;
+    animation-delay: 6.5s;
 }
 
 .step-2 {
     bottom: 160px;
     transform:  rotateZ(-198deg);
-    animation-delay: 1.8s;
+    animation-delay: 5.8s;
     right: 40%;
 }
 
@@ -63,40 +57,28 @@
     bottom: 205px;
     transform:  rotateZ(198deg);
     right: 50%;
-    animation-delay: 1s;
+    animation-delay: 5s;
 }
 
 .step-4 {
     bottom: 245px;
     transform:  rotateZ(-198deg);
     right:40%;
-}
-
-
-h2 {
-    color:white;
-    font-size: calc(3em + 1vw)
+    animation-delay: 4s;
 }
 
 
 
-.container_img-profile {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    overflow: hidden;
-    img{
-        top: -40px;
-        width: 100%;
+.light-theme {
+    .container__step {
+        color: black;
     }
+    h2 {
+        color:$main-color-white-mode;
+    }
+    
 }
 
-
-
-
-.secret-container:hover {
-    opacity: 1;
-}
 
 
 

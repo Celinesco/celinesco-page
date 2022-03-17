@@ -5,9 +5,7 @@ const AnimacionPortada = () => {
         <div className="contenedor_rectangulos">
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>W</p>
                         <div></div>
                         <p>W</p>
@@ -18,9 +16,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>e</p>
                         <div></div>
                         <p>i</p>
@@ -32,9 +28,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>l</p>
                         <div></div>
                         <p>l</p>
@@ -45,9 +39,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>c</p>
                         <div></div>
                         <p>l</p>
@@ -58,9 +50,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>o</p>
                         <div></div>
                         <p>k</p>
@@ -71,9 +61,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>m</p>
                         <div></div>
                         <p>o</p>
@@ -84,9 +72,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>e</p>
                         <div></div>
                         <p>m</p>
@@ -97,9 +83,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>.</p>
                         <div></div>
                         <p>m</p>
@@ -110,9 +94,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>.</p>
                         <div></div>
                         <p>e</p>
@@ -123,9 +105,7 @@ const AnimacionPortada = () => {
             </div>
             <div className="carta-box">
                 <div className="carta">
-                    <div className="cara cara-frontal">
-                    </div>
-                    <div className="cara detras">
+                    <div className="cara ">
                         <p>.</p>
                         <div></div>
                         <p>n</p>

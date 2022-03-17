@@ -19,12 +19,6 @@ const MainSection = () => {
 
         <div className="sections">
             <section className='section__main'>
-                <div className='secret-container'>
-                    <p>This is me and one of the best cats in the world.</p>
-                    <div className='container_img-profile'>
-                        <img src={ArnoldyYo} alt="Celina Ines Alsina"></img>
-                    </div>
-                </div>
                 <AnimacionPortada />
                 <div className='container__steps'>
                     <div className='container__step step-1'>
