@@ -7,7 +7,8 @@ export const datosProyecto = [
         link: "https://celinesco.github.io/Portafolio/",
         description: "This is the first assignment of the ADA ITW Bootcamp. The portfolio was originally based on only CSS and HTML, because those were the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the drop-down menu for mobile.",
         technologies: "HTML5, CSS3, JS",
-        repository: "https://github.com/Celinesco/Portafolio"
+        repository: "https://github.com/Celinesco/Portafolio",
+        extralinks: []
     },
     {
         id: "2_Meme_Genertor",
@@ -18,6 +19,7 @@ export const datosProyecto = [
         description: "This is the second project of the ADA ITW bootcamp, and the first group assignment. With this project I learnt how to work on a collaborative project with GitHub, how to use external libraries, and to make dynamical web pages by manipulating the DOM with JS.",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/CaroSanchezL/Editor-de-memes",
+        extralinks: []
     },
     {
         id: "3_matcheadas",
@@ -27,7 +29,8 @@ export const datosProyecto = [
         link: "https://celinesco.github.io/MatcheADAs/",
         description: "This was an optional project of the ADA ITW bootcamp. It is a 3-match game. Some things are worth improving (cleaning the code + adding some extra functionalities, the responsive design and some bugs), it was really challenging and I am happy with the results.",
         technologies: "HTML5, CSS3, JS",
-        repository: "https://github.com/Celinesco/MatcheADAs"
+        repository: "https://github.com/Celinesco/MatcheADAs",
+        extralinks: []
     },
     {
         id: "4_ahorradas",
@@ -38,6 +41,7 @@ export const datosProyecto = [
         description: "The third project of the ADA ITW bootcamp was also a group assignment. It is a tracker for your incomes and expenses. Here we learnt how to store the user information on Local Storage.",
         technologies: "HTML5, BULMA, JS",
         repository: "https://github.com/Celinesco/AhorrAdas",
+        extralinks: []
     },
     {
         id: "5_comics",
@@ -47,7 +51,9 @@ export const datosProyecto = [
         link: "https://celinesco.github.io/buscador_de_comics_2/",
         description: "The aim of the project was to work with a public API. As always, we had pages examples, with different APIs. I chose Marvel Api, and also dabbled in another API to complete with those superheroes that don't belong to the Marvel world.",
         technologies: "HMTL, SASS, JS",
-        repository: "https://github.com/Celinesco/buscador_de_comics_2"
+        apiLink: 'https://developer.marvel.com/',
+        repository: "https://github.com/Celinesco/buscador_de_comics_2",
+        extralinks: []
     },
     {
         id: "6_rick&morty",
@@ -57,7 +63,9 @@ export const datosProyecto = [
         link: "https://morty-and-rick-page.netlify.app/RickAndMortyPage",
         description: "This page (SPA) was the result of an exercise. We were taught how to use APIs with React and to make pages more navigable with React Router DOM.",
         technologies: "React.js",
-        repository: "https://github.com/Celinesco/RickAndMortyPage"
+        apiLink: 'https://rickandmortyapi.com/',
+        repository: "https://github.com/Celinesco/RickAndMortyPage",
+        extralinks: []
     },
 
     {
@@ -66,12 +74,12 @@ export const datosProyecto = [
         img: "https://blogger.googleusercontent.com/img/a/AVvXsEjr85XwtU6erDfZETf5dVTGeQaT6e7DYI61R2NIuB5Hv-jPmMUHN8DdfOK-Ejvmm7QeHaDU_EzT1rYTmHFnytdSRzNkUrGwZfOVGTiH3XxtI_c0vq-MtRQBcx2XW0E4UJ2CpZnGBnRDvHHHBi6MbsFAy5pvg9hcMGMheZklrf3uMBJJyMPk1Cx7W8x4gg=s320",
         alt: "Clapperboard illustration",
         link: "https://infokleinkino.netlify.app/",
-        description: "Last porject of the bootcamp ADA ITW. ",
+        description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss this amazing code for the breakpoints with SASS`,
         technologies: "React.js",
-        repository: "https://github.com/Celinesco/buscador_de_peliculas"
+        repository: "https://github.com/Celinesco/buscador_de_peliculas",
+        apiLink: 'https://www.themoviedb.org/?language=es',
+        extralinks: ['https://swiperjs.com/', 'https://sass-lang.com/','https://reactrouter.com/','https://react-icons.github.io/react-icons/','https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss']
     }
-
-
 
 ]
 
