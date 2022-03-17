@@ -1,14 +1,14 @@
-import BackgroundParticles from './BackgroundParticles';
-import './BackgroundParticles.scss';
-import ProjectCard from './ProjectCard';
+import BackgroundParticles from './BackgroundParticles/BackgroundParticles';
+import './BackgroundParticles/BackgroundParticles.scss';
+import ProjectCard from '../Projects/ProjectCard';
 import { useParams } from 'react-router-dom';
-import { datosProyecto } from './datos_proyectos';
-import ProjectInfo from './ProjectInfo';
+import { pojectDetails } from '../datos_proyectos';
+import ProjectInfo from '../Projects/ProjectInfo';
 
 
 const DetailSection = () => {
     const tarjetaClickeada = useParams();
-    const prueba = datosProyecto.filter( proyecto => proyecto.id === tarjetaClickeada.project);
+    const prueba = pojectDetails.filter( proyecto => proyecto.id === tarjetaClickeada.project);
     window.scrollTo(0, 0);
 
     return (

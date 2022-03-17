@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard";
-import "./MainSection.scss";
-import { datosProyecto } from "./datos_proyectos";
+import "./ProjectsContainer.scss";
+import { pojectDetails } from "../datos_proyectos";
 import AOS from 'aos';
 import { useEffect } from 'react';
 
@@ -16,7 +16,7 @@ const ProjectsContainer = () => {
         <section className="section__projects">
             <h2 className="title__section"  data-aos="flip-down" data-aos-duration="1000">Projects</h2>
             <div className="container__cards-projects">
-              {datosProyecto.map((project)=> (
+              {pojectDetails.map((project)=> (
                   <ProjectCard key={project.id}
                   data_aos="zoom-in"
                   duration_aos="1000"

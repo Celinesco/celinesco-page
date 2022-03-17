@@ -1,0 +1,21 @@
+.container__cards-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    justify-content: center;
+}
+
+.section__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 300px 0;
+}
+
+.container__cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1500px;
+}

@@ -1,26 +1,42 @@
 import './App.scss';
 import MainSection from './components/MainSection';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import DetailSection from './components/DetailSection';
-import Footer from './components/Footer';
-import ProjectsContainer from './components/ProjectsContainer';
+import DetailSection from './components/DetailSection/DetailSection';
+import Footer from './components/Footer/Footer';
+import ProjectsContainer from './components/Projects/ProjectsContainer';
+import Context from './Context/Context'
+import {useState } from 'react';
 
 
 
 const App = () => {
+  const [language, setLanguage] = useState('en');
+  const [lightTheme, setLightTheme] = useState(false);
+
+
+  const context = {
+    language: language,
+    setLanguage: setLanguage,
+    lightTheme: lightTheme,
+    setLightTheme: setLightTheme,
+  }
+
   return (
-    <BrowserRouter>
-      <div className="App">
-        <NavBar />
-        <Routes>
-          <Route path="/" element= {<MainSection />} />
-          <Route path="/details/:project" element={<DetailSection />} />
-          <Route path="/projects" element={<ProjectsContainer />} />
-        </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <Context.Provider value={context}>
+      <BrowserRouter>
+        <div className={lightTheme ? 'light-theme' : 'App'}>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<MainSection />} />
+            <Route path="/details/:project" element={<DetailSection />} />
+            <Route path="/projects" element={<ProjectsContainer />} />
+          </Routes>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </Context.Provider>
+
   );
 }
 

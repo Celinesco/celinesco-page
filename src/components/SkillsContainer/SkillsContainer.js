@@ -1,4 +1,4 @@
-
+import './SkillsContainer.scss';
 
 const TechnologiesContainer = () => {
 

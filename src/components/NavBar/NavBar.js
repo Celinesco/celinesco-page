@@ -3,10 +3,19 @@ import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { useState } from 'react';
+import { FaLightbulb } from 'react-icons/fa';
+import { useContext } from 'react';
+import Context from '../../Context/Context';
 
 
 const NavBar = () => {
     const [hamburguerMenu, setHamburguerMenu] = useState(false)
+
+    const context = useContext(Context)
+
+    const handleClickTheme = () => {
+        context.setLightTheme(!context.lightTheme)
+    }
 
     const handleClickOpenMenu = () => {
         setHamburguerMenu(true)
@@ -18,9 +27,10 @@ const NavBar = () => {
 // className={"card-container " + `${!isAvailable && "no-available"} ${cardHover && isAvailable && "scale-card"}`}>
     return (
         <nav className="navbar">
-            <div>
+            <div className='container__info-navbar'>
                 <p>Celina Inés Alsina</p>
                 <p>Front-end Developer</p>
+                <button onClick={handleClickTheme}><FaLightbulb /></button>
             </div>
             <ul className="navbar__list">
                 <Link to="/"><li>Home</li></Link>
@@ -30,7 +40,7 @@ const NavBar = () => {
             <button className='container__hamburguer-menu-button' onClick={handleClickOpenMenu}>
                 <GiHamburgerMenu />
             </button>
-            <div className={'container__nav-menu ' + `${hamburguerMenu && 'desplazar-menu'}`}>
+            <div className={`container__nav-menu ${hamburguerMenu && 'desplazar-menu'}`}>
                 <button className="close-nav-menu" onClick={handleClickCloseMenu}><ImCross /></button>
                 <ul>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>

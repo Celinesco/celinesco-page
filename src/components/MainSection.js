@@ -1,9 +1,9 @@
 import './MainSection.scss';
-import TechnologiesContainer from './TechnologiesContainer';
+import TechnologiesContainer from './SkillsContainer/SkillsContainer';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import ProjectsContainer from './ProjectsContainer';
+import ProjectsContainer from './Projects/ProjectsContainer';
 import AnimacionPortada from './AnimacionPortada';
 import ArnoldyYo from '../assets/ArnoldyYo.jpg'
 import { MdPets } from "react-icons/md";

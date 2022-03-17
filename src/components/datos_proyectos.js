@@ -1,4 +1,4 @@
-export const datosProyecto = [
+export const pojectDetails = [
     {
         id: "1_first_portfolio",
         title: "First Portfolio",
@@ -8,7 +8,11 @@ export const datosProyecto = [
         description: "This is the first assignment of the ADA ITW Bootcamp. The portfolio was originally based on only CSS and HTML, because those were the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the drop-down menu for mobile.",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/Portafolio",
-        extralinks: []
+        extralinks: [
+            ['images', 'https://undraw.co/illustrations'],
+            ['skills svg images', 'https://devicon.dev/'],
+            ['icons', 'https://fontawesome.com/'],
+        ]
     },
     {
         id: "2_Meme_Genertor",
@@ -50,10 +54,10 @@ export const datosProyecto = [
         alt: "Kapow exclamation",
         link: "https://celinesco.github.io/buscador_de_comics_2/",
         description: "The aim of the project was to work with a public API. As always, we had pages examples, with different APIs. I chose Marvel Api, and also dabbled in another API to complete with those superheroes that don't belong to the Marvel world.",
-        technologies: "HMTL, SASS, JS",
+        technologies: "HTML, SASS, JS",
         apiLink: 'https://developer.marvel.com/',
         repository: "https://github.com/Celinesco/buscador_de_comics_2",
-        extralinks: []
+        extralinks: [        ]
     },
     {
         id: "6_rick&morty",
@@ -62,10 +66,13 @@ export const datosProyecto = [
         alt: "Rick and Morty silhouette",
         link: "https://morty-and-rick-page.netlify.app/RickAndMortyPage",
         description: "This page (SPA) was the result of an exercise. We were taught how to use APIs with React and to make pages more navigable with React Router DOM.",
-        technologies: "React.js",
+        technologies: "React.js, SASS",
         apiLink: 'https://rickandmortyapi.com/',
         repository: "https://github.com/Celinesco/RickAndMortyPage",
-        extralinks: []
+        extralinks: [
+            ['react_icons', 'https://react-icons.github.io/react-icons/'],
+            ['react router','https://reactrouter.com/'],
+        ]
     },
 
     {
@@ -75,10 +82,15 @@ export const datosProyecto = [
         alt: "Clapperboard illustration",
         link: "https://infokleinkino.netlify.app/",
         description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss this amazing code for the breakpoints with SASS`,
-        technologies: "React.js",
+        technologies: "React.js, SASS",
         repository: "https://github.com/Celinesco/buscador_de_peliculas",
         apiLink: 'https://www.themoviedb.org/?language=es',
-        extralinks: ['https://swiperjs.com/', 'https://sass-lang.com/','https://reactrouter.com/','https://react-icons.github.io/react-icons/','https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss']
+        extralinks: [
+            ['swiper', 'https://swiperjs.com/'],
+            ['react router','https://reactrouter.com/'],
+            ['react_icons', 'https://react-icons.github.io/react-icons/'],
+            ['Developer codes','https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss']
+        ]
     }
 
 ]

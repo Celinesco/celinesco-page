@@ -1,0 +1,135 @@
+@import '../../styles/variables';
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 10vh;
+    background-color: $background-color-dark-mode;
+    border-bottom: 2px solid $main-color-dark-mode;
+    box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
+    padding: 0 60px;
+    .container__info-navbar {
+        display: flex;
+        flex-direction: column;
+        button {
+            color: $main-color-dark-mode;
+            background-color: transparent;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    }
+}
+
+.container__hamburguer-menu-button {
+    color: $main-color-dark-mode;
+    font-size: calc(2rem - 1vw);
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar__list {
+    display: flex;
+    li {
+        margin: 0 10px;
+        color: $main-color-dark-mode;
+    }
+}
+
+.container__nav-menu {
+    position:fixed;
+    display: flex;
+    left: -200%;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 27, 27);
+    width: 100vw;
+    height: 100vh;
+    transition: left 0.9s;
+    ul {
+        width: 90vw;
+        height: 90vh;
+        border: 2px solid $main-color-dark-mode;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin: 20px 0;
+            color: $main-color-dark-mode;
+            font-size: 25px;
+        }
+    }
+    .close-nav-menu {
+        position: absolute;
+        top: 80px;
+        right: 55px;
+        background-color: transparent;
+        border: none;
+        color: $main-color-dark-mode;
+        font-size: 25px;
+        
+    }
+}
+
+.desplazar-menu {
+    left: 0;
+}
+
+
+
+.light-theme {
+    .navbar {
+        background-color: $background-color-white-mode;
+        border-bottom: 2px solid $main-color-white-mode;
+        box-shadow:  0px 0px 20px 1px $main-color-white-mode;
+        .container__info-navbar {
+            button {
+                color: $main-color-white-mode;
+            }
+        }
+        .container__info-navbar {
+            p{
+                color: $main-color-white-mode;
+            }
+        }
+    }
+    .navbar__list {
+        li {
+            color: $main-color-white-mode
+        }
+    }
+ 
+}
+
+.light-theme {
+    .container__nav-menu {
+        background-color: $background-color-white-mode;
+        ul {
+            border: 2px solid $main-color-white-mode;
+            li {
+                color: $main-color-white-mode;
+            }
+        }
+    }
+    .close-nav-menu {
+        color: rgb(0, 0, 0);
+        
+    }
+}
+
+.light-theme {
+    .container__hamburguer-menu-button {
+        color: $main-color-white-mode;
+    }
+}
+
+
+
+@import '../../styles/breakpoints'

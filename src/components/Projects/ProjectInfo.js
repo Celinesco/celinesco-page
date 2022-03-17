@@ -1,4 +1,4 @@
-import './DetailSection.scss';
+import '../DetailSection/DetailSection.scss';
 import { HiOutlineExternalLink } from "react-icons/hi";
 
 const ProjectInfo = ({ title, description, technologies, link, code }) => {
