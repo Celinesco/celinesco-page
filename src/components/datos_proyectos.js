@@ -1,6 +1,10 @@
 import claqueta from '../assets/claqueta.png';
 import tateti from '../assets/tateti.png';
 import RickAndMortyContornoNegro from '../assets/RickAndMortyContornoNegro.png';
+import comicImg from '../assets/comic.png';
+import firstPortfolio from '../assets/FirstPorfolio.png';
+import ahorradas from '../assets/ahorradas.png';
+
 
 
 
@@ -8,7 +12,7 @@ export const projectDetails = [
     {
         id: "1_first_portfolio",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjiy93dYLcllgGSHXnsr_4WMOkjBfz9fP8octsENo1KW7A3l1ejF7Im-Ns8wJRM-l44nG7X6DBC0INPaanNjvAoOoB85DVEURnoKBNu40BZtYZCUr0izz7k785Sw6vehAJtB7LTdG8peKDhEjcEeqZ-eoXOQPpNhpopo9VNJABWrE-VigtYZsMXFiCYLw=s320",
-        img_white_theme: "",
+        img_white_theme: firstPortfolio,
         link: "https://celinesco.github.io/Portafolio/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/Portafolio",
@@ -89,8 +93,7 @@ export const projectDetails = [
         id: "4_ahorradas",
         title: "AhorrADAs",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjvvYItYKdgI-8jDOJJTmnqgeEcnZyAer7eBFwDVJIl1uEo3voUNf7k2GeAIvIkReNTkA--PNiZo8gficbgv0pXyRQIYKMoKN3xLxZ9dBZO3Dezde5cH2Vrry5xky6BPff8COKs_DGGHED8876GDMEcAQbbTGqO-1hJTgNff9lonFSY_TgXwUv0bFYdhA=s320",
-        img_white_theme: '',
-        
+        img_white_theme: ahorradas,
         link: "https://celinesco.github.io/AhorrAdas/",
         technologies: "HTML5, BULMA, JS",
         repository: "https://github.com/Celinesco/AhorrAdas",
@@ -114,7 +117,7 @@ export const projectDetails = [
     {
         id: "5_comics",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEg2_0yrTTO2xuQm7hrMKIJNCELT70jXypEOW6NXhySMSqGgkLDJvnjPP4qQnbD_-yrLZP1qw8hIInAKinZamEVdIC3lc9EkAZJkJoAurRqAw0gvC-R6NPHt5gVmnrGMWYA3chptGvCn6OlL5XICv17iBbYIrW_f4Q5TKJQgc7XdMS4Hfi4RysF6ZdnPIg=s320",
-        img_white_theme: '',
+        img_white_theme: comicImg,
         link: "https://celinesco.github.io/buscador_de_comics_2/",
         technologies: "HTML, SASS, JS",
         apiLink: 'https://developer.marvel.com/',
