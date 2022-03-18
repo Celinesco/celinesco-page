@@ -1,111 +1,204 @@
-export const pojectDetails = [
+import claqueta from '../assets/claqueta.png';
+import tateti from '../assets/tateti.png';
+import RickAndMortyContornoNegro from '../assets/RickAndMortyContornoNegro.png';
+
+
+
+export const projectDetails = [
     {
         id: "1_first_portfolio",
-        title: "First Portfolio",
-        img: "https://blogger.googleusercontent.com/img/a/AVvXsEjiy93dYLcllgGSHXnsr_4WMOkjBfz9fP8octsENo1KW7A3l1ejF7Im-Ns8wJRM-l44nG7X6DBC0INPaanNjvAoOoB85DVEURnoKBNu40BZtYZCUr0izz7k785Sw6vehAJtB7LTdG8peKDhEjcEeqZ-eoXOQPpNhpopo9VNJABWrE-VigtYZsMXFiCYLw=s320",
-        alt: "code with many errors",
+        img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjiy93dYLcllgGSHXnsr_4WMOkjBfz9fP8octsENo1KW7A3l1ejF7Im-Ns8wJRM-l44nG7X6DBC0INPaanNjvAoOoB85DVEURnoKBNu40BZtYZCUr0izz7k785Sw6vehAJtB7LTdG8peKDhEjcEeqZ-eoXOQPpNhpopo9VNJABWrE-VigtYZsMXFiCYLw=s320",
+        img_white_theme: "",
         link: "https://celinesco.github.io/Portafolio/",
-        description: "This is the first assignment of the ADA ITW Bootcamp. The portfolio was originally based on only CSS and HTML, because those were the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the drop-down menu for mobile.",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/Portafolio",
         extralinks: [
             ['images', 'https://undraw.co/illustrations'],
             ['skills svg images', 'https://devicon.dev/'],
             ['icons', 'https://fontawesome.com/'],
-        ]
+        ],
+        es: {
+            title: 'Primer Porfolio',
+            alt: "código html mal escrito a propósito",
+            description: 'Este fue el primer trabajo práctico del bootcamp ADA ITW. El proyecto fue realizado originalmente utilizando sólo CSS and HTML, que fueron los primeros lenguajes aprendidos. Una vez aprendido JS y cómo manipular el DOM, agregué el modo oscuro y el menu hamburguesa para hacer la página más navegable.'
+        },
+        en: {
+            title: "First Portfolio",
+            alt: "code with many errors",
+            description: "This is the first assignment of the ADA ITW Bootcamp. The portfolio was originally based on only CSS and HTML, because those were the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the drop-down menu for mobile.",
+
+        },
+        de: {
+            title: 'Erstes Portfolio',
+            alt: '',
+            description: 'Das ist die erste Projektarbeit des ADA ITW Bootcamps. Das Portfolio basierte ursprünglich nur auf CSS und HTML, da dies die beiden ersten Sprachen waren, die wir gelernt haben. Im zweiten Teil des Kurses habe ich etwas JS hinzugefügt, um den Dark-Mode und das Dropdown-Menü für mobile Geräte zu ermöglichen.',
+        }
     },
     {
         id: "2_Meme_Genertor",
-        title: "Meme Generator",
-        img: "https://i.etsystatic.com/32248327/r/il/614b2e/3442381236/il_340x270.3442381236_jxj5.jpg",
-        alt: "Famous cat meme",
+        img_dark_theme: "https://i.etsystatic.com/32248327/r/il/614b2e/3442381236/il_340x270.3442381236_jxj5.jpg",
+        img_white_theme: '',
+       
         link: "https://carosanchezl.github.io/Editor-de-memes/",
-        description: "This is the second project of the ADA ITW bootcamp, and the first group assignment. With this project I learnt how to work on a collaborative project with GitHub, how to use external libraries, and to make dynamical web pages by manipulating the DOM with JS.",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/CaroSanchezL/Editor-de-memes",
-        extralinks: []
+        extralinks: [],
+        es: {
+            title: 'Generador de Memes',
+            alt: "Meme famoso de gato",
+            description: 'Este fue el segundo proyecto del Bootcamp de ADA ITW y el primer proyecto grupal. Con este proyecto aprendí como hacer mis páginas dinámicamente, manipulando elementos del DOM a través de JS. Implementamos el uso de librerías externas (en este caso, para descargar el meme creado) y lo más desafiante fue trabajar en equipo utilizando GitHub'
+        },
+        en: {
+            title: "Meme Generator",
+            alt: "Famous cat meme",
+            description: "This is the second project of the ADA ITW bootcamp, and the first group assignment. With this project I learnt how to work on a collaborative project with GitHub, how to use external libraries, and to make dynamical web pages by manipulating the DOM with JS.",
+        },
+        de: {
+            title: 'Meme Generator',
+            alt: 'Match 3-Spiel',
+            description: 'Das ist das zweite Projekt des ADA ITW Bootcamps und die erste Gruppenarbeit. Hier habe ich gelernt, wie man an einem gemeinsamen Projekt über GitHub arbeitet, wie man externe Bibliotheken verwendet und wie man dynamische Webseiten durch Manipulation des DOM mit JS erstellt.',
+        }
+        
     },
     {
         id: "3_matcheadas",
-        title: "MatcheADAs",
-        img: "https://blogger.googleusercontent.com/img/a/AVvXsEiq822jcy76XX9xUD5vVqneksee2EbKYJ1zGJ8fH1bhaqT9yRTFh_Q97QaghXcUD5TzbIe4_2yX7Nd7VbIgjmbzAX18bV_Rg5OU7TuA8hyqt74yPyEP-h1pEbFtpUtF7SzRKKijQCplPKwIcRbU0aW6Du154r10i1SaimyE16a7yIW1Xz0lBTPdSuShzQ=w323-h399",
-        alt: "tic-tac-toe game",
+        img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEiq822jcy76XX9xUD5vVqneksee2EbKYJ1zGJ8fH1bhaqT9yRTFh_Q97QaghXcUD5TzbIe4_2yX7Nd7VbIgjmbzAX18bV_Rg5OU7TuA8hyqt74yPyEP-h1pEbFtpUtF7SzRKKijQCplPKwIcRbU0aW6Du154r10i1SaimyE16a7yIW1Xz0lBTPdSuShzQ=w323-h399",
+        img_white_theme: tateti,
         link: "https://celinesco.github.io/MatcheADAs/",
-        description: "This was an optional project of the ADA ITW bootcamp. It is a 3-match game. Some things are worth improving (cleaning the code + adding some extra functionalities, the responsive design and some bugs), it was really challenging and I am happy with the results.",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/MatcheADAs",
-        extralinks: []
+        extralinks: [],
+        es: {
+            title: 'MatcheADAs',
+            alt: "Juego tateti o tres en línea",
+            description: 'Este era un proyecto opcional del bootcamp ADA ITW. Es un juego de tres en línea, similar a Candy Crush. Todavía el juego necesita muchas optimizaciones, como limpieza de código, añadir funcionalidades y el diseño responsivo, pero fue un proyecto muy desafiante en el que aprendí muchísimo sobre JS. Sobretodo el uso del SetTimeOut para lograr las animaciones. Estoy muy feliz con el resultado.'
+        },
+        en: {
+            title: "MatcheADAs",
+            alt: "tic'tac'toe game",
+            description: "This was an optional project of the ADA ITW bootcamp. It is a 3-match game. Some things are worth improving (cleaning the code + adding some extra functionalities, the responsive design and some bugs), it was really challenging and I am happy with the results.",
+
+        },
+        de: {
+            title: 'MatcheADAs',
+            alt: 'Match 3-Spiel',
+            description: 'Das ist ein optionales Projekt des ADA ITW Bootcamps. Es ist ein 3-Match-Spiel. Einige Dinge sind noch zu verbessern (Aufräumen des Codes + Hinzufügen einiger zusätzlicher Funktionen, responsive Design und einige Bugs), aber es war eine Herausforderung und ich bin sehr zufrieden mit dem Ergebnis.',
+        }
     },
     {
         id: "4_ahorradas",
         title: "AhorrADAs",
-        img: "https://blogger.googleusercontent.com/img/a/AVvXsEjvvYItYKdgI-8jDOJJTmnqgeEcnZyAer7eBFwDVJIl1uEo3voUNf7k2GeAIvIkReNTkA--PNiZo8gficbgv0pXyRQIYKMoKN3xLxZ9dBZO3Dezde5cH2Vrry5xky6BPff8COKs_DGGHED8876GDMEcAQbbTGqO-1hJTgNff9lonFSY_TgXwUv0bFYdhA=s320",
-        alt: "Statistics graph",
+        img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjvvYItYKdgI-8jDOJJTmnqgeEcnZyAer7eBFwDVJIl1uEo3voUNf7k2GeAIvIkReNTkA--PNiZo8gficbgv0pXyRQIYKMoKN3xLxZ9dBZO3Dezde5cH2Vrry5xky6BPff8COKs_DGGHED8876GDMEcAQbbTGqO-1hJTgNff9lonFSY_TgXwUv0bFYdhA=s320",
+        img_white_theme: '',
+        
         link: "https://celinesco.github.io/AhorrAdas/",
-        description: "The third project of the ADA ITW bootcamp was also a group assignment. It is a tracker for your incomes and expenses. Here we learnt how to store the user information on Local Storage.",
         technologies: "HTML5, BULMA, JS",
         repository: "https://github.com/Celinesco/AhorrAdas",
-        extralinks: []
+        extralinks: [],
+        es: {
+            title: 'AhorrADAs',
+            alt: "Gráfica estadística",
+            description: 'Tercer proyecto de ADA ITW. También fue un proyecto grupal. La página te permite llevar un registro de tus gastos e ingresos en el año, almacenando la información en el Local Storage del navegador.'
+        },
+        en: {
+            title: "AhorrADAs",
+            alt: "Statistics graph",
+            description: "The third project of the ADA ITW bootcamp was also a group assignment. It is a tracker for your incomes and expenses. Here we learnt how to store the user information on Local Storage.",
+        },
+        de: {
+            title: 'MatcheADAs',
+            alt: '',
+            description: 'Das dritte Projekt des ADA ITW Bootcamps war ebenfalls eine Gruppenarbeit. Es ist ein Tracker für Einnahmen und Ausgaben. Hier habe ich gelernt, wie man Benutzerinformationen auf einem lokalen Speicher ablegt. ',
+        }
     },
     {
         id: "5_comics",
-        title: "Comics",
-        img: "https://blogger.googleusercontent.com/img/a/AVvXsEg2_0yrTTO2xuQm7hrMKIJNCELT70jXypEOW6NXhySMSqGgkLDJvnjPP4qQnbD_-yrLZP1qw8hIInAKinZamEVdIC3lc9EkAZJkJoAurRqAw0gvC-R6NPHt5gVmnrGMWYA3chptGvCn6OlL5XICv17iBbYIrW_f4Q5TKJQgc7XdMS4Hfi4RysF6ZdnPIg=s320",
-        alt: "Kapow exclamation",
+        img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEg2_0yrTTO2xuQm7hrMKIJNCELT70jXypEOW6NXhySMSqGgkLDJvnjPP4qQnbD_-yrLZP1qw8hIInAKinZamEVdIC3lc9EkAZJkJoAurRqAw0gvC-R6NPHt5gVmnrGMWYA3chptGvCn6OlL5XICv17iBbYIrW_f4Q5TKJQgc7XdMS4Hfi4RysF6ZdnPIg=s320",
+        img_white_theme: '',
         link: "https://celinesco.github.io/buscador_de_comics_2/",
-        description: "The aim of the project was to work with a public API. As always, we had pages examples, with different APIs. I chose Marvel Api, and also dabbled in another API to complete with those superheroes that don't belong to the Marvel world.",
         technologies: "HTML, SASS, JS",
         apiLink: 'https://developer.marvel.com/',
         repository: "https://github.com/Celinesco/buscador_de_comics_2",
-        extralinks: [        ]
+        extralinks: [        ],
+        es: {
+            title: 'Web de Comics',
+            alt: "Onomatopeya Kapow",
+            description: 'Cuarto proyecto del bootcamp. El objetivo era trabajar con una API pública. Nos dieron diferentes ejemplos. Elegí la Api de Marvel, y además incursioné en otra para aquellos superhéroes que no pertenecen al mundo de Marvel. '
+        },
+        en: {
+            title: "Comics",
+            alt: "Kapow exclamation",
+            description: "The goal of the project was to work with a public API. As always, we had sample pages with different APIs. I decided to use a Marvel API and also integrated another API to add the superheroes that are not part of the Marvel world.",
+        },
+        de: {
+            title: 'MatcheADAs',
+            alt: '',
+            description: 'Ziel des Projekts war es, mit einer öffentlichen API zu arbeiten. Wie immer hatten wir Beispielseiten mit verschiedenen APIs. Ich entschied mich für eine Marvel-API und integrierte eine weitere API, um die Superhelden hinzuzufügen, die nicht Teil der Marvel-Welt sind. ',
+        }
     },
     {
         id: "6_rick&morty",
-        title: "Rick & Morty",
-        img: "https://blogger.googleusercontent.com/img/a/AVvXsEjelRjxXPLIpTBBUeEUQcnlbZ3R5n7mSBUeZr1zQXfH8EIxndWlDpRrhPSr5n_ENVJrSCyZhLxRjO-84AOOWRF52-0X_Blr0aONvLxbz4BXx3h-cvhuhBNXZFnm1GB2ftKryDzz7g9Udgo92doqXQz5l0z8Csdal_zt7KESMXCTbZO9HC6PMxzh8NGgHA=s320",
-        alt: "Rick and Morty silhouette",
+        img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjelRjxXPLIpTBBUeEUQcnlbZ3R5n7mSBUeZr1zQXfH8EIxndWlDpRrhPSr5n_ENVJrSCyZhLxRjO-84AOOWRF52-0X_Blr0aONvLxbz4BXx3h-cvhuhBNXZFnm1GB2ftKryDzz7g9Udgo92doqXQz5l0z8Csdal_zt7KESMXCTbZO9HC6PMxzh8NGgHA=s320",
+        img_white_theme: RickAndMortyContornoNegro,
         link: "https://morty-and-rick-page.netlify.app/RickAndMortyPage",
-        description: "This page (SPA) was the result of an exercise. We were taught how to use APIs with React and to make pages more navigable with React Router DOM.",
         technologies: "React.js, SASS",
         apiLink: 'https://rickandmortyapi.com/',
         repository: "https://github.com/Celinesco/RickAndMortyPage",
         extralinks: [
             ['react_icons', 'https://react-icons.github.io/react-icons/'],
-            ['react router','https://reactrouter.com/'],
-        ]
+            ['react router', 'https://reactrouter.com/'],
+        ],
+        es: {
+            title: "Rick & Morty",
+            alt: "Siluetas de Rick y de Morty dibujadas imitando un electrocardiograma",
+            description: "Esta página surgió como resultado de un ejercicio del bootcamp de ADA ITW en el que aprendimos el Hook useEffect para poder hacer fetchs a una API sin caer en un loop infinito. También aprendí a utilizar la librería react-router, lo que convirtió la app en una página mucho más cómoda de navegar para el usuario",
+
+        },
+        en: {
+            title: "Rick & Morty",
+            alt: "Rick and Morty silhouette",
+            description: "This page (SPA) was the result of an exercise. We were taught how to use APIs with React and to make pages more navigable with React Router DOM.",
+        },
+        de: {
+            title: "Rick & Morty",
+            alt: "Rick and Morty Konturen",
+            description: 'Diese Seite (SPA) war das Ergebnis einer Übungsaufgabe. Hier haben wir gelernt, wie man APIs mit React verwendet und wie man Seiten mit dem React Router DOM leichter navigierbar gestaltet. ',
+        }
     },
 
     {
         id: "7_movies",
-        title: "Movies",
-        img: "https://blogger.googleusercontent.com/img/a/AVvXsEjr85XwtU6erDfZETf5dVTGeQaT6e7DYI61R2NIuB5Hv-jPmMUHN8DdfOK-Ejvmm7QeHaDU_EzT1rYTmHFnytdSRzNkUrGwZfOVGTiH3XxtI_c0vq-MtRQBcx2XW0E4UJ2CpZnGBnRDvHHHBi6MbsFAy5pvg9hcMGMheZklrf3uMBJJyMPk1Cx7W8x4gg=s320",
-        alt: "Clapperboard illustration",
+        img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjr85XwtU6erDfZETf5dVTGeQaT6e7DYI61R2NIuB5Hv-jPmMUHN8DdfOK-Ejvmm7QeHaDU_EzT1rYTmHFnytdSRzNkUrGwZfOVGTiH3XxtI_c0vq-MtRQBcx2XW0E4UJ2CpZnGBnRDvHHHBi6MbsFAy5pvg9hcMGMheZklrf3uMBJJyMPk1Cx7W8x4gg=s320",
+        img_white_theme: claqueta,
         link: "https://infokleinkino.netlify.app/",
-        description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss this amazing code for the breakpoints with SASS`,
         technologies: "React.js, SASS",
         repository: "https://github.com/Celinesco/buscador_de_peliculas",
         apiLink: 'https://www.themoviedb.org/?language=es',
         extralinks: [
             ['swiper', 'https://swiperjs.com/'],
-            ['react router','https://reactrouter.com/'],
+            ['react router', 'https://reactrouter.com/'],
             ['react_icons', 'https://react-icons.github.io/react-icons/'],
-            ['Developer codes','https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss']
-        ]
+            ['Developer codes', 'https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss']
+        ],
+        es: {
+            title: "Películas",
+            alt: "Claqueta de cine",
+            description: "Este es mi último proyecto del Bootcamp ADA ITW. Como siempre, nos dieron una página de modelo con la posibilidad de cambiar los estilos. Implementé diferentes librerías como: swiper, react router, react icons y un código  fantástico de un desarrollador para los breakpoints con SASS",
+
+        },
+        en: {
+            title: "Movies",
+            alt: "Clapperboard illustration",
+            description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss this amazing code for the breakpoints with SASS`,
+        },
+        de: {
+            title: "Filmen",
+            alt: "",
+            description: "",
+        }
     }
 
 ]
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
