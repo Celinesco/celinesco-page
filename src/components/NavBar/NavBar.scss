@@ -12,15 +12,24 @@
     border-bottom: 2px solid $main-color-dark-mode;
     box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
     padding: 0 60px;
-    .container__info-navbar {
-        display: flex;
-        flex-direction: column;
-        button {
-            color: $main-color-dark-mode;
-            background-color: transparent;
-            font-size: 20px;
-            margin-top: 15px;
-        }
+}
+
+.container__actions-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        color: $main-color-dark-mode;
+        background-color: transparent;
+        font-size: 20px;
+        margin-top: 10px;
+    } 
+}
+
+.container__preferences-user {
+    margin-top: 10px;
+    button {
+        margin: 0 15px
     }
 }
 
@@ -95,7 +104,12 @@
             }
         }
         .container__info-navbar {
-            p{
+            p {
+                color: $main-color-white-mode;
+            }
+        }
+        .container__actions-navbar {
+            button {
                 color: $main-color-white-mode;
             }
         }
