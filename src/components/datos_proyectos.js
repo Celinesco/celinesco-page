@@ -24,13 +24,13 @@ export const projectDetails = [
         },
         en: {
             title: "First Portfolio",
-            alt: "code with many errors",
+            alt: "HTML code with errors",
             description: "This is the first assignment of the ADA ITW Bootcamp. The portfolio was originally based on only CSS and HTML, because those were the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the drop-down menu for mobile.",
 
         },
         de: {
             title: 'Erstes Portfolio',
-            alt: '',
+            alt: 'HTML Code mit Fehlern',
             description: 'Das ist die erste Projektarbeit des ADA ITW Bootcamps. Das Portfolio basierte ursprünglich nur auf CSS und HTML, da dies die beiden ersten Sprachen waren, die wir gelernt haben. Im zweiten Teil des Kurses habe ich etwas JS hinzugefügt, um den Dark-Mode und das Dropdown-Menü für mobile Geräte zu ermöglichen.',
         }
     },
@@ -54,7 +54,7 @@ export const projectDetails = [
             description: "This is the second project of the ADA ITW bootcamp, and the first group assignment. With this project I learnt how to work on a collaborative project with GitHub, how to use external libraries, and to make dynamical web pages by manipulating the DOM with JS.",
         },
         de: {
-            title: 'Meme Generator',
+            title: 'Meme-Generator',
             alt: 'Match 3-Spiel',
             description: 'Das ist das zweite Projekt des ADA ITW Bootcamps und die erste Gruppenarbeit. Hier habe ich gelernt, wie man an einem gemeinsamen Projekt über GitHub arbeitet, wie man externe Bibliotheken verwendet und wie man dynamische Webseiten durch Manipulation des DOM mit JS erstellt.',
         }
@@ -106,8 +106,8 @@ export const projectDetails = [
             description: "The third project of the ADA ITW bootcamp was also a group assignment. It is a tracker for your incomes and expenses. Here we learnt how to store the user information on Local Storage.",
         },
         de: {
-            title: 'MatcheADAs',
-            alt: '',
+            title: 'AhorrADAs',
+            alt: 'Diagramme',
             description: 'Das dritte Projekt des ADA ITW Bootcamps war ebenfalls eine Gruppenarbeit. Es ist ein Tracker für Einnahmen und Ausgaben. Hier habe ich gelernt, wie man Benutzerinformationen auf einem lokalen Speicher ablegt. ',
         }
     },
@@ -127,12 +127,12 @@ export const projectDetails = [
         },
         en: {
             title: "Comics",
-            alt: "Kapow exclamation",
+            alt: "Kapow",
             description: "The goal of the project was to work with a public API. As always, we had sample pages with different APIs. I decided to use a Marvel API and also integrated another API to add the superheroes that are not part of the Marvel world.",
         },
         de: {
-            title: 'MatcheADAs',
-            alt: '',
+            title: 'Comic',
+            alt: 'Lautmalerei eines Explosionsgeräusches',
             description: 'Ziel des Projekts war es, mit einer öffentlichen API zu arbeiten. Wie immer hatten wir Beispielseiten mit verschiedenen APIs. Ich entschied mich für eine Marvel-API und integrierte eine weitere API, um die Superhelden hinzuzufügen, die nicht Teil der Marvel-Welt sind. ',
         }
     },
@@ -192,9 +192,9 @@ export const projectDetails = [
             description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss this amazing code for the breakpoints with SASS`,
         },
         de: {
-            title: "Filmen",
-            alt: "",
-            description: "",
+            title: "Film-Suchmachine",
+            alt: "Filmklappe",
+            description: "Das ist mein letztes Projekt im Rahmen des ADA ITW Bootcamps. Mir wurde eine Seite als Modell vorgegeben, mit der Option, den Style zu verändern. Ich habe folgende Bibliotheken implementiert: Swiper, React Router Dom, React Icons und einen herausragenden Code für die Breakpoints mit SASS ",
         }
     }
 

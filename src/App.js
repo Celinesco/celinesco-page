@@ -11,7 +11,7 @@ import {useState } from 'react';
 
 
 const App = () => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('de');
   const [lightTheme, setLightTheme] = useState(false);
 
 
