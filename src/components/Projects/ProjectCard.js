@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ img, title, alt, id, data_aos, duration_aos }) => {
     
-
     return (
         <Link to={`/details/${id}`}  data-aos={data_aos} data-aos-duration={duration_aos}  id={id}>
             <article className='card__project'>

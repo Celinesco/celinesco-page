@@ -1,6 +1,8 @@
 import '../DetailSection/DetailSection.scss';
 import { HiOutlineExternalLink } from "react-icons/hi";
 
+
+
 const ProjectInfo = ({ title, description, technologies, link, code }) => {
     return (
         <article className='info__projects'>

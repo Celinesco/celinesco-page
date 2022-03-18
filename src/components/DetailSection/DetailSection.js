@@ -4,27 +4,34 @@ import ProjectCard from '../Projects/ProjectCard';
 import { useParams } from 'react-router-dom';
 import { projectDetails } from '../datos_proyectos';
 import ProjectInfo from '../Projects/ProjectInfo';
+import { useContext } from 'react';
+import Context from '../../Context/Context';
 
 
 const DetailSection = () => {
+    const context = useContext(Context)
     const tarjetaClickeada = useParams();
-    const prueba = projectDetails.filter( proyecto => proyecto.id === tarjetaClickeada.project);
+    const clickedPorjectObject = projectDetails.filter( proyecto => proyecto.id === tarjetaClickeada.project);
+    const [clickedProjectArray] = [...clickedPorjectObject]
+
+
+    
     window.scrollTo(0, 0);
 
     return (
         <section className="section__details">
             <BackgroundParticles />
             <ProjectCard 
-            id={prueba[0].id}
-            img={prueba[0].img}
-            alt={prueba[0].alt}
-            title={prueba[0].title} />
+            id={clickedProjectArray.id}
+            img={!context.lightTheme ? clickedProjectArray.img_dark_theme : clickedProjectArray.img_white_theme}
+            alt={clickedProjectArray[context.language].alt}
+            title={clickedProjectArray[context.language].title} />
            <ProjectInfo 
-            description={prueba[0].description}
-            title={prueba[0].title} 
-            code={prueba[0].repository}
-            link={prueba[0].link}
-            technologies={prueba[0].technologies}/>
+            description={clickedProjectArray[context.language].description}
+            title={clickedProjectArray[context.language].title} 
+            code={clickedProjectArray.repository}
+            link={clickedProjectArray.link}
+            technologies={clickedProjectArray.technologies}/>
         </section>
     )
 }
