@@ -1,20 +1,26 @@
 import '../DetailSection/DetailSection.scss';
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { htmlProjects } from '../datos_proyectos';
+import Context from '../../Context/Context';
+import { useContext } from 'react';
 
 
 
 const ProjectInfo = ({ title, description, technologies, link, code }) => {
+    const context = useContext(Context);
+
+
     return (
         <article className='info__projects'>
             <h2>{title}</h2>
             <p>{description}</p>
             <div className='paragraph'>
-                <p>The project was built using: {technologies}.</p>
+                <p>{htmlProjects[context.language].made_with} {technologies}.</p>
             </div>
             <div className='paragraph'>
-                <p><a href={link} target="_blank" rel="noopener noreferrer"><HiOutlineExternalLink />Click HERE! </a>to see the project.</p>
+                <p><a href={link} target="_blank" rel="noopener noreferrer"><HiOutlineExternalLink />{htmlProjects[context.language].project_link}</a></p>
             </div>
-            <p><HiOutlineExternalLink />If you are interested in the code, <a href={code} target="_blank" rel="noopener noreferrer">you can also take a look at the repository.</a></p>
+            <a href={code} target="_blank" rel="noopener noreferrer"><p><HiOutlineExternalLink />{htmlProjects[context.language].find_code_at}</p></a>
         </article>
     )
 }

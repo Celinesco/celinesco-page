@@ -42,7 +42,7 @@ export const projectDetails = [
         id: "2_Meme_Genertor",
         img_dark_theme: "https://i.etsystatic.com/32248327/r/il/614b2e/3442381236/il_340x270.3442381236_jxj5.jpg",
         img_white_theme: '',
-       
+
         link: "https://carosanchezl.github.io/Editor-de-memes/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/CaroSanchezL/Editor-de-memes",
@@ -50,7 +50,7 @@ export const projectDetails = [
         es: {
             title: 'Generador de Memes',
             alt: "Meme famoso de gato",
-            description: 'Este fue el segundo proyecto del Bootcamp de ADA ITW y el primer proyecto grupal. Con este proyecto aprendí como hacer mis páginas dinámicamente, manipulando elementos del DOM a través de JS. Implementamos el uso de librerías externas (en este caso, para descargar el meme creado) y lo más desafiante fue trabajar en equipo utilizando GitHub'
+            description: 'Este fue el segundo proyecto del Bootcamp de ADA ITW y el primer proyecto grupal. Con este proyecto aprendí como hacer mis páginas dinámicamente, manipulando elementos del DOM a través de JS. Implementamos el uso de librerías externas (en este caso, para descargar el meme creado) y lo más desafiante fue trabajar en equipo utilizando GitHub.'
         },
         en: {
             title: "Meme Generator",
@@ -62,7 +62,7 @@ export const projectDetails = [
             alt: 'Match 3-Spiel',
             description: 'Das ist das zweite Projekt des ADA ITW Bootcamps und die erste Gruppenarbeit. Hier habe ich gelernt, wie man an einem gemeinsamen Projekt über GitHub arbeitet, wie man externe Bibliotheken verwendet und wie man dynamische Webseiten durch Manipulation des DOM mit JS erstellt.',
         }
-        
+
     },
     {
         id: "3_matcheadas",
@@ -122,7 +122,7 @@ export const projectDetails = [
         technologies: "HTML, SASS, JS",
         apiLink: 'https://developer.marvel.com/',
         repository: "https://github.com/Celinesco/buscador_de_comics_2",
-        extralinks: [        ],
+        extralinks: [],
         es: {
             title: 'Web de Comics',
             alt: "Onomatopeya Kapow",
@@ -134,7 +134,7 @@ export const projectDetails = [
             description: "The goal of the project was to work with a public API. As always, we had sample pages with different APIs. I decided to use a Marvel API and also integrated another API to add the superheroes that are not part of the Marvel world.",
         },
         de: {
-            title: 'Comic',
+            title: 'Comics',
             alt: 'Lautmalerei eines Explosionsgeräusches',
             description: 'Ziel des Projekts war es, mit einer öffentlichen API zu arbeiten. Wie immer hatten wir Beispielseiten mit verschiedenen APIs. Ich entschied mich für eine Marvel-API und integrierte eine weitere API, um die Superhelden hinzuzufügen, die nicht Teil der Marvel-Welt sind. ',
         }
@@ -207,4 +207,42 @@ export const projectDetails = [
 
 
 
+export const htmlProjects = {
+    es: {
+        made_with: 'El proyecto fue creado utilizando:',
+        project_link: 'Cliqueá ACA para mirar el proyecto.',
+        find_code_at: 'Si te interesa el código, podés chequearlo en el repo de Github.'
+    },
+    en: {
+        made_with: 'The project was made using:',
+        project_link: 'Click HERE to see the project',
+        find_code_at: 'If you are interested in the code, you can also take a look at the repository.'
 
+    },
+    de: {
+        made_with: 'Das Projekt wurde erstellt mit:',
+        project_link: 'Klicken Sie HIER! um das Projekt zu sehen.',
+        find_code_at: 'Wenn Sie an dem Code interessiert sind, können Sie auch einen Blick auf das Repository werfen.'
+    }
+}
+
+
+export const htmlTitles = {
+
+    es: {
+        title_projects: 'Proyectos',
+        title_skills: 'Tecnologías',
+        title_about: 'Sobre mi',
+    },
+    en: {
+        title_projects: 'Proyects',
+        title_skills: 'Skills',
+        title_about: 'About me',
+
+    },
+    de: {
+        title_projects: 'Projekte',
+        title_skills: 'Skills',
+        title_about: 'Über mich',
+    }
+}

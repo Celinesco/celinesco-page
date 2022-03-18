@@ -8,12 +8,13 @@ import { useContext } from 'react';
 import Context from '../../Context/Context';
 
 
+
 const DetailSection = () => {
+
     const context = useContext(Context)
     const tarjetaClickeada = useParams();
     const clickedPorjectObject = projectDetails.filter( proyecto => proyecto.id === tarjetaClickeada.project);
     const [clickedProjectArray] = [...clickedPorjectObject]
-
 
     
     window.scrollTo(0, 0);
