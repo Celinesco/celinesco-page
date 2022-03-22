@@ -5,6 +5,7 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 import Context from "../../Context/Context";
 import { useContext } from "react";
+import { htmlTitles } from "../datos_proyectos";
 
 
 const ProjectsContainer = () => {
@@ -18,7 +19,7 @@ const ProjectsContainer = () => {
 
     return (
         <section className="section__projects">
-            <h2 className="title__section"  data-aos="flip-down" data-aos-duration="1000">Projects</h2>
+            <h2 className="title__section"  data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_projects}</h2>
             <div className="container__cards-projects">
               {projectDetails.map((project)=> (
                   <ProjectCard key={project.id}
