@@ -226,6 +226,37 @@ export const htmlProjects = {
     }
 }
 
+export const htmlAboutme = {
+    es: {
+        about_me: `Mi nombres es Celina Inés Alsina. Soy oriunda de Rosario, Santa Fe, Argentina y desde el 2021 vivo en Múnich, Alemania.
+        Mis intereses son diversos, siempre oscilando entre trabajo creativo y la resolución analítica de problemas. 
+        En Rosario solía dar clases de violín, y desde el inicio de la pandemia decidí incursionar en el mundo de la programación. 
+        Comencé resolviendo problemas de programación competitiva usando Python y gracias a la curiosidad que todo esto me despertó, una amiga me recomendó ADA ITW donde realicé la carrera de desarrolladora Front-end de un año de duración.
+        Tuve la fortuna de tener como profesora a la maravillosa Maria Elena Rey, que me acompañó en todo este camino de aprendizaje y me enseñó la belleza de programar.
+        Después de haber sido estudiante de física en la universidad y haber dado clases de violín, encontré en el desarrollo Front-end, una simbiosis perfecta entre lógica y arte.
+        Si querés contactarme, podés escribirme un correo o completar el formulario que se encuentra  acá abajo.
+        Sugerencias, comentarios, preguntas siempre bienvenidas y me ayudan a crecer!`
+    },
+    en: {
+        about_me: `My name is Celina and I'm a front-end developer from Rosario, Argentina, living in Munich since 2021.
+        My interests are widespread and oscillate between creative work and analytical problem solving. When the pandemic started, I adventured myself into the programming world.
+        I started resolving problems from programming contests, and intrigued by those I did the "ADA ITW" front-end course(400hs in total), an Argentinian bootcamp for women.
+        I had the fortune to have Maria Elena Rey as a teacher, who motivated me a lot and taught me the beauty of programming.
+        Back when I was living in Rosario, I initially studied physics and then for a few years worked as a violin teacher. In front-end developing, I found myself in a very stimulating equilibrium between analytical problem solving and art. I enjoy this symbiosis a lot.
+        If you want to reach me, you can write me an email, or fill out the form below.
+        Your questions, suggestions, and comments are always welcome and help me to grow both on personal level and professionally.`
+    },
+    de: {
+        about_me: `Mein Name ist Celina und ich bin eine Front-End-Entwicklerin aus Rosario, Argentinien. Seit 2021 lebe in München. 
+        Meine Interessen sind breit gefächert und schwanken zwischen kreativer Arbeit und der Lösung analytischer Probleme. Mit Beginn der Pandemie bin ich in die Welt der Programmierung eingetaucht.
+        Ich habe angefangen, Probleme aus Programmierwettbewerben zu lösen, und fasziniert davon habe ich den  "ADA ITW" Kurs absolviert - ein argentinisches Bootcamp für Front-End Developing für Frauen (in Summe 400 Stunden).
+        Ich hatte das Glück, Maria Elena Rey als Lehrerin zu haben, die mich sehr motiviert hat und mir die Schönheit an der Arbeit des Programmierens näher brachte.
+        In meiner Zeit in Rosario, habe ich zunächst Physik studiert und dann mehr als sechs Jahre lang als Geigenlehrerin gearbeitet. Für mich stellt Front-End Developing ein sehr anregendes Gleichgewicht aus analytischer Problemlösung und Kunst dar und diese Symbiose begeistert mich sehr.
+        Wenn Sie mich erreichen wollen, schreiben Sie mir gerne eine E-Mail  oder füllen Sie das untenstehende Formular aus.
+        Über Ihre Fragen, Anregungen und Kommentare freue ich mich sehr und sie helfen mir, sowohl auf persönlicher Ebene als auch beruflich zu wachsen.`
+    }
+}
+
 
 export const htmlTitles = {
 
