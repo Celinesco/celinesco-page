@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .section__about {
     min-height: 50vw;
     display: flex;
@@ -5,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     h2 {
-        color: white;
+        color: $main-color-dark-mode;
         font-size: 60px;
         margin-bottom: 100px;
     }
@@ -22,7 +24,7 @@
         .container__img-profile {
             width: 250px;
             height: 360px;
-            border: 2px solid white;
+            border: 2px solid $main-color-dark-mode;
             overflow: hidden;
             border-radius: 10px;
             margin-right: 40px;
@@ -32,4 +34,22 @@
         }
     }
 
+}
+
+
+.light-theme {
+    .section__about {
+        h2 {
+            color: $main-color-white-mode;
+        }
+        .container__info-aboutme {
+            p {
+                color: $main-color-white-mode;
+            }
+            .container__img-profile {
+                border: 2px solid $main-color-white-mode;
+            }
+        }
+    
+    }
 }

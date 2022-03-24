@@ -4,6 +4,7 @@ import RickAndMortyContornoNegro from '../assets/RickAndMortyContornoNegro.png';
 import comicImg from '../assets/comic.png';
 import firstPortfolio from '../assets/FirstPorfolio.png';
 import ahorradas from '../assets/ahorradas.png';
+import meme from '../assets/meme.png';
 
 
 
@@ -40,26 +41,25 @@ export const projectDetails = [
     },
     {
         id: "2_Meme_Genertor",
-        img_dark_theme: "https://i.etsystatic.com/32248327/r/il/614b2e/3442381236/il_340x270.3442381236_jxj5.jpg",
-        img_white_theme: '',
-
+        img_dark_theme: meme,
+        img_white_theme: meme,
         link: "https://carosanchezl.github.io/Editor-de-memes/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/CaroSanchezL/Editor-de-memes",
         extralinks: [],
         es: {
             title: 'Generador de Memes',
-            alt: "Meme famoso de gato",
+            alt: "Meme de mi gato",
             description: 'Este fue el segundo proyecto del Bootcamp de ADA ITW y el primer proyecto grupal. Con este proyecto aprendí como hacer mis páginas dinámicamente, manipulando elementos del DOM a través de JS. Implementamos el uso de librerías externas (en este caso, para descargar el meme creado) y lo más desafiante fue trabajar en equipo utilizando GitHub.'
         },
         en: {
             title: "Meme Generator",
-            alt: "Famous cat meme",
+            alt: "Meme of my cat",
             description: "This is the second project of the ADA ITW bootcamp, and the first group assignment. With this project I learnt how to work on a collaborative project with GitHub, how to use external libraries, and to make dynamical web pages by manipulating the DOM with JS.",
         },
         de: {
             title: 'Meme-Generator',
-            alt: 'Match 3-Spiel',
+            alt: 'Meme von meine Katze',
             description: 'Das ist das zweite Projekt des ADA ITW Bootcamps und die erste Gruppenarbeit. Hier habe ich gelernt, wie man an einem gemeinsamen Projekt über GitHub arbeitet, wie man externe Bibliotheken verwendet und wie man dynamische Webseiten durch Manipulation des DOM mit JS erstellt.',
         }
 
@@ -229,19 +229,18 @@ export const htmlProjects = {
 export const htmlAboutme = {
     es: {
         about_me: `Mi nombre es Celina Inés Alsina. Soy oriunda de Rosario, Santa Fe, Argentina y desde el 2021 vivo en Múnich, Alemania.
-        Mis intereses son diversos, siempre oscilando entre trabajo creativo y la resolución analítica de problemas. 
-        En Rosario solía dar clases de violín, y desde el inicio de la pandemia decidí incursionar en el mundo de la programación. 
+        En Rosario trabajaba como profesora de violín, y desde el inicio de la pandemia decidí incursionar en el mundo de la programación. 
         Comencé resolviendo problemas de programación competitiva usando Python y gracias a la curiosidad que todo esto me despertó, realicé la carrera de desarrolladora Front-end de un año de duración en el bootcamp para mujeres ADA ITW.
-        Tuve la fortuna de tener como profesora a la maravillosa Maria Elena Rey, que me acompañó en todo este camino de aprendizaje y me enseñó la belleza de programar.
+        Tuve la fortuna de tener como profesora a la maravillosa María Elena Rey, que me acompañó en todo este camino de aprendizaje y me enseñó la belleza de programar.
         Después de haber sido estudiante de física en la universidad y haber dado clases de violín, encontré en el desarrollo Front-end, una simbiosis perfecta entre lógica y arte.`,
 
         contact_me: `Si querés contactarme, podés escribirme un correo o completar el formulario que se encuentra  acá abajo.
-        Sugerencias, comentarios, preguntas siempre bienvenidas y me ayudan a crecer!`
+        Sugerencias, comentarios, preguntas son siempre bienvenidas!`
       
     },
     en: {
         about_me: `My name is Celina and I'm a front-end developer from Rosario, Argentina, living in Munich since 2021.
-        My interests are widespread and oscillate between creative work and analytical problem solving. When the pandemic started, I adventured myself into the programming world.
+        When the pandemic started, I adventured myself into the programming world.
         I started resolving problems from programming contests, and intrigued by those I did the "ADA ITW" front-end course(400hs in total), an Argentinian bootcamp for women.
         I had the fortune to have Maria Elena Rey as a teacher, who motivated me a lot and taught me the beauty of programming.
         Back when I was living in Rosario, I initially studied physics and then for a few years worked as a violin teacher. 
@@ -252,7 +251,7 @@ export const htmlAboutme = {
     },
     de: {
         about_me: `Mein Name ist Celina und ich bin eine Front-End-Entwicklerin aus Rosario, Argentinien. Seit 2021 lebe in München. 
-        Meine Interessen sind breit gefächert und schwanken zwischen kreativer Arbeit und der Lösung analytischer Probleme. Mit Beginn der Pandemie bin ich in die Welt der Programmierung eingetaucht.
+        Mit Beginn der Pandemie bin ich in die Welt der Programmierung eingetaucht.
         Ich habe angefangen, Probleme aus Programmierwettbewerben zu lösen, und fasziniert davon habe ich den  "ADA ITW" Kurs absolviert - ein argentinisches Bootcamp für Front-End Developing für Frauen (in Summe 400 Stunden).
         Ich hatte das Glück, Maria Elena Rey als Lehrerin zu haben, die mich sehr motiviert hat und mir die Schönheit an der Arbeit des Programmierens näher brachte.
         In meiner Zeit in Rosario, habe ich zunächst Physik studiert und dann mehr als sechs Jahre lang als Geigenlehrerin gearbeitet. 

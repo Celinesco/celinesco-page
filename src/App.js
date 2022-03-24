@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 import ProjectsContainer from './components/Projects/ProjectsContainer';
 import Context from './Context/Context'
 import {useState } from 'react';
-import About from './components/About/About'
+import About from './components/About/About';
 
 
 
