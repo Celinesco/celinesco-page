@@ -32,8 +32,11 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className='container__info-navbar'>
-                <p>Celina Inés Alsina</p>
-                <p>Front-end Developer</p>
+                <div>
+                    <p>Celina Inés Alsina</p>
+                    <p>Front-end Developer</p>
+                </div>
+                <button className='button__dark-mode' onClick={handleClickTheme}><FaLightbulb /></button>
             </div>
             <div className='container__actions-navbar'>
                 <ul className="navbar__list">
@@ -42,10 +45,10 @@ const NavBar = () => {
                     <li>About</li>
                 </ul>
                 <div className='container__user-preferences'>
-                    <button onClick={handleClickTheme}><FaLightbulb /></button>
-                    <button onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
-                    <button onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
-                    <button onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
+                    <button className='button__dark-mode'  onClick={handleClickTheme}><FaLightbulb /></button>
+                    <button className='button__language' onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
+                    <button className='button__language' onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
+                    <button className='button__language' onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
                 </div>
 
             </div>
@@ -56,9 +59,9 @@ const NavBar = () => {
                 <button className="close-nav-menu" onClick={handleClickCloseMenu}><ImCross /></button>
                 <ul className='list__navbar-menu'>
                     <div className='container__user-preferences'>
-                        <button onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
-                        <button onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
-                        <button onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
+                        <button className='button__language' onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
+                        <button className='button__language' onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
+                        <button className='button__language' onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
                     </div>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>Projects</li></Link>

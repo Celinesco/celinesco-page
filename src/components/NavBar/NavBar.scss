@@ -11,7 +11,7 @@
     background-color: $background-color-dark-mode;
     border-bottom: 2px solid $main-color-dark-mode;
     box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
-    padding: 0 60px;
+    padding: 25px 60px;
 }
 
 .container__actions-navbar {
@@ -21,19 +21,18 @@
 }
 
 .container__user-preferences {
+    display: flex;
     margin-top: 10px;
-    button {
-        margin: 0 15px
-    }
-    button {
+    button  {
         color: $main-color-dark-mode;
         background-color: transparent;
         font-size: 20px;
-        margin-top: 10px;
+        margin: 10px 15px 0 15px;
     } 
 }
 
-.container__hamburguer-menu-button {
+
+.container__hamburguer-menu-button, .button__dark-mode {
     color: $main-color-dark-mode;
     font-size: calc(2rem - 1vw);
     display: flex;
@@ -87,7 +86,7 @@
     .list__navbar-menu {
         .container__user-preferences {
             display: flex;
-            button {
+            .button__language {
                 font-weight: bold;
                 margin: 0 15px 20px 15px;
             }
@@ -113,7 +112,7 @@
             }
         }
         .container__info-navbar {
-            p {
+            p, .button__dark-mode  {
                 color: $main-color-white-mode;
             }
         }
