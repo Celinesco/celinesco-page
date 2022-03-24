@@ -16,6 +16,7 @@ const context = useContext(Context);
                 </div>
                 <div className='container__aboutme-text'>
                     <p>{htmlAboutme[context.language].about_me}</p>
+                    <p>{htmlAboutme[context.language].contact_me}</p>
                 </div>
             </div>
 

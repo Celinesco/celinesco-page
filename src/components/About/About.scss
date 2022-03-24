@@ -14,6 +14,10 @@
         .container__aboutme-text {
             max-width: 800px;
             line-height: 1.7;
+            p {
+                text-align: justify;
+                margin-bottom: 25px;
+            }
         }
         .container__img-profile {
             width: 250px;
