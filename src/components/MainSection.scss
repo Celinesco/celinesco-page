@@ -13,12 +13,12 @@
     .section__main {
         display: flex;
         width: 100%;
-        align-items: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: relative;
         padding-top: 200px;
     }
-  
     .container__steps {
         width: 100%;
         margin-bottom: 40px;
@@ -35,7 +35,6 @@
     opacity: 0;
     animation-name: desvanecer;
     animation-duration: 4s;
-   
     animation-iteration-count: infinite;
     animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -78,9 +77,6 @@
     }
     
 }
-
-
-
 
 
 

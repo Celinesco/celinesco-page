@@ -7,6 +7,9 @@
     justify-content:flex-start;
     align-items: center;
     flex-direction: column;
+    @media (max-width: 767.98px) {
+        padding-top: 90px;
+    }
 }
 
 .card__skill {

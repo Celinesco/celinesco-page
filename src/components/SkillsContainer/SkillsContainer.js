@@ -1,11 +1,16 @@
 import './SkillsContainer.scss';
+import { htmlTitles } from '../datos_proyectos';
+import { useContext } from "react";
+import Context from "../../Context/Context";
+
 
 const TechnologiesContainer = () => {
 
+    const context = useContext(Context)
 
     return (
         <section className='section_technologys'>
-               <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">Skills</h2>
+               <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_skills}</h2>
             <div className='container__cards-technologies'>
                 <article data-aos="flip-right" data-aos-duration="1000" className='card__skill'>
                     <div className='container__svg-skill'>

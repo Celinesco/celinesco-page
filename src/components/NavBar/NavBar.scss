@@ -18,19 +18,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.container__user-preferences {
+    margin-top: 10px;
+    button {
+        margin: 0 15px
+    }
     button {
         color: $main-color-dark-mode;
         background-color: transparent;
         font-size: 20px;
         margin-top: 10px;
     } 
-}
-
-.container__preferences-user {
-    margin-top: 10px;
-    button {
-        margin: 0 15px
-    }
 }
 
 .container__hamburguer-menu-button {
@@ -83,8 +83,17 @@
         border: none;
         color: $main-color-dark-mode;
         font-size: 25px;
-        
     }
+    .list__navbar-menu {
+        .container__user-preferences {
+            display: flex;
+            button {
+                font-weight: bold;
+                margin: 0 15px 20px 15px;
+            }
+        }
+    }
+
 }
 
 .desplazar-menu {

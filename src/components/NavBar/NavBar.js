@@ -41,7 +41,7 @@ const NavBar = () => {
                     <Link to="/projects"><li>Projects</li></Link>
                     <li>About</li>
                 </ul>
-                <div className='container__preferences-user'>
+                <div className='container__user-preferences'>
                     <button onClick={handleClickTheme}><FaLightbulb /></button>
                     <button onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
                     <button onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
@@ -53,9 +53,13 @@ const NavBar = () => {
                 <GiHamburgerMenu />
             </button>
             <div className={`container__nav-menu ${hamburguerMenu && 'desplazar-menu'}`}>
-
                 <button className="close-nav-menu" onClick={handleClickCloseMenu}><ImCross /></button>
-                <ul>
+                <ul className='list__navbar-menu'>
+                    <div className='container__user-preferences'>
+                        <button onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
+                        <button onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
+                        <button onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
+                    </div>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>Projects</li></Link>
                     <li>About</li>

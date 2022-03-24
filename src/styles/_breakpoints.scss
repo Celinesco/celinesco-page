@@ -90,11 +90,6 @@
         margin-top: 30px;
     }
 
-    .carta-box, .cara {
-        width: 70px;
-        height: 400px;
-    }
-
     .section__details {
         flex-direction: column;
     }
@@ -147,7 +142,6 @@
         }
     }
     .info__projects {
-    
         p {
             font-size: calc(1.6rem - 1vw);
         }
@@ -165,16 +159,10 @@
             font-size: calc(1.2rem - 1vw);
         }
     }
-
     .section__main {
         margin-top: 80px;
-        padding: 150px 0;
+        padding: 60px 0;
         min-height: 100vh;
-    }
-
-    .carta-box, .cara {
-        width: 45px;
-        height: 350px;
     }
     .container__cards-technologies  {
         width: 350px;
@@ -229,14 +217,11 @@
         margin-top: 50px;
     }
 
-    .contenedor_rectangulos {
-        max-width: 320px;
+    .container__user-preferences {
+       display: none;
     }
-    .carta-box, .cara {
-        max-width: 35px;
-        height: 280px;
-        font-size: calc(1rem - 1vw);
-    }
+
+
 
     .card__skill {
         width: calc(100% / 2 - 5em);

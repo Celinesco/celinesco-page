@@ -11,6 +11,9 @@
     align-items: center;
     min-height: 100vh;
     padding: 300px 0;
+    @media (max-width: 575.98px) {
+        padding: 100px 0;
+    }
 }
 
 .container__cards-projects {
