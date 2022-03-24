@@ -139,6 +139,13 @@
                 color: $main-color-white-mode;
             }
         }
+        .list__navbar-menu {
+            .container__user-preferences {
+                .button__language {
+                  color: $main-color-white-mode;
+                }
+            }
+        }
     }
     .close-nav-menu {
         color: rgb(0, 0, 0);

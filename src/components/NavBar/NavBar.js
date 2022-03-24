@@ -66,7 +66,7 @@ const NavBar = () => {
                     </div>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>Projects</li></Link>
-                    <Link to='/about'><li>About</li></Link>
+                    <Link to='/about' onClick={handleClickCloseMenu}><li>About</li></Link>
                 </ul>
 
             </div>

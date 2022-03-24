@@ -245,7 +245,10 @@
     }
     .section__main {
         min-height: 80vh;
-        margin-top: 50px;
+        margin-top: 0;
+    }
+    .contenedor_rectangulos {
+        margin-top: 80px;
     }
 
     .navbar {
@@ -293,7 +296,26 @@
     .info__projects {
         max-width: 320px;
     }
- }
+    .section__about {
+        h2 {
+            margin-top: 180px;
+            margin-bottom: 50px;
+            font-size: 45px;
+        }
+        .container__info-aboutme {
+            flex-direction: column;
+            align-items: center;
+            .container__aboutme-text {
+                max-width: 300px;
+                margin: 50px 0;
+            }
+            .container__img-profile {
+                margin: 0;
+            }
+        }
+
+    }
+}
 
  @media (max-width: 280.98px) {
     .sections {

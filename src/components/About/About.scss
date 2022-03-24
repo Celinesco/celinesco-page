@@ -1,7 +1,8 @@
 @import '../../styles/variables';
 
+
 .section__about {
-    min-height: 50vw;
+    min-height: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -53,3 +54,5 @@
     
     }
 }
+
+@import '../../styles/breakpoints';
