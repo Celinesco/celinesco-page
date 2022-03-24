@@ -230,19 +230,23 @@ export const htmlProjects = {
 export const htmlTitles = {
 
     es: {
+        intro: 'Desarrolladora Front-end',
         title_projects: 'Proyectos',
         title_skills: 'Tecnologías',
         title_about: 'Sobre mi',
     },
     en: {
+        intro: 'Front-end Developer',
         title_projects: 'Proyects',
         title_skills: 'Skills',
         title_about: 'About me',
 
     },
     de: {
+        intro: 'Front-end Entwicklerin',
         title_projects: 'Projekte',
         title_skills: 'Skills',
         title_about: 'Über mich',
     }
 }
+

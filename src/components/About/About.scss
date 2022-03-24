@@ -1,0 +1,31 @@
+.section__about {
+    min-height: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        color: white;
+        font-size: 60px;
+        margin-bottom: 100px;
+    }
+    .container__info-aboutme {
+        display: flex;
+        .container__aboutme-text {
+            max-width: 800px;
+            line-height: 1.7;
+        }
+        .container__img-profile {
+            width: 250px;
+            height: 360px;
+            border: 2px solid white;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-right: 40px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

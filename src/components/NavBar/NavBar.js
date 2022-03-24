@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { FaLightbulb } from 'react-icons/fa';
 import { useContext } from 'react';
 import Context from '../../Context/Context';
+import { htmlTitles } from '../datos_proyectos';
 
 
 const NavBar = () => {
@@ -34,7 +35,7 @@ const NavBar = () => {
             <div className='container__info-navbar'>
                 <div>
                     <p>Celina Inés Alsina</p>
-                    <p>Front-end Developer</p>
+                    <p>{htmlTitles[context.language].intro}</p>
                 </div>
                 <button className='button__dark-mode' onClick={handleClickTheme}><FaLightbulb /></button>
             </div>
@@ -42,7 +43,7 @@ const NavBar = () => {
                 <ul className="navbar__list">
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/projects"><li>Projects</li></Link>
-                    <li>About</li>
+                    <Link to='/about'><li>About</li></Link>
                 </ul>
                 <div className='container__user-preferences'>
                     <button className='button__dark-mode'  onClick={handleClickTheme}><FaLightbulb /></button>
@@ -65,7 +66,7 @@ const NavBar = () => {
                     </div>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>Projects</li></Link>
-                    <li>About</li>
+                    <Link to='/about'><li>About</li></Link>
                 </ul>
 
             </div>

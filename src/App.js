@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import ProjectsContainer from './components/Projects/ProjectsContainer';
 import Context from './Context/Context'
 import {useState } from 'react';
+import About from './components/About/About'
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/" element={<MainSection />} />
             <Route path="/details/:project" element={<DetailSection />} />
             <Route path="/projects" element={<ProjectsContainer />} />
+            <Route path="/about" element={<About />} />
           </Routes>
           <Footer />
         </div>
