@@ -15,13 +15,14 @@ const App = () => {
   const [language, setLanguage] = useState('en');
   const [lightTheme, setLightTheme] = useState(false);
 
-
   const context = {
     language: language,
     setLanguage: setLanguage,
     lightTheme: lightTheme,
     setLightTheme: setLightTheme,
   }
+
+  document.documentElement.lang = context.language
 
   return (
     <Context.Provider value={context}>

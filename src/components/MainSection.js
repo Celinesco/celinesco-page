@@ -14,6 +14,7 @@ const MainSection = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        return () => ''
     }, [])
 
     const [footPrints, setFootPrints] = useState(true);

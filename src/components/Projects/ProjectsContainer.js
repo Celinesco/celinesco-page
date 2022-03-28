@@ -15,6 +15,7 @@ const ProjectsContainer = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
+        return () => ''
     }, [])
 
     return (
