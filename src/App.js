@@ -22,7 +22,7 @@ const App = () => {
     setLightTheme: setLightTheme,
   }
 
-  document.documentElement.lang = context.language
+  document.documentElement.lang = context.language;
 
   return (
     <Context.Provider value={context}>

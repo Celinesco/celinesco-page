@@ -2,7 +2,6 @@ import './MainSection.scss';
 import TechnologiesContainer from './SkillsContainer/SkillsContainer';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import { useEffect } from 'react';
 import ProjectsContainer from './Projects/ProjectsContainer';
 import AnimacionPortada from './AnimacionPortada';
 import { MdPets } from "react-icons/md";
@@ -11,16 +10,14 @@ import { useState } from 'react';
 
 const MainSection = () => {
 
-    useEffect(() => {
-        AOS.init();
-        AOS.refresh();
-        return () => ''
-    }, [])
+
+    AOS.init();
+    AOS.refresh();
 
     const [footPrints, setFootPrints] = useState(true);
     window.onscroll = () => {
         setFootPrints(false)
-        if (window.scrollY === 0){
+        if (window.scrollY === 0) {
             setFootPrints(true)
         }
     }
