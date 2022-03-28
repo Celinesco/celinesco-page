@@ -192,7 +192,7 @@ export const projectDetails = [
         en: {
             title: "Movies",
             alt: "Clapperboard illustration",
-            description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss this amazing code for the breakpoints with SASS`,
+            description: `This is my last project of the Bootcamp ADA ITW. I was given a page as a model with the posibility to change styles. I implemented this libraries: swiper, react router dom, react icons and an amazing code for the breakpoints with SASS(you can find the link on my Github repo)`,
         },
         de: {
             title: "Film-Suchmachine",
@@ -200,10 +200,7 @@ export const projectDetails = [
             description: "Das ist mein letztes Projekt im Rahmen des ADA ITW Bootcamps. Mir wurde eine Seite als Modell vorgegeben, mit der Option, den Style zu verändern. Ich habe folgende Bibliotheken implementiert: Swiper, React Router Dom, React Icons und einen herausragenden Code für die Breakpoints mit SASS ",
         }
     }
-
 ]
-
-
 
 
 

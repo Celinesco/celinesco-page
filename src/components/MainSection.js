@@ -6,33 +6,46 @@ import { useEffect } from 'react';
 import ProjectsContainer from './Projects/ProjectsContainer';
 import AnimacionPortada from './AnimacionPortada';
 import { MdPets } from "react-icons/md";
+import { useState } from 'react';
+
 
 const MainSection = () => {
-   
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, [])
+
+    const [footPrints, setFootPrints] = useState(true);
+    window.onscroll = () => {
+        setFootPrints(false)
+        if (window.scrollY === 0){
+            setFootPrints(true)
+        }
+    }
+
 
     return (
 
         <div className="sections">
             <section className='section__main'>
                 <AnimacionPortada />
-                <div className='container__steps'>
-                    <div className='container__step step-1'>
-                        <MdPets />
-                    </div>
-                    <div className='container__step step-2'>
-                        <MdPets />
-                    </div>
-                    <div className='container__step step-3'>
-                        <MdPets />
-                    </div>
-                    <div className='container__step step-4'>
-                        <MdPets />
-                    </div>
-                </div>
+                {footPrints &&
+                    <div className='container__steps'>
+                        <div className='container__step step-1'>
+                            <MdPets />
+                        </div>
+                        <div className='container__step step-2'>
+                            <MdPets />
+                        </div>
+                        <div className='container__step step-3'>
+                            <MdPets />
+                        </div>
+                        <div className='container__step step-4'>
+                            <MdPets />
+                        </div>
+                    </div>}
+
             </section>
             <TechnologiesContainer />
             <ProjectsContainer />
