@@ -116,6 +116,22 @@
             font-size: calc(2rem - 1vw);
         }
     }
+    .section__about {
+        h2 {
+            margin-top: 180px;
+            margin-bottom: 50px;
+            font-size: 45px;
+        }
+        .container__info-aboutme {
+            margin: 30px 0;
+            .container__aboutme-text {
+                max-width: 600px;
+            }
+            .container__img-profile {
+                margin-right: 20px;
+            }
+        }
+    }
  }
 
 
@@ -162,6 +178,22 @@
     .info__projects {
         p {
             font-size: calc(1.6rem - 1vw);
+        }
+    }
+    .section__about {
+        h2 {
+            margin-top: 180px;
+            margin-bottom: 50px;
+            font-size: 45px;
+        }
+        .container__info-aboutme {
+            margin: 30px 0;
+            .container__aboutme-text {
+                max-width: 500px;
+            }
+            .container__img-profile {
+                margin-right: 20px;
+            }
         }
     }
  }
@@ -233,6 +265,21 @@
             display: none;
         }
     }
+    .section__about {
+        .container__info-aboutme {
+            flex-direction: column;
+            align-items: center;
+        
+            .container__aboutme-text {
+                max-width: 450px;
+                margin: 50px 0;
+            }
+            .container__img-profile {
+                margin: 0;
+            }
+        }
+    }
+  
  }
 
 
@@ -296,23 +343,11 @@
         max-width: 320px;
     }
     .section__about {
-        h2 {
-            margin-top: 180px;
-            margin-bottom: 50px;
-            font-size: 45px;
-        }
         .container__info-aboutme {
-            flex-direction: column;
-            align-items: center;
             .container__aboutme-text {
                 max-width: 300px;
-                margin: 50px 0;
-            }
-            .container__img-profile {
-                margin: 0;
             }
         }
-
     }
 }
 

@@ -173,7 +173,7 @@ export const projectDetails = [
         id: "7_movies",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjr85XwtU6erDfZETf5dVTGeQaT6e7DYI61R2NIuB5Hv-jPmMUHN8DdfOK-Ejvmm7QeHaDU_EzT1rYTmHFnytdSRzNkUrGwZfOVGTiH3XxtI_c0vq-MtRQBcx2XW0E4UJ2CpZnGBnRDvHHHBi6MbsFAy5pvg9hcMGMheZklrf3uMBJJyMPk1Cx7W8x4gg=s320",
         img_white_theme: claqueta,
-        link: "https://infokleinkino.netlify.app/",
+        link: "https://film-suchmaschine.netlify.app/",
         technologies: "React.js, SASS",
         repository: "https://github.com/Celinesco/buscador_de_peliculas",
         apiLink: 'https://www.themoviedb.org/?language=es',
@@ -232,7 +232,15 @@ export const htmlAboutme = {
         Después de haber sido estudiante de física en la universidad y haber dado clases de violín, encontré en el desarrollo Front-end, una simbiosis perfecta entre lógica y arte.`,
 
         contact_me: `Si querés contactarme, podés escribirme un correo o completar el formulario que se encuentra  acá abajo.
-        Sugerencias, comentarios, preguntas son siempre bienvenidas!`
+        Sugerencias, comentarios, preguntas son siempre bienvenidas!`,
+
+        form: {
+            name: 'Nombre',
+            surname: 'Apellido',
+            message: 'Mensaje'
+        }
+
+    
       
     },
     en: {
@@ -243,7 +251,12 @@ export const htmlAboutme = {
         Back when I was living in Rosario, I initially studied physics and then for a few years worked as a violin teacher. 
         In front-end developing, I found myself in a very stimulating equilibrium between analytical problem solving and art. I enjoy this symbiosis a lot.`,
         contact_me:`  If you want to reach me, you can write me an email, or fill out the form below.
-        Your questions, suggestions, and comments are always welcome and help me to grow both on personal level and professionally.`
+        Your questions, suggestions, and comments are always welcome and help me to grow both on personal level and professionally.`,
+        form: {
+            name: 'First Name',
+            surname: 'Surname',
+            message: 'Message'
+        }
       
     },
     de: {
@@ -254,7 +267,12 @@ export const htmlAboutme = {
         In meiner Zeit in Rosario, habe ich zunächst Physik studiert und dann mehr als sechs Jahre lang als Geigenlehrerin gearbeitet. 
         Für mich stellt Front-End Developing ein sehr anregendes Gleichgewicht aus analytischer Problemlösung und Kunst dar und diese Symbiose begeistert mich sehr.`,
         contact_me: `Wenn Sie mich erreichen wollen, schreiben Sie mir gerne eine E-Mail  oder füllen Sie das untenstehende Formular aus.
-        Über Ihre Fragen, Anregungen und Kommentare freue ich mich sehr und sie helfen mir, sowohl auf persönlicher Ebene als auch beruflich zu wachsen.`
+        Über Ihre Fragen, Anregungen und Kommentare freue ich mich sehr und sie helfen mir, sowohl auf persönlicher Ebene als auch beruflich zu wachsen.`,
+        form: {
+            name: 'Vorname',
+            surname: 'Nachname',
+            message: 'Nachricht'
+        }
     }
 }
 
