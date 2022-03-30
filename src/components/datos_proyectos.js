@@ -287,7 +287,7 @@ export const htmlTitles = {
     },
     en: {
         intro: 'Front-end Developer',
-        title_projects: 'Proyects',
+        title_projects: 'Projects',
         title_skills: 'Skills',
         title_about: 'About me',
 
