@@ -235,13 +235,11 @@ export const htmlAboutme = {
         Sugerencias, comentarios, preguntas son siempre bienvenidas!`,
 
         form: {
-            name: 'Nombre',
-            surname: 'Apellido',
-            message: 'Mensaje'
+            name: 'Nombre*',
+            surname: 'Apellido*',
+            message: 'Mensaje*',
+            submit: 'Enviar'
         }
-
-    
-      
     },
     en: {
         about_me: `My name is Celina and I'm a front-end developer from Rosario, Argentina, living in Munich since 2021.
@@ -250,14 +248,15 @@ export const htmlAboutme = {
         I had the fortune to have Maria Elena Rey as a teacher, who motivated me a lot and taught me the beauty of programming.
         Back when I was living in Rosario, I initially studied physics and then for a few years worked as a violin teacher. 
         In front-end developing, I found myself in a very stimulating equilibrium between analytical problem solving and art. I enjoy this symbiosis a lot.`,
-        contact_me:`  If you want to reach me, you can write me an email, or fill out the form below.
+        contact_me: `  If you want to reach me, you can write me an email, or fill out the form below.
         Your questions, suggestions, and comments are always welcome and help me to grow both on personal level and professionally.`,
         form: {
-            name: 'First Name',
-            surname: 'Surname',
-            message: 'Message'
+            name: 'First Name*',
+            surname: 'Surname*',
+            message: 'Message*',
+            submit: 'Send'
         }
-      
+
     },
     de: {
         about_me: `Mein Name ist Celina und ich bin eine Front-End-Entwicklerin aus Rosario, Argentinien. Seit 2021 lebe in München. 
@@ -269,9 +268,10 @@ export const htmlAboutme = {
         contact_me: `Wenn Sie mich erreichen wollen, schreiben Sie mir gerne eine E-Mail  oder füllen Sie das untenstehende Formular aus.
         Über Ihre Fragen, Anregungen und Kommentare freue ich mich sehr und sie helfen mir, sowohl auf persönlicher Ebene als auch beruflich zu wachsen.`,
         form: {
-            name: 'Vorname',
-            surname: 'Nachname',
-            message: 'Nachricht'
+            name: 'Vorname *',
+            surname: 'Nachname*',
+            message: 'Nachricht*',
+            submit: 'Senden'
         }
     }
 }

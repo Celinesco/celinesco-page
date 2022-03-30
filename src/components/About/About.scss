@@ -2,41 +2,97 @@
 
 
 .section__about {
-    min-height: 50vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    h2 {
-        color: $main-color-dark-mode;
-        font-size: 60px;
-        margin-bottom: 100px;
-    }
-    .container__info-aboutme {
+    min-height: 90vw;
+    .sub__section {
         display: flex;
-        .container__aboutme-text {
-            max-width: 800px;
-            line-height: 1.7;
-            p {
-                text-align: justify;
-                margin-bottom: 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 200px;
+        padding-bottom: 0;
+        h2 {
+            color: $main-color-dark-mode;
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        .container__info-aboutme {
+            display: flex;
+            .container__aboutme-text {
+                max-width: 800px;
+                line-height: 1.7;
+                p {
+                    text-align: justify;
+                    margin-bottom: 25px;
+                }
+            }
+            .container__img-profile {
+                width: 250px;
+                height: 360px;
+                border: 2px solid $main-color-dark-mode;
+                overflow: hidden;
+                border-radius: 10px;
+                margin-right: 40px;
+                img {
+                    width: 100%;
+                }
             }
         }
-        .container__img-profile {
-            width: 250px;
-            height: 360px;
-            border: 2px solid $main-color-dark-mode;
-            overflow: hidden;
-            border-radius: 10px;
-            margin-right: 40px;
-            img {
-                width: 100%;
+        .container__title-alert {
+            text-align: center;
+            margin-bottom: 50px;
+            p {
+                font-style: italic;
+            }
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+        .container__form {
+            display: flex;
+            justify-content: center;
+            width: 520px;
+            color: $main-color-dark-mode;
+            .formular__contact {
+               font-weight: bold;
+               button {
+                   padding: 10px;
+                   border-radius: 10px;
+                   background-color: $background-color-white-mode;
+                   font-weight: bold;
+                   margin-top: 15px;
+                   width: 100px;
+               }
+               textarea {
+                   display: block;
+                   width: 410px;
+                   height: 150px;
+                   margin-top: 10px;
+                   padding: 5px;
+                   border-radius: 6px;
+               }
+               .row {
+                    display: flex;
+                    justify-content: space-between;
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                        input {
+                            height: 30px;
+                            margin:10px 10px 20px 0;
+                            padding: 5px;
+                            border-radius: 6px;
+                        }
+                        input[type="text"] {
+                            width:200px;
+                        }
+                        input[type="email"] {
+                            width: 410px;
+                        }
+                    }  
+                }
             }
         }
     }
-
 }
-
 
 .light-theme {
     .section__about {
@@ -50,6 +106,9 @@
             .container__img-profile {
                 border: 2px solid $main-color-white-mode;
             }
+        }
+        .container__form {
+            color: $main-color-white-mode;
         }
     
     }
