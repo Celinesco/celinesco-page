@@ -30,7 +30,6 @@
                 border: 2px solid $main-color-dark-mode;
                 overflow: hidden;
                 border-radius: 10px;
-                margin-right: 40px;
                 img {
                     width: 100%;
                 }
@@ -51,6 +50,7 @@
             justify-content: center;
             width: 520px;
             color: $main-color-dark-mode;
+            margin-bottom: 100px;
             .formular__contact {
                font-weight: bold;
                button {
@@ -109,6 +109,12 @@
         }
         .container__form {
             color: $main-color-white-mode;
+            .formular__contact {
+                button {
+                    background-color: $background-color-dark-mode;
+                    color: $main-color-dark-mode;
+                }
+            }
         }
     
     }

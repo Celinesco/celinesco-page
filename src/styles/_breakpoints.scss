@@ -3,16 +3,13 @@
     .container__hamburguer-menu-button {
         display: none;
     }
-
     .container__steps {
         margin-bottom: 180px;
         margin-top: 30px;
     }
-
     .step-1, .step-3 {
         right: 49%
     }
-
     .step-2, .step-4 {
         right: 46%
     }
@@ -22,7 +19,6 @@
             display: none;
         }
     }
-
 }
 
 
@@ -46,14 +42,29 @@
             font-size: calc(2.6rem - 1vw);
         }
     }
-  
-
     .carta {
         font-size: 90px;
         margin: 0 10px;
     }
     .contenedor_rectangulos {
         margin : 150px 0
+    }
+    .section__about {
+        .sub__section {
+            .container__info-aboutme {
+                margin: 30px 0;
+                .container__aboutme-text {
+                    max-width: 600px;
+                }
+                .container__img-profile {
+                    margin-right: 20px;
+                }
+            }
+        }
+        h2 {
+            font-size: 45px;
+        }
+   
     }
 }
 
@@ -93,6 +104,23 @@
         font-size: 90px;
         margin: 0 10px;
     }
+    .section__about {
+        .sub__section {
+            padding: 200px 100px 0 100px;
+        
+            .container__info-aboutme {
+                margin-bottom:  10px;
+                .container__img-profile {
+                    margin-right: 40px;
+                }
+                .container__aboutme-text {
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+
+
 }
 
 @media (max-width: 1199.98px) {
@@ -117,16 +145,20 @@
         }
     }
     .section__about {
-        h2 {
-            font-size: 45px;
-        }
-        .container__info-aboutme {
-            margin: 30px 0;
-            .container__aboutme-text {
-                max-width: 600px;
+        .sub__section {
+            padding: 200px 100px 0 100px;
+            h2 {
+                margin-bottom: 50px;
+                font-size: 45px;
             }
-            .container__img-profile {
-                margin-right: 20px;
+            .container__info-aboutme {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom:  10px;
+                .container__aboutme-text {
+                    margin: 50px 0;
+                    max-width: 600px;
+                }
             }
         }
     }
@@ -179,17 +211,11 @@
         }
     }
     .section__about {
-        h2 {
-            margin-bottom: 50px;
-            font-size: 45px;
-        }
-        .container__info-aboutme {
-            margin: 30px 0;
-            .container__aboutme-text {
-                max-width: 500px;
-            }
-            .container__img-profile {
-                margin-right: 20px;
+        .sub__section {
+            padding: 200px 100px 0 100px;
+            h2 {
+                margin-bottom: 50px;
+                font-size: 45px;
             }
         }
     }
@@ -263,16 +289,14 @@
         }
     }
     .section__about {
-        .container__info-aboutme {
-            flex-direction: column;
-            align-items: center;
-        
-            .container__aboutme-text {
-                max-width: 450px;
-                margin: 50px 0;
-            }
-            .container__img-profile {
-                margin: 0;
+        .sub__section {
+            .container__info-aboutme {
+                .container__aboutme-text {
+                    max-width: 450px;
+                }
+                .container__img-profile {
+                    margin: 0;
+                }
             }
         }
     }
@@ -340,11 +364,36 @@
         max-width: 320px;
     }
     .section__about {
-        .container__info-aboutme {
-            .container__aboutme-text {
-                max-width: 300px;
+        .sub__section {
+            padding: 200px 50px 0 50px;
+            .container__info-aboutme {
+                .container__aboutme-text {
+                    max-width: 300px;
+                }
+            }
+            .container__form {
+                width: 250px;
+                .formular__contact {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    textarea {
+                        width: 300px;
+                    }
+                .row {
+                    flex-direction: column;
+                    align-items: center;
+                    .column {
+                        input[type="email"] {
+                            width: 200px;
+                        }
+                    }
+                    }
+                }
             }
         }
+       
     }
 }
 

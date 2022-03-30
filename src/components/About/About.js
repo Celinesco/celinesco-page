@@ -52,17 +52,19 @@ const About = () => {
                                 <input
                                     type="text"
                                     name="surname"
+                                    id="surname"
                                     required
                                 ></input>
                             </div>
                         </div>
                         <div className="row">
                             <div className="column">
-                                <label>Email*</label>
+                                <label htmlFor="email">Email*</label>
                                 <input
                                     type="email"
                                     name="user_email"
                                     required
+                                    id="email"
                                 ></input>
                             </div>
                         </div>

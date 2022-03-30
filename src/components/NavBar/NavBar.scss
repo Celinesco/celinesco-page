@@ -27,8 +27,18 @@
         color: $main-color-dark-mode;
         background-color: transparent;
         font-size: 20px;
+        border-radius: 100%;
         margin: 10px 15px 0 15px;
+        padding: 2px;
+        transition: all 0.7s;
     } 
+    button:hover {
+        color: $main-color-white-mode;
+        background-color: $background-color-white-mode;
+    }
+    button:active {
+        background-color: green;
+    }
 }
 
 
@@ -111,6 +121,15 @@
                 color: $main-color-white-mode;
             }
         }
+        .container__user-preferences {
+            .button__language:hover {
+                color: $main-color-dark-mode;
+                background-color: $background-color-dark-mode;
+            }
+            .button_language:active {
+                background-color: green;
+            }
+        }
         .container__info-navbar {
             p, .button__dark-mode  {
                 color: $main-color-white-mode;
@@ -143,7 +162,7 @@
             .container__user-preferences {
                 .button__language {
                   color: $main-color-white-mode;
-                }
+                }  
             }
         }
     }

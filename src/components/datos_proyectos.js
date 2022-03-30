@@ -268,7 +268,7 @@ export const htmlAboutme = {
         contact_me: `Wenn Sie mich erreichen wollen, schreiben Sie mir gerne eine E-Mail  oder füllen Sie das untenstehende Formular aus.
         Über Ihre Fragen, Anregungen und Kommentare freue ich mich sehr und sie helfen mir, sowohl auf persönlicher Ebene als auch beruflich zu wachsen.`,
         form: {
-            name: 'Vorname *',
+            name: 'Vorname*',
             surname: 'Nachname*',
             message: 'Nachricht*',
             submit: 'Senden'
