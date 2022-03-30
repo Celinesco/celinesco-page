@@ -3,19 +3,17 @@ import "./ProjectsContainer.scss";
 import { projectDetails } from "../datos_proyectos";
 import AOS from 'aos';
 import Context from "../../Context/Context";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { htmlTitles } from "../datos_proyectos";
 
 
 const ProjectsContainer = () => {
 
     const context = useContext(Context)
-
-
-    AOS.init();
-    AOS.refresh();
-
-
+    useEffect(()=> {
+        AOS.init();
+        AOS.refresh();
+    }, [])
     return (
         <section className="section__projects">
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_projects}</h2>

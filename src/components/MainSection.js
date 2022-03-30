@@ -5,15 +5,16 @@ import "aos/dist/aos.css";
 import ProjectsContainer from './Projects/ProjectsContainer';
 import AnimacionPortada from './AnimacionPortada';
 import { MdPets } from "react-icons/md";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 const MainSection = () => {
 
-
-    AOS.init();
-    AOS.refresh();
-
+    useEffect(()=> {
+        AOS.init();
+        AOS.refresh();
+    }, [])
+  
     const [footPrints, setFootPrints] = useState(true);
     window.onscroll = () => {
         setFootPrints(false)
