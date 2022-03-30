@@ -58,9 +58,19 @@
                    border-radius: 10px;
                    background-color: $background-color-white-mode;
                    font-weight: bold;
+                   transition: all 0.7s;
                    margin-top: 15px;
                    width: 100px;
                }
+               button:hover {
+                    color:$main-color-dark-mode;
+                    background-color: $main-color-white-mode;
+                    border: 1px solid $main-color-dark-mode
+                }
+                button:active {
+                    background-color: green;
+                    color:$main-color-dark-mode
+                }               
                textarea {
                    display: block;
                    width: 410px;
@@ -114,6 +124,16 @@
                     background-color: $background-color-dark-mode;
                     color: $main-color-dark-mode;
                 }
+                button:hover {
+                    color:$main-color-white-mode;
+                    background-color: $main-color-dark-mode;
+                    border: 1px solid $main-color-white-mode
+                }
+                button:active {
+                    background-color: green;
+                    color:$main-color-dark-mode
+                }  
+         
             }
         }
     

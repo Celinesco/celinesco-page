@@ -29,15 +29,16 @@
         font-size: 20px;
         border-radius: 100%;
         margin: 10px 15px 0 15px;
-        padding: 2px;
+        padding: 4px;
         transition: all 0.7s;
     } 
-    button:hover {
+    .button__language:hover {
         color: $main-color-white-mode;
         background-color: $background-color-white-mode;
     }
-    button:active {
+    .button__language:active {
         background-color: green;
+        color:$main-color-dark-mode
     }
 }
 
@@ -55,6 +56,17 @@
     li {
         margin: 0 10px;
         color: $main-color-dark-mode;
+        transition: all 0.7s;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    li:hover {
+        color:$main-color-white-mode;
+        background-color: $main-color-dark-mode;
+    }
+    li:active {
+        background-color: green;
+        color:$main-color-dark-mode
     }
 }
 
