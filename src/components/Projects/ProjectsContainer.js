@@ -29,7 +29,6 @@ const ProjectsContainer = () => {
                         title={project[context.language].title} />
                 ))}
             </div>
-
         </section>
     )
 }
