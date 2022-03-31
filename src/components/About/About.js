@@ -1,7 +1,7 @@
 import "./About.scss";
 import profilePicture from "../../assets/profile_picture.jpg";
 import Context from "../../Context/Context";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { htmlAboutme } from "../datos_proyectos";
 import emailjs from '@emailjs/browser';
 import ModalForm from "../ModalForm/ModalForm";
@@ -12,7 +12,10 @@ const About = () => {
     const [datosFormulario, setDatosFormulario] = useState(initialState);
     const [displayModal, setDisplayModal] = useState(false);
 
-    window.scrollTo(0, 0);
+    useEffect (()=> {
+        window.scrollTo(0, 0);
+    }, [])
+  
 
 
     const handleChange = (e) => {

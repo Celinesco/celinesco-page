@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: fadeIn;
+    animation-duration: 0.8s;
     .container__modal {
         position: relative;
         display: flex;
@@ -42,3 +44,35 @@
     }
 }
 
+
+
+.light-theme {
+    .container__modal-background {
+        .container__modal {
+            background-color: $background-color-white-mode;
+            border: 5px double $main-color-white-mode;
+            button {
+                color: $main-color-white-mode;
+            }
+            .title__modal {
+                color:$main-color-white-mode;
+            }
+            h2, p {
+                color: $main-color-white-mode;
+            }
+        
+        }
+    }
+
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
