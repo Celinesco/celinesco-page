@@ -33,7 +33,7 @@ const About = () => {
         <section className="section__about">
             <section className="sub__section">
                 {displayModal && <ModalForm setDisplayModal={setDisplayModal}/>}
-                <h2>About me</h2>
+                <h2>{htmlAboutme[context.language].title_about}</h2>
                 <div className="container__info-aboutme">
                     <div className="container__img-profile">
                         <img src={profilePicture} alt="my profile"></img>
@@ -47,8 +47,8 @@ const About = () => {
 
             <section className="sub__section">
                 <div className="container__title-alert">
-                    <h2>Contact</h2>
-                    <p>(All fields requierd)</p>
+                    <h2>{htmlAboutme[context.language].title_contact}</h2>
+                    <p>{htmlAboutme[context.language].form.requierd_message}</p>
                 </div>
                 <div className="container__form">
                     <form className="formular__contact" onSubmit={handleSubmit}>
