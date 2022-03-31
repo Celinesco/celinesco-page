@@ -4,11 +4,13 @@ import Context from "../../Context/Context";
 import { useContext, useState } from "react";
 import { htmlAboutme } from "../datos_proyectos";
 import emailjs from '@emailjs/browser';
+import ModalForm from "../ModalForm/ModalForm";
 
 const About = () => {
     const context = useContext(Context);
     const initialState = { name: '', surname: '', user_email: '', message: '' }
     const [datosFormulario, setDatosFormulario] = useState(initialState);
+    const [displayModal, setDisplayModal] = useState(false)
 
 
     const handleChange = (e) => {
@@ -22,14 +24,15 @@ const About = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        emailjs.sendForm('service_ezni8g4', 'template_0r0j00d', e.target, 'XLNlgGOCoVeMHyEIy')
-        setDatosFormulario(initialState)
-
+        emailjs.sendForm('service_ezni8g4', 'template_0r0j00d', e.target, 'XLNlgGOCoVeMHyEIy');
+        setDatosFormulario(initialState);
+        setDisplayModal(true);
     };
 
     return (
         <section className="section__about">
             <section className="sub__section">
+                {displayModal && <ModalForm setDisplayModal={setDisplayModal}/>}
                 <h2>About me</h2>
                 <div className="container__info-aboutme">
                     <div className="container__img-profile">
@@ -101,7 +104,6 @@ const About = () => {
                     </form>
                 </div>
             </section>
-
         </section>
     );
 };

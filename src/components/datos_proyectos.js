@@ -238,7 +238,9 @@ export const htmlAboutme = {
             name: 'Nombre*',
             surname: 'Apellido*',
             message: 'Mensaje*',
-            submit: 'Enviar'
+            submit: 'Enviar',
+            modal_title:'¡Muchas gracias por tu mensaje!',
+            modal_message: 'Te estaré respondiendo a la brevedad.'
         }
     },
     en: {
@@ -254,7 +256,9 @@ export const htmlAboutme = {
             name: 'First Name*',
             surname: 'Surname*',
             message: 'Message*',
-            submit: 'Send'
+            submit: 'Send',
+            modal_title:'Thank you so much for your message!',
+            modal_message: 'I will answer as soon as possible.'
         }
 
     },
@@ -271,7 +275,9 @@ export const htmlAboutme = {
             name: 'Vorname*',
             surname: 'Nachname*',
             message: 'Nachricht*',
-            submit: 'Senden'
+            submit: 'Senden',
+            modal_title:'Herzlichen Dank für deine Nachricht!',
+            modal_message: 'Ich werde so bald wie möglich antworten.'
         }
     }
 }
