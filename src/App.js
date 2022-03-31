@@ -6,11 +6,8 @@ import DetailSection from './components/DetailSection/DetailSection';
 import Footer from './components/Footer/Footer';
 import ProjectsContainer from './components/Projects/ProjectsContainer';
 import Context from './Context/Context'
-import { useState } from 'react';
+import {useState } from 'react';
 import About from './components/About/About';
-import { ToastContainer, toast } from "react-toastify";
-import { LinkPreview } from '@dhaiwat10/react-link-preview';
-import previewImg from './assets/previewImg.png';
 
 
 
@@ -30,26 +27,16 @@ const App = () => {
   return (
     <Context.Provider value={context}>
       <BrowserRouter>
-          <ToastContainer position="bottom-center" />
-          <h1 className="title">Welcome, Willkommen, Bienvenid@ </h1>
-          <h3 className="subtitle">
-            To my portfolio
-          </h3>
-          <LinkPreview
-            margin="30px auto"
-            width="500px"
-            url={previewImg}
-          />
-          <div className={lightTheme ? 'light-theme' : 'App'}>
-            <NavBar />
-            <Routes>
-              <Route path="/" element={<MainSection />} />
-              <Route path="/details/:project" element={<DetailSection />} />
-              <Route path="/projects" element={<ProjectsContainer />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-            <Footer />
-          </div>
+        <div className={lightTheme ? 'light-theme' : 'App'}>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<MainSection />} />
+            <Route path="/details/:project" element={<DetailSection />} />
+            <Route path="/projects" element={<ProjectsContainer />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+          <Footer />
+        </div>
       </BrowserRouter>
     </Context.Provider>
 
