@@ -175,6 +175,9 @@
                 .button__language {
                   color: $main-color-white-mode;
                 }  
+                .button__language:hover {
+                    color: $main-color-dark-mode;
+                  }  
             }
         }
     }

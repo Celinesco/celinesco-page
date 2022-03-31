@@ -3,6 +3,12 @@
     .container__hamburguer-menu-button {
         display: none;
     }
+    .section__main {
+        min-height: 80vh;
+    }
+    .section_technologys {
+        padding-top: 200px;
+    }
     .container__steps {
         margin-bottom: 180px;
         margin-top: 30px;
@@ -97,7 +103,7 @@
         }
     }
     .contenedor_rectangulos {
-        margin-top: 200px;
+        margin-top: 10%;
         margin-bottom: 20px
     }
     .carta {
@@ -155,6 +161,9 @@
                 flex-direction: column;
                 align-items: center;
                 margin-bottom:  10px;
+                .container__img-profile {
+                    margin-right:0
+                }
                 .container__aboutme-text {
                     margin: 50px 0;
                     max-width: 600px;
@@ -168,10 +177,9 @@
 @media (max-width: 991.98px) { 
 
     .section__main {
-        margin-top: 60px;
-        padding-top: 100px;
-        padding-bottom: 0;
-        min-height: 80vh;
+        padding: 100px 0;
+        margin-bottom: 150px;
+        min-height: 70vh;
     }
     .contenedor_rectangulos {
         margin-bottom: 20px;
@@ -240,11 +248,6 @@
     }
     .container__actions-navbar {
         display: none;
-    }
-    .section__main {
-        margin-top: 80px;
-        padding: 60px 0;
-        min-height: 100vh;
     }
     .carta {
         font-size: 60px;

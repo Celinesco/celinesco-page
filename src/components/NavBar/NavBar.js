@@ -67,7 +67,7 @@ const NavBar = () => {
                     </div>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>{htmlTitles[context.language].title_projects}</li></Link>
-                    <Link to='/about' onClick={handleClickCloseMenu}>{htmlAboutme[context.language].title_about}</Link>
+                    <Link to='/about' onClick={handleClickCloseMenu}><li>{htmlAboutme[context.language].title_about}</li></Link>
                 </ul>
 
             </div>
