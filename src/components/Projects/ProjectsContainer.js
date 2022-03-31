@@ -14,6 +14,7 @@ const ProjectsContainer = () => {
         AOS.init();
         AOS.refresh();
     }, [])
+    
     return (
         <section className="section__projects">
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_projects}</h2>

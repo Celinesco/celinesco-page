@@ -10,7 +10,9 @@ const About = () => {
     const context = useContext(Context);
     const initialState = { name: '', surname: '', user_email: '', message: '' }
     const [datosFormulario, setDatosFormulario] = useState(initialState);
-    const [displayModal, setDisplayModal] = useState(false)
+    const [displayModal, setDisplayModal] = useState(false);
+
+    window.scrollTo(0, 0);
 
 
     const handleChange = (e) => {

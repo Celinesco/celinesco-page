@@ -33,10 +33,10 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className='container__info-navbar'>
-                <div>
+                <Link to='/'>
                     <p>Celina Inés Alsina</p>
                     <p>{htmlTitles[context.language].intro}</p>
-                </div>
+                </Link>
                 <button className='button__dark-mode' onClick={handleClickTheme}><FaLightbulb /></button>
             </div>
             <div className='container__actions-navbar'>
