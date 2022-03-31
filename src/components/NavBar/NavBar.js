@@ -6,7 +6,8 @@ import { useState } from 'react';
 import { FaLightbulb } from 'react-icons/fa';
 import { useContext } from 'react';
 import Context from '../../Context/Context';
-import { htmlTitles } from '../datos_proyectos';
+import { htmlTitles, htmlAboutme } from '../datos_proyectos';
+
 
 
 const NavBar = () => {
@@ -42,8 +43,8 @@ const NavBar = () => {
             <div className='container__actions-navbar'>
                 <ul className="navbar__list">
                     <Link to="/"><li>Home</li></Link>
-                    <Link to="/projects"><li>Projects</li></Link>
-                    <Link to='/about'><li>About</li></Link>
+                    <Link to="/projects"><li>{htmlTitles[context.language].title_projects}</li></Link>
+                    <Link to='/about'><li>{htmlAboutme[context.language].title_about}</li></Link>
                 </ul>
                 <div className='container__user-preferences'>
                     <button className='button__dark-mode'  onClick={handleClickTheme}><FaLightbulb /></button>
@@ -65,8 +66,8 @@ const NavBar = () => {
                         <button className='button__language' onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
                     </div>
                     <Link to="/" onClick={handleClickCloseMenu}><li>Home</li></Link>
-                    <Link to="/projects" onClick={handleClickCloseMenu}><li>Projects</li></Link>
-                    <Link to='/about' onClick={handleClickCloseMenu}><li>About</li></Link>
+                    <Link to="/projects" onClick={handleClickCloseMenu}><li>{htmlTitles[context.language].title_projects}</li></Link>
+                    <Link to='/about' onClick={handleClickCloseMenu}>{htmlAboutme[context.language].title_about}</Link>
                 </ul>
 
             </div>
