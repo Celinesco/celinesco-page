@@ -1,6 +1,8 @@
 @import '../styles/variables';
 
 .sections {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,18 +68,14 @@
     animation-delay: 2s;
 }
 
-
-
 .light-theme {
     .container__step {
         color: black;
     }
     h2 {
         color:$main-color-white-mode;
-    }
-    
+    }   
 }
-
 
 
 @keyframes desvanecer {

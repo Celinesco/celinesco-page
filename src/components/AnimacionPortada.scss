@@ -1,8 +1,10 @@
 .contenedor_rectangulos {
-    display: flex;
-    justify-content: center;
-    margin: 0 10px;
-    margin-bottom: 300px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  margin-bottom: 300px;
     .carta {
       position: relative;
       perspective: 500px;
@@ -23,9 +25,9 @@
 }
   
 
-  .light-theme {
-    .carta {
-      p {
+.light-theme {
+  .carta {
+    p {
           color: black;
       }
     }
