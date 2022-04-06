@@ -143,7 +143,7 @@ export const projectDetails = [
         id: "6_rick&morty",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjelRjxXPLIpTBBUeEUQcnlbZ3R5n7mSBUeZr1zQXfH8EIxndWlDpRrhPSr5n_ENVJrSCyZhLxRjO-84AOOWRF52-0X_Blr0aONvLxbz4BXx3h-cvhuhBNXZFnm1GB2ftKryDzz7g9Udgo92doqXQz5l0z8Csdal_zt7KESMXCTbZO9HC6PMxzh8NGgHA=s320",
         img_white_theme: RickAndMortyContornoNegro,
-        link: "https://morty-and-rick-page.netlify.app/RickAndMortyPage",
+        link: "https://morty-and-rick-page.netlify.app",
         technologies: "React.js, SASS",
         apiLink: 'https://rickandmortyapi.com/',
         repository: "https://github.com/Celinesco/RickAndMortyPage",
