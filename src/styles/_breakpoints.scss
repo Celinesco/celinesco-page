@@ -21,9 +21,6 @@
     }
     .container__info-navbar {
         display: flex;
-        .button__dark-mode {
-            display: none;
-        }
     }
 }
 
@@ -406,10 +403,6 @@
     .navbar {
         padding: 20px;
     }
-    .button__dark-mode {
-        display: none;
-    }
-
     .carta {
         margin: 0 2px;
         font-size: 35px;

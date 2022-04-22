@@ -8,15 +8,22 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    width: 210px;
     background-color: $background-color-dark-mode;
     border-bottom: 2px solid $main-color-dark-mode;
-    box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
-    padding: 20px;
+    box-shadow:  0px 0px 5px 1px aquamarine;
+    padding: 50px 15px;
 }
 .container__info-navbar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    a {
+        p:hover {
+            color:aquamarine
+        }
+       
+    }
 }
 
 .container__sections-nav {
@@ -25,27 +32,28 @@
     align-items: center;
 }
 
+.text-front-end {
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
 .container__user-preferences {
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
     button  {
-        color: $main-color-dark-mode;
+        color: rgb(169, 169, 169);
         background-color: transparent;
-        font-size: 20px;
+        font-size: 15px;
         border-radius: 100%;
         padding: 4px;
         transition: all 0.7s;
+    }
+    button:hover {
+        color:aquamarine;
+        font-weight: bold;
     } 
-    .button__language:hover {
-        color: $main-color-white-mode;
-        background-color: $background-color-white-mode;
-    }
-    .button__language:active {
-        background-color: aquamarine;
-    }
 }
-
 
 .container__hamburguer-menu-button, .button__dark-mode {
     color: $main-color-dark-mode;
@@ -61,15 +69,29 @@
     li {
         color: $main-color-dark-mode;
         transition: all 0.7s;
-        border-radius: 10px;
+        margin-bottom: 15px;
         padding: 5px;
+        width: 110px;
+        border-bottom: 1px solid rgb(203, 203, 203);
     }
     li:hover {
-        color:$main-color-white-mode;
-        background-color: $main-color-dark-mode;
+        color:aquamarine;
+        letter-spacing:1px;
+        border-bottom: 2px solid aquamarine
     }
-    li:active {
-        background-color: aquamarine;
+}
+
+.container__social-media {
+    ul {
+        display: flex;
+        li {
+            margin: 0 10px;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li:hover {
+            color: aquamarine;
+        }
     }
 }
 
@@ -117,7 +139,6 @@
             }
         }
     }
-
 }
 
 .desplazar-menu {
@@ -137,14 +158,7 @@
             }
         }
         .container__user-preferences {
-            .button__language:hover {
-                color: $main-color-dark-mode;
-                background-color: $background-color-dark-mode;
-            }
-            .button__language:active {
-                background-color: aquamarine;
-                color:$main-color-white-mode;
-            }
+    
         }
         .container__info-navbar {
             p, .button__dark-mode  {
@@ -160,14 +174,6 @@
     .navbar__list {
         li {
             color: $main-color-white-mode;
-        }
-        li:hover {
-            color: $main-color-dark-mode;
-            background-color: $main-color-white-mode
-        }
-        li:active {
-            color:$main-color-white-mode;
-            background-color: aquamarine;
         }
     }
  
@@ -187,9 +193,6 @@
                 .button__language {
                   color: $main-color-white-mode;
                 }  
-                .button__language:hover {
-                    color: $main-color-dark-mode;
-                  }  
             }
         }
     }
