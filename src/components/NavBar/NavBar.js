@@ -37,7 +37,7 @@ const NavBar = () => {
             <div className='container__info-navbar'>
                 <Link to='/'>
                     <p>Celina Inés Alsina</p>
-                    <p>{htmlTitles[context.language].intro}</p>
+                    <p class="text-front-end">{htmlTitles[context.language].intro}</p>
                 </Link>
                 <div className='container__user-preferences'>
                     <button className='button__dark-mode' onClick={handleClickTheme}><FaLightbulb /></button>
@@ -51,7 +51,9 @@ const NavBar = () => {
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/projects"><li>{htmlTitles[context.language].title_projects}</li></Link>
                     <Link to='/about'><li>{htmlAboutme[context.language].title_about}</li></Link>
-                    <Link to='/contact'><li>{htmlAboutme[context.language].title_about}</li></Link>
+                    <Link to='/contact'><li>Skills</li></Link>
+                    <Link to='/contact'><li>Contact</li></Link>
+
                 </ul>
 
 
