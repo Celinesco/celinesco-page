@@ -3,18 +3,17 @@ import TechnologiesContainer from './SkillsContainer/SkillsContainer';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import ProjectsContainer from './Projects/ProjectsContainer';
-import AnimacionPortada from './AnimacionPortada';
 import { MdPets } from "react-icons/md";
 import { useEffect, useState } from 'react';
 
 
 const MainSection = () => {
 
-    useEffect(()=> {
+    useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, [])
-  
+
     const [footPrints, setFootPrints] = useState(true);
     window.onscroll = () => {
         setFootPrints(false)
@@ -28,7 +27,6 @@ const MainSection = () => {
 
         <div className="sections">
             <section className='section__main'>
-                <AnimacionPortada />
                 {footPrints &&
                     <div className='container__steps'>
                         <div className='container__step step-1'>

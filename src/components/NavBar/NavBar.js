@@ -7,6 +7,7 @@ import { FaLightbulb } from 'react-icons/fa';
 import { useContext } from 'react';
 import Context from '../../Context/Context';
 import { htmlTitles, htmlAboutme } from '../datos_proyectos';
+import { BsGithub, BsLinkedin, BsEnvelope } from "react-icons/bs";
 
 
 
@@ -38,20 +39,21 @@ const NavBar = () => {
                     <p>Celina Inés Alsina</p>
                     <p>{htmlTitles[context.language].intro}</p>
                 </Link>
-                <button className='button__dark-mode' onClick={handleClickTheme}><FaLightbulb /></button>
-            </div>
-            <div className='container__actions-navbar'>
-                <ul className="navbar__list">
-                    <Link to="/"><li>Home</li></Link>
-                    <Link to="/projects"><li>{htmlTitles[context.language].title_projects}</li></Link>
-                    <Link to='/about'><li>{htmlAboutme[context.language].title_about}</li></Link>
-                </ul>
                 <div className='container__user-preferences'>
-                    <button className='button__dark-mode'  onClick={handleClickTheme}><FaLightbulb /></button>
+                    <button className='button__dark-mode' onClick={handleClickTheme}><FaLightbulb /></button>
                     <button className='button__language' onClick={handleClickLanguage} aria-label='Deutsch' lang='de' value='de'>DE</button>
                     <button className='button__language' onClick={handleClickLanguage} aria-label='English' lang='en' value='en' >EN</button>
                     <button className='button__language' onClick={handleClickLanguage} aria-label='Español' lang='es' value='es'>ES</button>
                 </div>
+            </div>
+            <div className='container__sections-nav'>
+                <ul className="navbar__list">
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/projects"><li>{htmlTitles[context.language].title_projects}</li></Link>
+                    <Link to='/about'><li>{htmlAboutme[context.language].title_about}</li></Link>
+                    <Link to='/contact'><li>{htmlAboutme[context.language].title_about}</li></Link>
+                </ul>
+
 
             </div>
             <button className='container__hamburguer-menu-button' onClick={handleClickOpenMenu}>
@@ -69,7 +71,13 @@ const NavBar = () => {
                     <Link to="/projects" onClick={handleClickCloseMenu}><li>{htmlTitles[context.language].title_projects}</li></Link>
                     <Link to='/about' onClick={handleClickCloseMenu}><li>{htmlAboutme[context.language].title_about}</li></Link>
                 </ul>
-
+            </div>
+            <div className='container__social-media'>
+                <ul>
+                    <a href="https://github.com/Celinesco" target="_blank" rel="noopener noreferrer" aria-label="Ir a cuenta Github Celinesco"><li><BsGithub /></li></a>
+                    <a href="https://www.linkedin.com/in/celinesalsina/" target="_blank" rel="noopener noreferrer" aria-label="Perfil Linkedin de Celina"><li><BsLinkedin /></li></a>
+                    <a href="mailto:celina.alsina@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar mail"><li><BsEnvelope /></li></a>
+                </ul>
             </div>
         </nav>
     )

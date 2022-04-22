@@ -4,17 +4,22 @@
     position: fixed;
     z-index: 999;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    min-height: 10vh;
+    height: 100%;
     background-color: $background-color-dark-mode;
     border-bottom: 2px solid $main-color-dark-mode;
     box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
-    padding: 25px 60px;
+    padding: 20px;
+}
+.container__info-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.container__actions-navbar {
+.container__sections-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,13 +27,13 @@
 
 .container__user-preferences {
     display: flex;
+    justify-content: flex-start;
     margin-top: 10px;
     button  {
         color: $main-color-dark-mode;
         background-color: transparent;
         font-size: 20px;
         border-radius: 100%;
-        margin: 10px 15px 0 15px;
         padding: 4px;
         transition: all 0.7s;
     } 
@@ -52,8 +57,8 @@
 
 .navbar__list {
     display: flex;
+    flex-direction: column;
     li {
-        margin: 0 10px;
         color: $main-color-dark-mode;
         transition: all 0.7s;
         border-radius: 10px;
@@ -136,8 +141,9 @@
                 color: $main-color-dark-mode;
                 background-color: $background-color-dark-mode;
             }
-            .button_language:active {
+            .button__language:active {
                 background-color: aquamarine;
+                color:$main-color-white-mode;
             }
         }
         .container__info-navbar {
@@ -145,7 +151,7 @@
                 color: $main-color-white-mode;
             }
         }
-        .container__actions-navbar {
+        .container__sections-nav {
             button {
                 color: $main-color-white-mode;
             }
@@ -153,7 +159,15 @@
     }
     .navbar__list {
         li {
-            color: $main-color-white-mode
+            color: $main-color-white-mode;
+        }
+        li:hover {
+            color: $main-color-dark-mode;
+            background-color: $main-color-white-mode
+        }
+        li:active {
+            color:$main-color-white-mode;
+            background-color: aquamarine;
         }
     }
  
