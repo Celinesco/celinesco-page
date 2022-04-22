@@ -37,8 +37,7 @@
         background-color: $background-color-white-mode;
     }
     .button__language:active {
-        background-color: green;
-        color:$main-color-dark-mode
+        background-color: aquamarine;
     }
 }
 
@@ -65,8 +64,7 @@
         background-color: $main-color-dark-mode;
     }
     li:active {
-        background-color: green;
-        color:$main-color-dark-mode
+        background-color: aquamarine;
     }
 }
 
@@ -139,7 +137,7 @@
                 background-color: $background-color-dark-mode;
             }
             .button_language:active {
-                background-color: green;
+                background-color: aquamarine;
             }
         }
         .container__info-navbar {
