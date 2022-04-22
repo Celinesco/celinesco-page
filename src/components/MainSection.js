@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import ProjectsContainer from './Projects/ProjectsContainer';
 import { MdPets } from "react-icons/md";
 import { useEffect, useState } from 'react';
+import Portada from './Portada';
+import About from './About/About'
 
 
 const MainSection = () => {
@@ -15,18 +17,14 @@ const MainSection = () => {
     }, [])
 
     const [footPrints, setFootPrints] = useState(true);
-    window.onscroll = () => {
-        setFootPrints(false)
-        if (window.scrollY === 0) {
-            setFootPrints(true)
-        }
-    }
+
 
 
     return (
 
         <div className="sections">
             <section className='section__main'>
+                <Portada />
                 {footPrints &&
                     <div className='container__steps'>
                         <div className='container__step step-1'>
@@ -44,8 +42,10 @@ const MainSection = () => {
                     </div>}
 
             </section>
-            <TechnologiesContainer />
             <ProjectsContainer />
+            <TechnologiesContainer />
+            <About />
+
         </div>
 
     )

@@ -18,15 +18,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: relative;
         padding-top: 200px;
     }
     .container__steps {
-        width: 100%;
+        position: fixed;
+        left:210px;
+        top:10px;
+        width: 50px;
         margin-bottom: 40px;
         margin-top: 50px;
-        position: relative;
-        top: 300px;
     }
 }
 
@@ -41,28 +41,28 @@
     animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .step-1 {
-    bottom: 100px;
+    top:140px;
     transform: rotateZ(198deg);
-    right: 50%;
+    left: 40px;
     animation-delay: 4.5s;
 }
 
 .step-2 {
-    bottom: 160px;
+    top:80px;
     transform:  rotateZ(-198deg);
     animation-delay: 3.8s;
-    right: 40%;
+    left:60px;
 }
 
 .step-3 {
-    bottom: 205px;
+    top:20px;
     transform:  rotateZ(198deg);
-    right: 50%;
+    left:40px;
     animation-delay: 3s;
 }
 
 .step-4 {
-    bottom: 245px;
+    top:0;
     transform:  rotateZ(-198deg);
     right:40%;
     animation-delay: 2s;
