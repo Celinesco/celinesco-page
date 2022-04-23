@@ -7,6 +7,7 @@ import ProjectsContainer from './components/Projects/ProjectsContainer';
 import Context from './Context/Context'
 import { useState } from 'react';
 import About from './components/About/About';
+import Huellitas from './components/Huellitas';
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
       <BrowserRouter>
         <div className={lightTheme ? 'light-theme' : 'App'}>
           <NavBar />
+          <Huellitas />
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/details/:project" element={<DetailSection />} />

@@ -1,0 +1,70 @@
+@import '../styles/variables';
+
+.container__steps {
+    position: fixed;
+    height: 100%;
+    top:83%;
+    left:220px;
+    width: 50px;
+}
+
+.container__step {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    opacity: 0;
+    animation-name: desvanecer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.step-1 {
+    top:140px;
+    transform: rotateZ(198deg);
+    left: 40px;
+    animation-delay: 4.5s;
+}
+
+.step-2 {
+    top:80px;
+    transform:  rotateZ(-198deg);
+    animation-delay: 3.8s;
+    left:60px;
+}
+
+.step-3 {
+    top:50px;
+    transform:  rotateZ(198deg);
+    left:40px;
+    animation-delay: 3s;
+    color:$secondary-color;
+}
+
+.step-4 {
+    top:0;
+    transform:  rotateZ(-198deg);
+    left: 60px;
+    color:$main-color-dark-mode;
+    animation-delay: 2s;
+}
+
+.light-theme {
+    .container__step {
+        color: black;
+    }
+    h2 {
+        color:$main-color-white-mode;
+    }   
+}
+
+
+@keyframes desvanecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity:  0;
+    }
+    
+}
