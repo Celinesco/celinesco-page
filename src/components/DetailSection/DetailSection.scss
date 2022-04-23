@@ -7,11 +7,11 @@
 }
 
 .info__projects {
-    border: 2px solid $main-color-dark-mode;
+    border: 2px solid $secondary-color;
     line-height: 1.4;
     max-width: 900px;
     background-color: rgba(0, 0, 0, 0.705);
-    box-shadow:  0px 0px 20px 1px $main-color-dark-mode;
+    box-shadow:  0px 0px 20px 1px $secondary-color;
     border-radius: 10px;
     z-index: 10;
     padding: 40px;
@@ -27,6 +27,9 @@
         color: $main-color-dark-mode;
         font-weight: bold;
         font-style:oblique;
+        p {
+            color:rgb(171, 0, 0)
+        }
     }
     svg {
         margin-right: 5px;
@@ -36,25 +39,13 @@
 
 .paragraph {
     margin: 25px 0;
-}
-
-.light-theme {
-    .info__projects {
-        border: 2px solid $main-color-white-mode;
-        box-shadow:  0px 0px 20px 1px $main-color-white-mode;
-        background-color: rgb(231, 231, 231);
-        p {
-            color:$main-color-white-mode;
-        }
-        h2 {
-            color: $main-color-white-mode;
-        }
+    p {
         a {
-            color: $main-color-white-mode;
+            color:$secondary-color
         }
-     
     }
 }
+
 
 
 @import '../../styles/breakpoints'

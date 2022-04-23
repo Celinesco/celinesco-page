@@ -6,11 +6,13 @@
     }
     p {
         font-size: 30px;
-        margin-bottom: 30px;
     }
     h1 {
         color: white;
         font-size: 65px;
+    }
+    .container__link {
+        margin-top: 30px;
     }
     .link__contact {
         background-color: $secondary-color;
@@ -19,4 +21,74 @@
         border-radius: 10px;
         font-size: 20px;
     }
+    .cuadrado {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        top:60px;
+        right: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid aquamarine;
+        animation-name: girar ;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-style: preserve-3d;
+ 
+    }
+    .cuadradito {
+        top:90px;
+        right: 140px;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border: 2px solid aquamarine;
+        animation-name: rotarY ;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-style: preserve-3d;
+    }
+    .cuadradito2 {
+        position: absolute;
+        border: 2px solid aquamarine;
+        width: 70px;
+        height: 70px;
+        top:115px;
+        right: 165px;
+        animation-name: rotarX ;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform-style: preserve-3d;
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotarY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }   
+}
+
+@keyframes rotarX {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(-360deg);
+    }   
 }

@@ -15,13 +15,10 @@ import Contact from './components/Contact/Contact'
 
 const App = () => {
   const [language, setLanguage] = useState('en');
-  const [lightTheme, setLightTheme] = useState(false);
 
   const context = {
     language: language,
     setLanguage: setLanguage,
-    lightTheme: lightTheme,
-    setLightTheme: setLightTheme,
   }
 
   document.documentElement.lang = context.language;
@@ -29,7 +26,7 @@ const App = () => {
   return (
     <Context.Provider value={context}>
       <BrowserRouter>
-        <div className={lightTheme ? 'light-theme' : 'App'}>
+        <div className='App'>
           <NavBar />
           <Huellitas />
           <Routes>

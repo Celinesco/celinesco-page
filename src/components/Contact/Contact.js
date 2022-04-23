@@ -7,7 +7,6 @@ import { htmlAboutme } from "../datos_proyectos";
 
 const Contact = () => {
     const context = useContext(Context);
-
     const initialState = { name: "", surname: "", user_email: "", message: "" };
     const [datosFormulario, setDatosFormulario] = useState(initialState);
     const [displayModal, setDisplayModal] = useState(false);
@@ -35,7 +34,7 @@ const Contact = () => {
         <section className="section__contact">
             {displayModal && <ModalForm setDisplayModal={setDisplayModal} />}
             <div className="container__title-alert">
-                <h2 className="title__section">
+                <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">
                     {htmlAboutme[context.language].title_contact}
                 </h2>
                 <p>{htmlAboutme[context.language].form.requierd_message}</p>

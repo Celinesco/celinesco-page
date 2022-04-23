@@ -1,19 +1,9 @@
-import claqueta from '../assets/claqueta.png';
-import tateti from '../assets/tateti.png';
-import RickAndMortyContornoNegro from '../assets/RickAndMortyContornoNegro.png';
-import comicImg from '../assets/comic.png';
-import firstPortfolio from '../assets/FirstPorfolio.png';
-import ahorradas from '../assets/ahorradas.png';
-import meme from '../assets/meme.png';
-
-
-
+import meme from '../assets/meme.png'
 
 export const projectDetails = [
     {
         id: "1_first_portfolio",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjiy93dYLcllgGSHXnsr_4WMOkjBfz9fP8octsENo1KW7A3l1ejF7Im-Ns8wJRM-l44nG7X6DBC0INPaanNjvAoOoB85DVEURnoKBNu40BZtYZCUr0izz7k785Sw6vehAJtB7LTdG8peKDhEjcEeqZ-eoXOQPpNhpopo9VNJABWrE-VigtYZsMXFiCYLw=s320",
-        img_white_theme: firstPortfolio,
         link: "https://celinesco.github.io/Portafolio/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/Portafolio",
@@ -42,7 +32,6 @@ export const projectDetails = [
     {
         id: "2_Meme_Genertor",
         img_dark_theme: meme,
-        img_white_theme: meme,
         link: "https://carosanchezl.github.io/Editor-de-memes/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/CaroSanchezL/Editor-de-memes",
@@ -67,7 +56,6 @@ export const projectDetails = [
     {
         id: "3_matcheadas",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEiq822jcy76XX9xUD5vVqneksee2EbKYJ1zGJ8fH1bhaqT9yRTFh_Q97QaghXcUD5TzbIe4_2yX7Nd7VbIgjmbzAX18bV_Rg5OU7TuA8hyqt74yPyEP-h1pEbFtpUtF7SzRKKijQCplPKwIcRbU0aW6Du154r10i1SaimyE16a7yIW1Xz0lBTPdSuShzQ=w323-h399",
-        img_white_theme: tateti,
         link: "https://celinesco.github.io/MatcheADAs/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/MatcheADAs",
@@ -93,7 +81,6 @@ export const projectDetails = [
         id: "4_ahorradas",
         title: "AhorrADAs",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjvvYItYKdgI-8jDOJJTmnqgeEcnZyAer7eBFwDVJIl1uEo3voUNf7k2GeAIvIkReNTkA--PNiZo8gficbgv0pXyRQIYKMoKN3xLxZ9dBZO3Dezde5cH2Vrry5xky6BPff8COKs_DGGHED8876GDMEcAQbbTGqO-1hJTgNff9lonFSY_TgXwUv0bFYdhA=s320",
-        img_white_theme: ahorradas,
         link: "https://celinesco.github.io/AhorrAdas/",
         technologies: "HTML5, BULMA, JS",
         repository: "https://github.com/Celinesco/AhorrAdas",
@@ -117,7 +104,6 @@ export const projectDetails = [
     {
         id: "5_comics",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEg2_0yrTTO2xuQm7hrMKIJNCELT70jXypEOW6NXhySMSqGgkLDJvnjPP4qQnbD_-yrLZP1qw8hIInAKinZamEVdIC3lc9EkAZJkJoAurRqAw0gvC-R6NPHt5gVmnrGMWYA3chptGvCn6OlL5XICv17iBbYIrW_f4Q5TKJQgc7XdMS4Hfi4RysF6ZdnPIg=s320",
-        img_white_theme: comicImg,
         link: "https://celinesco.github.io/buscador_de_comics_2/",
         technologies: "HTML, SASS, JS",
         apiLink: 'https://developer.marvel.com/',
@@ -142,7 +128,6 @@ export const projectDetails = [
     {
         id: "6_rick&morty",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjelRjxXPLIpTBBUeEUQcnlbZ3R5n7mSBUeZr1zQXfH8EIxndWlDpRrhPSr5n_ENVJrSCyZhLxRjO-84AOOWRF52-0X_Blr0aONvLxbz4BXx3h-cvhuhBNXZFnm1GB2ftKryDzz7g9Udgo92doqXQz5l0z8Csdal_zt7KESMXCTbZO9HC6PMxzh8NGgHA=s320",
-        img_white_theme: RickAndMortyContornoNegro,
         link: "https://morty-and-rick-page.netlify.app",
         technologies: "React.js, SASS",
         apiLink: 'https://rickandmortyapi.com/',
@@ -172,7 +157,6 @@ export const projectDetails = [
     {
         id: "7_movies",
         img_dark_theme: "https://blogger.googleusercontent.com/img/a/AVvXsEjr85XwtU6erDfZETf5dVTGeQaT6e7DYI61R2NIuB5Hv-jPmMUHN8DdfOK-Ejvmm7QeHaDU_EzT1rYTmHFnytdSRzNkUrGwZfOVGTiH3XxtI_c0vq-MtRQBcx2XW0E4UJ2CpZnGBnRDvHHHBi6MbsFAy5pvg9hcMGMheZklrf3uMBJJyMPk1Cx7W8x4gg=s320",
-        img_white_theme: claqueta,
         link: "https://film-suchmaschine.netlify.app/",
         technologies: "React.js, SASS",
         repository: "https://github.com/Celinesco/buscador_de_peliculas",
@@ -226,7 +210,7 @@ export const htmlProjects = {
 export const htmlAboutme = {
     es: {
         title_about: 'Sobre mi',
-        about_me: `Mi nombre es Celina Inés Alsina. Soy oriunda de Rosario, Santa Fe, Argentina y desde el 2021 vivo en Múnich, Alemania.
+        about_me: `Soy oriunda de Rosario, Santa Fe, Argentina y desde el 2021 vivo en Múnich, Alemania.
         En Rosario trabajaba como profesora de violín, y desde el inicio de la pandemia decidí incursionar en el mundo de la programación. 
         Comencé resolviendo problemas de programación competitiva usando Python y gracias a la curiosidad que todo esto me despertó, realicé la carrera de desarrolladora Front-end de un año de duración en el bootcamp para mujeres ADA ITW.
         Tuve la fortuna de tener como profesora a la maravillosa María Elena Rey, que me acompañó en todo este camino de aprendizaje y me enseñó la belleza de programar.
@@ -247,9 +231,9 @@ export const htmlAboutme = {
     },
     en: {
         title_about: 'About',
-        about_me: `My name is Celina and I'm a front-end developer from Rosario, Argentina, living in Munich since 2021.
+        about_me: `I'm a front-end developer from Rosario, Argentina, living in Munich since 2021.
         When the pandemic started, I adventured myself into the programming world.
-        I started resolving problems from programming contests, and intrigued by those I did the "ADA ITW" front-end course(400hs in total), an Argentinian bootcamp for women.
+        I started solving problems from programming contests, and intrigued by those I did the "ADA ITW" front-end course(400hs in total), an Argentinian bootcamp for women.
         I had the fortune to have Maria Elena Rey as a teacher, who motivated me a lot and taught me the beauty of programming.
         Back when I was living in Rosario, I initially studied physics and then for a few years worked as a violin teacher. 
         In front-end developing, I found myself in a very stimulating equilibrium between analytical problem solving and art. I enjoy this symbiosis a lot.`,
@@ -269,7 +253,7 @@ export const htmlAboutme = {
     },
     de: {
         title_about: 'Über mich',
-        about_me: `Mein Name ist Celina und ich bin eine Front-End-Entwicklerin aus Rosario, Argentinien. Seit 2021 lebe in München. 
+        about_me: `Ich bin eine Front-End-Entwicklerin aus Rosario, Argentinien. Seit 2021 lebe in München. 
         Mit Beginn der Pandemie bin ich in die Welt der Programmierung eingetaucht.
         Ich habe angefangen, Probleme aus Programmierwettbewerben zu lösen, und fasziniert davon habe ich den  "ADA ITW" Kurs absolviert - ein argentinisches Bootcamp für Front-End Developing für Frauen (in Summe 400 Stunden).
         Ich hatte das Glück, Maria Elena Rey als Lehrerin zu haben, die mich sehr motiviert hat und mir die Schönheit an der Arbeit des Programmierens näher brachte.
