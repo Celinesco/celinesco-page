@@ -22,8 +22,12 @@ const MainSection = () => {
             <section className='section__main'>
                 <Portada />
             </section>
-            <ProjectsContainer />
-            <About />
+            <section className='section__main'>
+                <ProjectsContainer />
+            </section>
+            <section className='section__main'>
+                <About />
+            </section>
             <TechnologiesContainer />
             <Contact />
 

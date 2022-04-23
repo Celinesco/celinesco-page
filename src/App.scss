@@ -1,17 +1,10 @@
 @import './styles/variables';
 
 .App {
-  background: rgb(31, 31, 31);
+  background-color: rgb(31, 31, 31);
   width: 100vw;
 }
 
-
-
-.light-theme {
-   .App {
-    background: rgb(255, 255, 255);
-  }
-}
 
 * {
   margin: 0;

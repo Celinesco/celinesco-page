@@ -1,13 +1,12 @@
 @import "../../styles/variables";
 
 .section__about {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 100px;
+  padding: 100px 0;
   margin-left: 210px;
   .container__img-map {
     position: absolute;
@@ -16,18 +15,30 @@
     }
   }
   .de-map {
-    top:20%;
-    right:-25%;
+    top:-90%;
+    right:-30%;
     width: 270px;
   }
   .arg-map {
     width:400px;
-    bottom: 5%;
-    left:-35%;
-    transform: rotate(-5deg);
+    bottom: -40%;
+    left:-40%;
+    z-index: 0;
   }
   .container__info-aboutme {
     display: flex;
+    position: relative;
+    svg {
+      position: absolute;
+      z-index: 1;
+      opacity: 0;
+      top:-60px;
+      transform:rotate(30deg);
+      color:rgb(171, 4, 4);
+      left:-10%;
+      font-size: 30px;
+      transition: left 3s linear;
+    }
     .container__aboutme-text {
       max-width: 800px;
       line-height: 1.7;
@@ -48,37 +59,13 @@
       }
     }
   }
-}
-
-.light-theme {
-  .section__about {
-    .container__info-aboutme {
-      p {
-        color: $main-color-white-mode;
-      }
-      .container__img-profile {
-        border: 2px solid $main-color-white-mode;
-      }
-    }
-    .container__form {
-      color: $main-color-white-mode;
-      .formular__contact {
-        button {
-          background-color: $background-color-dark-mode;
-          color: $main-color-dark-mode;
-        }
-        button:hover {
-          color: $main-color-white-mode;
-          background-color: $main-color-dark-mode;
-          border: 1px solid $main-color-white-mode;
-        }
-        button:active {
-          background-color: green;
-          color: $main-color-dark-mode;
-        }
-      }
+  .container__info-aboutme:hover {
+    svg {
+      left:1000px;
+      opacity: 1
     }
   }
 }
+
 
 @import "../../styles/breakpoints";

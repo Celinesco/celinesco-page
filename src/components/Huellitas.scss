@@ -48,15 +48,6 @@
     animation-delay: 2s;
 }
 
-.light-theme {
-    .container__step {
-        color: black;
-    }
-    h2 {
-        color:$main-color-white-mode;
-    }   
-}
-
 
 @keyframes desvanecer {
     from {
