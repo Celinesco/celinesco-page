@@ -51,7 +51,7 @@ const NavBar = () => {
                     <Link to="/"><li>Home</li></Link>
                     <Link to="/projects"><li>{htmlTitles[context.language].title_projects}</li></Link>
                     <Link to='/about'><li>{htmlAboutme[context.language].title_about}</li></Link>
-                    <Link to='/contact'><li>Skills</li></Link>
+                    <Link to='/skills'><li>Skills</li></Link>
                     <Link to='/contact'><li>Contact</li></Link>
 
                 </ul>

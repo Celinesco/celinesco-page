@@ -1,6 +1,7 @@
+@import './styles/variables';
+
 .App {
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(23,23,22,1) 47%, rgba(38,38,35,1) 76%, rgb(34, 34, 33) 100%);
+  background: rgb(31, 31, 31);
   width: 100vw;
 }
 
@@ -30,7 +31,7 @@ ul {
 
 .title__section {
   text-align: center;
-  color: white;
+  color:$secondary-color ;
   font-size: 70px;
   margin: 60px 0;
 }
