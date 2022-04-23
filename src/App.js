@@ -8,6 +8,8 @@ import Context from './Context/Context'
 import { useState } from 'react';
 import About from './components/About/About';
 import Huellitas from './components/Huellitas';
+import SkillsContainer from './components/SkillsContainer/SkillsContainer';
+import Contact from './components/Contact/Contact'
 
 
 
@@ -35,6 +37,8 @@ const App = () => {
             <Route path="/details/:project" element={<DetailSection />} />
             <Route path="/projects" element={<ProjectsContainer />} />
             <Route path="/about" element={<About />} />
+            <Route path='/skills' element={<SkillsContainer />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </BrowserRouter>
