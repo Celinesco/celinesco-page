@@ -1,12 +1,22 @@
+@import '../styles/variables';
+
 .container__portada {
     span {
         color: aquamarine;
     }
     p {
         font-size: 30px;
+        margin-bottom: 30px;
     }
     h1 {
         color: white;
         font-size: 65px;
+    }
+    .link__contact {
+        background-color: $secondary-color;
+        color:$main-color-white-mode;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 20px;
     }
 }
