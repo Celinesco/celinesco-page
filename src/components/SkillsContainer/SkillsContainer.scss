@@ -10,26 +10,23 @@
     margin-left: 210px;
 }
 
-.card__skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 5px;
-    width: 200px;
-    margin: 10px;
-    h3 {
-        height: 40px;
-    }
+.card__skill:hover {
+    color:aquamarine
 }
 
 .container__svg-skill {
-    width: 150px;
+    width: 100px;
     svg {
         padding: 10px;
         width: 100%;
         fill: $background-color-dark-mode;
+        transition: animate__rubberBand;
+    }
+    
+    svg:hover {
+        fill:aquamarine;
+        animation-name: animate__rubberBand;
+        animation-duration: 0.6s;
     }
 }
 
