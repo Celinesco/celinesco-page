@@ -7,7 +7,6 @@
   justify-content: center;
   min-height: 100vh;
   padding: 100px 0;
-  margin-left: 210px;
   .container__img-map {
     position: absolute;
     img {
@@ -64,6 +63,40 @@
       left:1000px;
       opacity: 1
     }
+  }
+  @media (min-width: 1200px) {
+    margin-left: 210px;
+  }
+  @media (max-width: 575.98px) {
+    .container__img-map  {
+      width: 70px;  
+      top: 100%;
+      right: 0;
+      left: 0;
+      bottom:0;
+    }
+    .arg-map {
+      left: 50px;
+    }
+    .de-map {
+      left: 150px;
+    }
+    .container__info-aboutme {
+      flex-direction: column;
+      align-items: center;
+      .container__aboutme-text {
+        max-width: 340px;
+        p {
+          text-align: justify;
+          margin-bottom: 25px;
+        }
+      }
+      .container__img-profile {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  
   }
 }
 
