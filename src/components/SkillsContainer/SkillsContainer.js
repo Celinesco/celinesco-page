@@ -9,9 +9,9 @@ const TechnologiesContainer = () => {
     const context = useContext(Context)
 
     return (
-        <section className='section_technologys'>
+        <section className='section__skills'>
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_skills}</h2>
-            <div className='container__cards-technologies'>
+            <div className='container__cards-skills'>
                 <article data-aos="flip-right" data-aos-duration="1000" className='card__skill'>
                     <div className='container__svg-skill'>
                         <svg viewBox="0 0 128 128">
