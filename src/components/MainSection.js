@@ -19,7 +19,7 @@ const MainSection = () => {
     return (
 
         <div className="sections">
-            <section className='section__main'>
+            <section className='section__main sections'>
                 <Portada />
             </section>
             <section className='section__main'>
