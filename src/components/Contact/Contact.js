@@ -2,7 +2,8 @@ import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import ModalForm from "../ModalForm/ModalForm";
 import Context from "../../Context/Context";
-import { useContext, useState } from "react";
+import AOS from 'aos';
+import { useContext, useState, useEffect } from "react";
 import { htmlAboutme } from "../datos_proyectos";
 
 const Contact = () => {
@@ -10,6 +11,11 @@ const Contact = () => {
     const initialState = { name: "", surname: "", user_email: "", message: "" };
     const [datosFormulario, setDatosFormulario] = useState(initialState);
     const [displayModal, setDisplayModal] = useState(false);
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, [])
 
     const handleChange = (e) => {
         setDatosFormulario({
