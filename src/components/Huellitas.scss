@@ -6,47 +6,52 @@
     top:83%;
     left:220px;
     width: 50px;
+    .container__step {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        opacity: 0;
+        animation-name: desvanecer;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .step-1 {
+        top:130px;
+        transform: rotateZ(198deg);
+        left: 40px;
+        animation-delay: 4.5s;
+    }
+    
+    .step-2 {
+        top:90px;
+        transform:  rotateZ(-198deg);
+        animation-delay: 3.8s;
+        left:60px;
+    }
+    
+    .step-3 {
+        top:50px;
+        transform:  rotateZ(198deg);
+        left:40px;
+        animation-delay: 3s;
+        color:$secondary-color;
+    }
+    
+    .step-4 {
+        top:0;
+        transform:  rotateZ(-198deg);
+        left: 60px;
+        color:$main-color-dark-mode;
+        animation-delay: 2s;
+    }
+    @media (max-width:575.98px){
+        left:0;
+        top:70%
+    }
+    
 }
 
-.container__step {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    opacity: 0;
-    animation-name: desvanecer;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.step-1 {
-    top:140px;
-    transform: rotateZ(198deg);
-    left: 40px;
-    animation-delay: 4.5s;
-}
-
-.step-2 {
-    top:80px;
-    transform:  rotateZ(-198deg);
-    animation-delay: 3.8s;
-    left:60px;
-}
-
-.step-3 {
-    top:50px;
-    transform:  rotateZ(198deg);
-    left:40px;
-    animation-delay: 3s;
-    color:$secondary-color;
-}
-
-.step-4 {
-    top:0;
-    transform:  rotateZ(-198deg);
-    left: 60px;
-    color:$main-color-dark-mode;
-    animation-delay: 2s;
-}
 
 
 @keyframes desvanecer {

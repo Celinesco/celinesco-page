@@ -15,7 +15,7 @@ const MainSection = () => {
     }, []);
 
     return (
-        <div className="sections">
+        <div className="">
             <section className="section__main sections">
                 <Portada />
             </section>

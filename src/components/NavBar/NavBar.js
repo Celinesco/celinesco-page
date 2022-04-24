@@ -34,7 +34,7 @@ const NavBar = () => {
                 <div className="container__info-navbar">
                     <Link to="/">
                         <p>Celina Inés Alsina</p>
-                        <p class="text-front-end">{htmlTitles[context.language].intro}</p>
+                        <p className="text-front-end">{htmlTitles[context.language].intro}</p>
                     </Link>
                     <div className="container__user-preferences">
                         <button
