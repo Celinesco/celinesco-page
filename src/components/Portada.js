@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const Portada = () => {
     return (
         <div className="container__portada">
-            <div className='cuadrado'>
+            <div className='cuadrado box'>
 
             </div>
-            <div className='cuadradito'>
+            <div className='cuadradito box'>
 
             </div>
-            <div className='cuadradito2'>
+            <div className='cuadradito2 box'>
 
             </div>
             <p>Hello,</p>
