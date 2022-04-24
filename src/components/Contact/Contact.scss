@@ -6,8 +6,6 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 100px;
-  margin-left: 210px;
   .title__section {
     margin-bottom: 0;
   }
@@ -73,5 +71,27 @@
         }
       }
     }
+  }
+  @media (min-width:1200px) {
+    margin-left: 210px;
+  }
+  @media(max-width:575.98px) {
+    .container__form {
+      max-width: 300px;
+      .formular__contact {
+        textarea {
+          width: 300px;
+        }
+        .row {
+          flex-direction: column;
+          .column {
+            input[type="email"], input[type="text"] {
+              width: auto
+            }
+          }
+        }
+      }
+    }
+
   }
 }
