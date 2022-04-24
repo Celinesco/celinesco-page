@@ -14,6 +14,7 @@ const NavBar = () => {
     const context = useContext(Context);
 
     const handleClickOpenMenu = () => {
+        console.log("funciono")
         setHamburguerMenu(true);
     };
 
@@ -30,6 +31,60 @@ const NavBar = () => {
             <button className="button__hamburguer" onClick={handleClickOpenMenu}>
                 <GiHamburgerMenu />
             </button>
+            <div className={`container__nav-menu ${hamburguerMenu && "desplazar-menu"}`}>
+                <button className="close-nav-menu" onClick={handleClickCloseMenu}>
+                    <ImCross />
+                </button>
+                <ul className="list__navbar-menu">
+                    <div className="container__user-preferences">
+                        <button
+                            className="button__language"
+                            onClick={handleClickLanguage}
+                            aria-label="Deutsch"
+                            lang="de"
+                            value="de"
+                        >
+                            DE
+                        </button>
+                        <button
+                            className="button__language"
+                            onClick={handleClickLanguage}
+                            aria-label="English"
+                            lang="en"
+                            value="en"
+                        >
+                            EN
+                        </button>
+                        <button
+                            className="button__language"
+                            onClick={handleClickLanguage}
+                            aria-label="Español"
+                            lang="es"
+                            value="es"
+                        >
+                            ES
+                        </button>
+                    </div>
+                    <div className="navbar__list">
+                        <Link to="/" onClick={handleClickCloseMenu}>
+                            <li>Home</li>
+                        </Link>
+                        <Link to="/projects" onClick={handleClickCloseMenu}>
+                            <li>{htmlTitles[context.language].title_projects}</li>
+                        </Link>
+                        <Link to="/about" onClick={handleClickCloseMenu}>
+                            <li>{htmlAboutme[context.language].title_about}</li>
+                        </Link>
+                        <Link to="/about" onClick={handleClickCloseMenu}>
+                            <li>Skills</li>
+                        </Link>
+                        <Link to="/contact">
+                            <li>Contact</li>
+                        </Link>
+                    </div>
+                </ul>
+            </div>
+
             <nav className="navbar">
                 <div className="container__info-navbar">
                     <Link to="/">
@@ -66,7 +121,7 @@ const NavBar = () => {
                         </button>
                     </div>
                 </div>
-                <div className="container__sections-nav">
+                <div>
                     <ul className="navbar__list">
                         <Link to="/">
                             <li>Home</li>
@@ -86,54 +141,7 @@ const NavBar = () => {
                     </ul>
                 </div>
 
-                <div
-                    className={`container__nav-menu ${hamburguerMenu && "desplazar-menu"
-                        }`}
-                >
-                    <button className="close-nav-menu" onClick={handleClickCloseMenu}>
-                        <ImCross />
-                    </button>
-                    <ul className="list__navbar-menu">
-                        <div className="container__user-preferences">
-                            <button
-                                className="button__language"
-                                onClick={handleClickLanguage}
-                                aria-label="Deutsch"
-                                lang="de"
-                                value="de"
-                            >
-                                DE
-                            </button>
-                            <button
-                                className="button__language"
-                                onClick={handleClickLanguage}
-                                aria-label="English"
-                                lang="en"
-                                value="en"
-                            >
-                                EN
-                            </button>
-                            <button
-                                className="button__language"
-                                onClick={handleClickLanguage}
-                                aria-label="Español"
-                                lang="es"
-                                value="es"
-                            >
-                                ES
-                            </button>
-                        </div>
-                        <Link to="/" onClick={handleClickCloseMenu}>
-                            <li>Home</li>
-                        </Link>
-                        <Link to="/projects" onClick={handleClickCloseMenu}>
-                            <li>{htmlTitles[context.language].title_projects}</li>
-                        </Link>
-                        <Link to="/about" onClick={handleClickCloseMenu}>
-                            <li>{htmlAboutme[context.language].title_about}</li>
-                        </Link>
-                    </ul>
-                </div>
+
                 <div className="container__social-media">
                     <ul>
                         <a
