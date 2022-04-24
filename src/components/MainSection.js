@@ -16,7 +16,7 @@ const MainSection = () => {
 
     return (
         <div className="">
-            <section className="section__main sections">
+            <section className="section__main">
                 <Portada />
             </section>
             <section className="section__main">
