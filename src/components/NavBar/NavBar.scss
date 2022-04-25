@@ -88,12 +88,15 @@
 
 .button__hamburguer {
   position: fixed;
+  display: flex;
+  align-items: center;
   top: 30px;
   right: 20px;
   color: aquamarine;
   z-index: 990;
   font-size: calc(2.5rem - 1vw);
   background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.411);
   @media (min-width: 1200px) {
     display: none;
   }
