@@ -101,7 +101,7 @@ const Contact = () => {
                             onChange={handleChange}
                         ></textarea>
                     </div>
-                    <button type="submit">
+                    <button className="button__submit" type="submit">
                         {htmlAboutme[context.language].form.submit}
                     </button>
                 </form>

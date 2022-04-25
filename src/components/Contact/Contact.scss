@@ -24,21 +24,22 @@
     margin-bottom: 100px;
     .formular__contact {
       font-weight: bold;
-      button {
+      .button__submit{
         padding: 10px;
         border-radius: 10px;
-        background-color: $background-color-white-mode;
-        font-weight: bold;
+        background-color: aquamarine;
+        letter-spacing: 4px;
+        font-size: 15px;
         transition: all 0.7s;
         margin-top: 15px;
         width: 100px;
       }
-      button:hover {
+      .button__submit:hover {
         color: $main-color-dark-mode;
-        background-color: $main-color-white-mode;
+        background-color: aquamarine;
         border: 1px solid $main-color-dark-mode;
       }
-      button:active {
+      .button__submit:active {
         background-color: green;
         color: $main-color-dark-mode;
       }
