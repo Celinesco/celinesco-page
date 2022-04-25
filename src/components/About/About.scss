@@ -7,37 +7,21 @@
   justify-content: center;
   min-height: 100vh;
   padding: 100px 0;
-  .container__img-map {
-    display: none;
-    position: absolute;
-    img {
-      width: 100%;
-    }
-  }
-  .de-map {
-    top:-90%;
-    right:-30%;
-    width: 270px;
-  }
-  .arg-map {
-    width:400px;
-    bottom: -40%;
-    left:-40%;
-    z-index: 0;
-  }
+  position: relative;
   .container__info-aboutme {
     display: flex;
     position: relative;
     svg {
       position: absolute;
       z-index: 1;
-      opacity: 0;
-      top:-60px;
+      top:-100px;
       transform:rotate(30deg);
-      color:rgb(171, 4, 4);
-      left:-10%;
+      color:rgb(218, 69, 69);
+      left:20px;
       font-size: 30px;
-      transition: left 3s linear;
+      transition: 
+      left 3s linear,
+      top 1s 1s
     }
     .container__aboutme-text {
       max-width: 500px;
@@ -61,16 +45,45 @@
   }
   .container__info-aboutme:hover {
     svg {
-      left:1000px;
-      opacity: 1
+      left:880px;
+      top: 400px;
     }
   }
   @media (min-width: 1200px) {
     margin-left: 210px;
+    
   }
-  @media (max-width: 1399.98px) {
-    .container__img-map {
+  @media (min-width: 1850px) {
+    .container__maps {
+      position: absolute;
+      width: 1080px;
+      height: 100px;
+      top:600px;
+      display: flex;
+      justify-content: space-between;
+      .arg-map {
+        transform: translateY(-230px);
+      }
+      .de-map {
+        transform: translate(100px, 120px)
+      }
+      .container__img-map{
+        width: 300px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width:1849px) {
+    .container__maps {
       display: none;
+    }
+    .container__info-aboutme {
+      svg {
+        display: none;
+      }
     }
   }
   @media (max-width: 1199.98px) {
@@ -81,20 +94,6 @@
     } 
   }
   @media (max-width:991.98px) {
-    .container__img-map  {
-      width: 120px; 
-      top: 10%;
-      right: 0;
-      left: 0;
-      bottom:0;
-    }
-    .arg-map {
-      left: 0;
-      width: 120px;
-    }
-    .de-map {
-      left: 400px;
-    }
     .container__info-aboutme {
       flex-direction: column;
       align-items: center;
@@ -111,19 +110,12 @@
     }
   }
   @media(max-width: 767.98px) {
-    .container__img-map  {
-      width: 70px;  
-      top: 100%;
-      right: 0;
-      left: 0;
-      bottom:0;
+    .container__info-aboutme {
+      .container__aboutme-text {
+        max-width: 280px;
+      }
     }
-    .arg-map {
-      left: 50px;
-    }
-    .de-map {
-      left: 150px;
-    }
+    
     .container__info-aboutme {
       flex-direction: column;
       align-items: center;
@@ -136,13 +128,6 @@
       .container__img-profile {
         margin-right: 0;
         margin-bottom: 20px;
-      }
-    }
-  }
-  @media (max-width: 575.98px) {
-    .container__info-aboutme {
-      .container__aboutme-text {
-        max-width: 280px;
       }
     }
   }

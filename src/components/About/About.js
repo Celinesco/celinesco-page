@@ -22,14 +22,16 @@ const About = () => {
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">
                 {htmlAboutme[context.language].title_about}
             </h2>
-            <div className="container__info-aboutme" >
-                <GiPaperPlane></GiPaperPlane>
+            <div className="container__maps">
                 <div className="container__img-map arg-map">
-                    <img src={mapaArg} alt="Mapa Argentina"></img>
+                    <img src={mapaArg} alt="Argentinian map"></img>
                 </div>
                 <div className="container__img-map de-map" >
-                    <img src={mapaDeutschland} alt="Mapa Alemania"></img>
+                    <img src={mapaDeutschland} alt="Germany map"></img>
                 </div>
+            </div>
+            <div className="container__info-aboutme" >
+                <GiPaperPlane></GiPaperPlane>
                 <div className="container__img-profile">
                     <img src={profilePicture} alt="my profile"></img>
                 </div>
