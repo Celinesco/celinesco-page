@@ -14,7 +14,7 @@ const NavBar = () => {
     const context = useContext(Context);
 
     const handleClickOpenMenu = () => {
-        console.log("funciono")
+        console.log("funciono");
         setHamburguerMenu(true);
     };
 
@@ -31,11 +31,14 @@ const NavBar = () => {
             <button className="button__hamburguer" onClick={handleClickOpenMenu}>
                 <GiHamburgerMenu />
             </button>
-            <div className={`container__nav-menu ${hamburguerMenu && "desplazar-menu"}`}>
-                <button className="close-nav-menu" onClick={handleClickCloseMenu}>
-                    <ImCross />
-                </button>
-                <ul className="list__navbar-menu">
+            <div
+                className={`container__nav-menu ${hamburguerMenu && "desplazar-menu"}`}
+            >
+                <div className="container__border">
+
+                    <button className="close-nav-menu" onClick={handleClickCloseMenu}>
+                        <ImCross />
+                    </button>
                     <div className="container__user-preferences">
                         <button
                             className="button__language"
@@ -65,7 +68,8 @@ const NavBar = () => {
                             ES
                         </button>
                     </div>
-                    <div className="navbar__list">
+
+                    <ul className="navbar__list">
                         <Link to="/" onClick={handleClickCloseMenu}>
                             <li>Home</li>
                         </Link>
@@ -81,15 +85,20 @@ const NavBar = () => {
                         <Link to="/contact">
                             <li>Contact</li>
                         </Link>
-                    </div>
-                </ul>
+                    </ul>
+
+                </div>
+
+
             </div>
 
             <nav className="navbar">
                 <div className="container__info-navbar">
                     <Link to="/">
                         <p>Celina Inés Alsina</p>
-                        <p className="text-front-end">{htmlTitles[context.language].intro}</p>
+                        <p className="text-front-end">
+                            {htmlTitles[context.language].intro}
+                        </p>
                     </Link>
                     <div className="container__user-preferences">
                         <button
@@ -140,7 +149,6 @@ const NavBar = () => {
                         </Link>
                     </ul>
                 </div>
-
 
                 <div className="container__social-media">
                     <ul>

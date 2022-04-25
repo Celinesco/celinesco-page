@@ -67,7 +67,7 @@
   @media (min-width: 1200px) {
     margin-left: 210px;
   }
-  @media (max-width: 575.98px) {
+  @media(max-width: 767.98px) {
     .container__img-map  {
       width: 70px;  
       top: 100%;
@@ -85,19 +85,24 @@
       flex-direction: column;
       align-items: center;
       .container__aboutme-text {
-        max-width: 280px;
+        max-width: 500px;
         p {
           text-align: justify;
           margin-bottom: 25px;
         }
       }
       .container__img-profile {
-      
         margin-right: 0;
         margin-bottom: 20px;
       }
     }
-  
+  }
+  @media (max-width: 575.98px) {
+    .container__info-aboutme {
+      .container__aboutme-text {
+        max-width: 280px;
+      }
+    }
   }
 }
 
