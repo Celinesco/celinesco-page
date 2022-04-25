@@ -5,7 +5,7 @@ import { ImCross } from "react-icons/im";
 import { useState } from "react";
 import { useContext } from "react";
 import Context from "../../Context/Context";
-import { htmlTitles, htmlAboutme } from "../datos_proyectos";
+import { htmlTitles } from "../datos_proyectos";
 import { BsGithub, BsLinkedin, BsEnvelope } from "react-icons/bs";
 
 const NavBar = () => {
@@ -70,19 +70,19 @@ const NavBar = () => {
 
                     <ul className="navbar__list">
                         <Link to="/" onClick={handleClickCloseMenu}>
-                            <li>Home</li>
+                            <li>{htmlTitles[context.language].title_home}</li>
                         </Link>
                         <Link to="/projects" onClick={handleClickCloseMenu}>
                             <li>{htmlTitles[context.language].title_projects}</li>
                         </Link>
                         <Link to="/about" onClick={handleClickCloseMenu}>
-                            <li>{htmlAboutme[context.language].title_about}</li>
+                            <li>{htmlTitles[context.language].title_about}</li>
                         </Link>
-                        <Link to="/about" onClick={handleClickCloseMenu}>
-                            <li>Skills</li>
+                        <Link to="/skills" onClick={handleClickCloseMenu}>
+                            <li>{htmlTitles[context.language].title_skills}</li>
                         </Link>
-                        <Link to="/contact">
-                            <li>Contact</li>
+                        <Link to="/contact" onClick={handleClickCloseMenu}>
+                            <li>{htmlTitles[context.language].title_contact}</li>
                         </Link>
                     </ul>
 
@@ -132,19 +132,19 @@ const NavBar = () => {
                 <div>
                     <ul className="navbar__list">
                         <Link to="/">
-                            <li>Home</li>
+                            <li>{htmlTitles[context.language].title_home}</li>
                         </Link>
                         <Link to="/projects">
                             <li>{htmlTitles[context.language].title_projects}</li>
                         </Link>
                         <Link to="/about">
-                            <li>{htmlAboutme[context.language].title_about}</li>
+                            <li>{htmlTitles[context.language].title_about}</li>
                         </Link>
-                        <Link to="/skills">
-                            <li>Skills</li>
+                        <Link to="/skills" onClick={handleClickCloseMenu}>
+                            <li>{htmlTitles[context.language].title_skills}</li>
                         </Link>
-                        <Link to="/contact">
-                            <li>Contact</li>
+                        <Link to="/contact" onClick={handleClickCloseMenu}>
+                            <li>{htmlTitles[context.language].title_contact}</li>
                         </Link>
                     </ul>
                 </div>

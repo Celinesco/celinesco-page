@@ -230,7 +230,7 @@ export const htmlAboutme = {
         }
     },
     en: {
-        title_about: 'About',
+        title_about: 'About me',
         about_me: `I'm a front-end developer from Rosario, Argentina, living in Munich since 2021.
         When the pandemic started, I adventured myself into the programming world.
         I started solving problems from programming contests, and intrigued by those I did the "ADA ITW" front-end course(400hs in total), an Argentinian bootcamp for women.
@@ -249,7 +249,6 @@ export const htmlAboutme = {
             modal_title: 'Thank you so much for your message!',
             modal_message: 'I will answer as soon as possible.'
         }
-
     },
     de: {
         title_about: 'Über mich',
@@ -279,22 +278,27 @@ export const htmlTitles = {
 
     es: {
         intro: 'Desarrolladora Front-end',
+        title_home: 'Inicio',
         title_projects: 'Proyectos',
         title_skills: 'Tecnologías',
         title_about: 'Sobre mi',
+        title_contact: 'Contacto'
     },
     en: {
         intro: 'Front-end Developer',
+        title_home: 'Home',
         title_projects: 'Projects',
         title_skills: 'Skills',
         title_about: 'About me',
-
+        title_contact: 'Contact',
     },
     de: {
         intro: 'Front-end Entwicklerin',
+        title_home: 'Start',
         title_projects: 'Projekte',
         title_skills: 'Skills',
         title_about: 'Über mich',
+        title_contact: 'Kontakt'
     }
 }
 
