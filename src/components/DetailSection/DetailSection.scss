@@ -3,7 +3,7 @@
 .section__details {
     display: flex;
     padding: 100px 20px;
-    margin-left: 210px;
+   
     .info__projects {
         border: 2px solid $secondary-color;
         line-height: 1.4;
@@ -33,7 +33,12 @@
             margin-right: 5px;
         }
     }
+
+    @media(max-width:1200px) {
+        margin-left:0;
+    }
     @media (max-width: 1199.98px) {
+       
         .info__projects {
             max-width: 500px;
             padding: 30px;

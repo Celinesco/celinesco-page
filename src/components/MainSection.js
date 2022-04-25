@@ -16,8 +16,8 @@ const MainSection = () => {
     }, []);
 
     return (
-        <div className="">
-            <section className="section__main">
+        <>
+            <section className="section__main section__portada">
                 <Portada />
             </section>
             <section className="section__main">
@@ -35,7 +35,7 @@ const MainSection = () => {
             <section className="section__main">
                 <Contact />
             </section>
-        </div>
+        </>
     );
 };
 
