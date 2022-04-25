@@ -1,15 +1,11 @@
 @import '../styles/variables';
 
 
-.container__portada {
-    .container__steps {
-        top:70%;
-    }
-}
+
 
 .container__steps {
     position: fixed;
-    top: 95%;
+  
     height: 100vh;
     width: 50px;
     .container__step {
@@ -53,9 +49,34 @@
     }
     @media (max-width:575.98px){
         left:0;
-    }
-    
+    }    
 }
+
+.section__main {
+    @media(min-width:1200px) {
+        .container__steps {
+            left: 210px;
+        } 
+    }
+    .container__steps {
+        top: 95%;
+    }
+}
+
+.container__portada {
+    .container__steps {
+        top:75%;
+        left: 0;
+    }
+    @media(min-width:1200px) {
+        .container__steps {
+            left:210px;
+            top:85%;
+        }
+    }
+  
+}
+
 
 
 
