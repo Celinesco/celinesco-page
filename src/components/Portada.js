@@ -1,5 +1,6 @@
 import './Portada.scss'
 import { Link } from 'react-router-dom';
+import Huellitas from './Huellitas';
 
 
 const Portada = () => {
@@ -20,6 +21,7 @@ const Portada = () => {
             <div className='container__link'>
                 <Link to='/contact' className='link__contact'>Contact me!</Link>
             </div>
+            <Huellitas />
         </div >
     )
 }

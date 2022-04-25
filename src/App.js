@@ -28,7 +28,6 @@ const App = () => {
       <BrowserRouter>
         <div className='App'>
           <NavBar />
-          <Huellitas />
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/details/:project" element={<DetailSection />} />

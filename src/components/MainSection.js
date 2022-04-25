@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Portada from "./Portada";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
+import Huellitas from "./Huellitas";
 
 const MainSection = () => {
     useEffect(() => {
@@ -21,12 +22,15 @@ const MainSection = () => {
             </section>
             <section className="section__main">
                 <ProjectsContainer />
+                <Huellitas />
             </section>
             <section className="section__main">
                 <About />
+                <Huellitas />
             </section>
             <section className="section__main">
                 <TechnologiesContainer />
+                <Huellitas />
             </section>
             <section className="section__main">
                 <Contact />
