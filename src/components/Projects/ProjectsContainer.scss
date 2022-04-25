@@ -14,11 +14,12 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 1500px;
+    justify-content: center;
+ 
     @media(max-width: 767.98px) {
         max-width: 500px;
     }
     @media (max-width: 575.95px) {
         max-width: 280px;
-        justify-content: center;
     }
 }

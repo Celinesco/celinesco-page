@@ -67,6 +67,37 @@
   @media (min-width: 1200px) {
     margin-left: 210px;
   }
+  @media (max-width:991.98px) {
+    .container__img-map  {
+      width: 120px; 
+      top: 10%;
+      right: 0;
+      left: 0;
+      bottom:0;
+    }
+    .arg-map {
+      left: 0;
+      width: 120px;
+    }
+    .de-map {
+      left: 400px;
+    }
+    .container__info-aboutme {
+      flex-direction: column;
+      align-items: center;
+      .container__aboutme-text {
+        max-width: 500px;
+        p {
+          text-align: justify;
+          margin-bottom: 25px;
+        }
+      }
+      .container__img-profile {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
   @media(max-width: 767.98px) {
     .container__img-map  {
       width: 70px;  
