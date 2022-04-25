@@ -1,4 +1,8 @@
 @import '../styles/variables';
+.section__portada {
+    background-image: url(../assets/prueba.png);
+    background-repeat:repeat;
+}
     .section__main {
         h2 {
             font-size: calc(3em + 1vw)
