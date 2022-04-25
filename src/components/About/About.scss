@@ -8,6 +8,7 @@
   min-height: 100vh;
   padding: 100px 0;
   .container__img-map {
+    display: none;
     position: absolute;
     img {
       width: 100%;
@@ -39,7 +40,7 @@
       transition: left 3s linear;
     }
     .container__aboutme-text {
-      max-width: 800px;
+      max-width: 500px;
       line-height: 1.7;
       p {
         text-align: justify;
@@ -67,6 +68,18 @@
   @media (min-width: 1200px) {
     margin-left: 210px;
   }
+  @media (max-width: 1399.98px) {
+    .container__img-map {
+      display: none;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .container__info-aboutme {
+      .container__aboutme-text {
+        max-width: 450px;
+      }
+    } 
+  }
   @media (max-width:991.98px) {
     .container__img-map  {
       width: 120px; 
@@ -88,7 +101,6 @@
       .container__aboutme-text {
         max-width: 500px;
         p {
-          text-align: justify;
           margin-bottom: 25px;
         }
       }
@@ -118,7 +130,6 @@
       .container__aboutme-text {
         max-width: 500px;
         p {
-          text-align: justify;
           margin-bottom: 25px;
         }
       }

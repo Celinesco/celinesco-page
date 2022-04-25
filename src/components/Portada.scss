@@ -8,10 +8,11 @@
         color: aquamarine;
     }
     p {
-        font-size: calc(1.3rem - 1vw);
+        font-size: calc(2.5rem - 1vw);
     }
     h1 {
         color: white;
+        font-size: calc(4rem - 1vw);
     }
     .container__link {
         margin-top: 30px;
@@ -55,6 +56,14 @@
             animation-name: rotarX ;
             animation-duration: 15s;
         }
+     }
+     @media (max-width: 1199.98px) {
+        h1 {
+            font-size: calc(4.5rem - 1vw);
+         }
+         p {
+            font-size: calc((2.3rem - 1vw));
+         }
      }
      @media (max-width: 991.98px) {
          h1 {
