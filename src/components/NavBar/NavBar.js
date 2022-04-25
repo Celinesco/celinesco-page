@@ -35,7 +35,6 @@ const NavBar = () => {
                 className={`container__nav-menu ${hamburguerMenu && "desplazar-menu"}`}
             >
                 <div className="container__border">
-
                     <button className="close-nav-menu" onClick={handleClickCloseMenu}>
                         <ImCross />
                     </button>
