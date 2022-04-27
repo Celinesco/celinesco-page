@@ -1,6 +1,9 @@
 .link__card-project {
     padding: .8rem;
     background-color: #da4545;
+    border-right:  15px solid black;
+    width: 100%;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.781);
     border-radius: 10px;
     margin: 1rem 0;
     color: white;
@@ -14,4 +17,5 @@
 
 .link__card-project:hover {
     letter-spacing: 5px;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.781);
 }

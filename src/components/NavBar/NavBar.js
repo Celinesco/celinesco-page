@@ -132,7 +132,7 @@ const NavBar = () => {
                 <div>
                     <ul className="navbar__list">
                         <Link to="/">
-                            <li>{htmlTitles[context.language].title_home}</li>
+                            <li onClick={() => window.scrollTo(0, 0)}>{htmlTitles[context.language].title_home}</li>
                         </Link>
                         <Link to="/projects">
                             <li>{htmlTitles[context.language].title_projects}</li>

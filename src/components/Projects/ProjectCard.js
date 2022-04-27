@@ -1,7 +1,8 @@
 import LinksProjects from "./LinksProjects";
 import "./ProjectCard.scss";
 
-const ProjectCard = ({ img, title, alt, data_aos, duration_aos, urlProject, urlRepo }) => {
+const ProjectCard = ({ img, title, alt, data_aos, duration_aos, urlProject, urlRepo, preview }) => {
+
     return (
         <article
             className="container__card-project"
@@ -16,7 +17,7 @@ const ProjectCard = ({ img, title, alt, data_aos, duration_aos, urlProject, urlR
                     <h3 className="card__project-title">{title}</h3>
                 </div>
 
-                <div className="card__project-back">
+                <div className="card__project-back" style={{ backgroundImage: `url(${preview})` }}>
                     <LinksProjects
                         text="Demo"
                         url={urlProject} />
