@@ -107,12 +107,12 @@
 .container__nav-menu, .desplazar-menu {
   position: fixed;
   padding: 20px;
-  left: -200%;
+  left: -150%;
   top: 0;
   background-color: rgb(29, 27, 27);
   width: 100vw;
   min-height: 100vh;
-  transition: left 0.9s;
+  transition: left 0.8s;
   z-index: 999;
   .container__border {
     display: flex;

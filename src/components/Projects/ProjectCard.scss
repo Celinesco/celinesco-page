@@ -4,10 +4,6 @@
     width: 300px;
     margin: 20px 15px;
     background-color: transparent;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: space-between;
     position: relative;
     
     h3 {
@@ -58,13 +54,28 @@
         }
     }
     .card__project-back {
+        border-radius: 8px;
+      padding: 0;
       transform: rotateY(.5turn);
       transform-style: preserve-3d;
       background-position: center;
       background-size: cover;
+      .container__links {
+        border-radius: 8px;
+          background-color: rgba(0, 0, 0, 0.651);
+          backface-visibility: hidden;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform-style: preserve-3d;
         .link__card-project {
-          transform: translateZ(40px);
+            transform: translateZ(40px);
+        }
       }
+    
 
     }
     

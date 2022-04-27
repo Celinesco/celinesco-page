@@ -1,21 +1,48 @@
 .link__card-project {
     padding: .8rem;
     background-color: #da4545;
-    border-right:  15px solid black;
-    width: 100%;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.781);
+    border-right:  15px solid rgb(255, 255, 255);
+    width: 60%;
     border-radius: 10px;
     margin: 1rem 0;
     color: white;
     transition: all .4s linear;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    svg {
+        color: #da4545;
+        position: relative;
+        animation-name: backAndFoward;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+    }
 }
 
 .link__url-project {
-    background-color: aquamarine;
-    color: black;
+    background-color: rgb(41, 173, 129);
+    svg {
+        color: rgb(41, 173, 129);
+    }
+
 }
 
 .link__card-project:hover {
-    letter-spacing: 5px;
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.781);
+    color:black;
+    background-color: white;
+    svg {
+        color: black
+    }
+}
+
+@keyframes backAndFoward {
+    from {
+        right: 0;
+    }
+    to {
+        right: 5px;
+    }
 }

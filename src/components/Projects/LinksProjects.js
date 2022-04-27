@@ -1,4 +1,5 @@
 import './LinksProjects.scss';
+import { AiOutlineArrowRight } from 'react-icons/ai'
 
 const LinksProjects = ({ text, url }) => {
     let linkProject = true
@@ -13,6 +14,7 @@ const LinksProjects = ({ text, url }) => {
             target="_blank"
             rel="noopener noreferrer">
             {text}
+            <AiOutlineArrowRight />
         </a>
     )
 }

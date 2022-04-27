@@ -1,6 +1,5 @@
 import LinksProjects from "./LinksProjects";
 import "./ProjectCard.scss";
-
 const ProjectCard = ({ img, title, alt, data_aos, duration_aos, urlProject, urlRepo, preview }) => {
 
     return (
@@ -18,13 +17,14 @@ const ProjectCard = ({ img, title, alt, data_aos, duration_aos, urlProject, urlR
                 </div>
 
                 <div className="card__project-back" style={{ backgroundImage: `url(${preview})` }}>
-                    <LinksProjects
-                        text="Demo"
-                        url={urlProject} />
-                    <LinksProjects
-                        text="Repo"
-                        url={urlRepo} />
-
+                    <div className="container__links">
+                        <LinksProjects
+                            text="Demo"
+                            url={urlProject} />
+                        <LinksProjects
+                            text="Repo"
+                            url={urlRepo} />
+                    </div>
                 </div>
             </div>
         </article>
