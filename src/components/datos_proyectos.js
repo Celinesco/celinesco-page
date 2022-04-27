@@ -287,7 +287,7 @@ export const htmlTitles = {
     },
     de: {
         intro: 'Front-end Entwicklerin',
-        presentation_text: 'Servus, Ich bin',
+        presentation_text: 'Servus, ich bin',
         button__contact: 'Contact me!',
         title_home: 'Start',
         title_projects: 'Projekte',
