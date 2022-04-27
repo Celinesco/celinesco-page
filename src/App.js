@@ -1,5 +1,5 @@
 import './App.scss';
-import MainSection from './components/MainSection';
+import MainSection from './components/MainSection/MainSection';
 import NavBar from './components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProjectsContainer from './components/Projects/ProjectsContainer';

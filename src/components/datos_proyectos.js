@@ -1,4 +1,10 @@
-import meme from '../assets/meme.png'
+import meme from '../assets/meme.png';
+import previewComics from '../assets/previewComics.png';
+import previewRick from '../assets/previewRick.png';
+import previewMatch from '../assets/previewMatch.png';
+import previewMovies from '../assets/previewMovies.png';
+import previewAhorradas from '../assets/previewAhorradas.png';
+import previewFirstPortfolio from '../assets/previewFirstPortfolio.png'
 
 export const projectDetails = [
     {
@@ -7,11 +13,7 @@ export const projectDetails = [
         link: "https://celinesco.github.io/Portafolio/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/Portafolio",
-        extralinks: [
-            ['images', 'https://undraw.co/illustrations'],
-            ['skills svg images', 'https://devicon.dev/'],
-            ['icons', 'https://fontawesome.com/'],
-        ],
+        preview: previewFirstPortfolio,
         es: {
             title: 'Primer Porfolio',
             alt: "código html mal escrito a propósito",
@@ -21,7 +23,6 @@ export const projectDetails = [
             title: "First Portfolio",
             alt: "HTML code with errors",
             description: "This is the first assignment of the ADA ITW Bootcamp. The portfolio was originally based on only CSS and HTML, because those were the two first languages we learnt. In the second part of the course, I added some JS in order to make the dark-mode and the drop-down menu for mobile.",
-
         },
         de: {
             title: 'Erstes Portfolio',
@@ -35,7 +36,6 @@ export const projectDetails = [
         link: "https://carosanchezl.github.io/Editor-de-memes/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/CaroSanchezL/Editor-de-memes",
-        extralinks: [],
         es: {
             title: 'Generador de Memes',
             alt: "Meme de mi gato",
@@ -51,7 +51,6 @@ export const projectDetails = [
             alt: 'Meme von meine Katze',
             description: 'Das ist das zweite Projekt des ADA ITW Bootcamps und die erste Gruppenarbeit. Hier habe ich gelernt, wie man an einem gemeinsamen Projekt über GitHub arbeitet, wie man externe Bibliotheken verwendet und wie man dynamische Webseiten durch Manipulation des DOM mit JS erstellt.',
         }
-
     },
     {
         id: "3_matcheadas",
@@ -59,7 +58,7 @@ export const projectDetails = [
         link: "https://celinesco.github.io/MatcheADAs/",
         technologies: "HTML5, CSS3, JS",
         repository: "https://github.com/Celinesco/MatcheADAs",
-        extralinks: [],
+        preview: previewMatch,
         es: {
             title: 'MatcheADAs',
             alt: "Juego tateti o tres en línea",
@@ -84,7 +83,7 @@ export const projectDetails = [
         link: "https://celinesco.github.io/AhorrAdas/",
         technologies: "HTML5, BULMA, JS",
         repository: "https://github.com/Celinesco/AhorrAdas",
-        extralinks: [],
+        preview: previewAhorradas,
         es: {
             title: 'AhorrADAs',
             alt: "Gráfica estadística",
@@ -107,8 +106,8 @@ export const projectDetails = [
         link: "https://celinesco.github.io/buscador_de_comics_2/",
         technologies: "HTML, SASS, JS",
         apiLink: 'https://developer.marvel.com/',
+        preview: previewComics,
         repository: "https://github.com/Celinesco/buscador_de_comics_2",
-        extralinks: [],
         es: {
             title: 'Web de Comics',
             alt: "Onomatopeya Kapow",
@@ -132,15 +131,11 @@ export const projectDetails = [
         technologies: "React.js, SASS",
         apiLink: 'https://rickandmortyapi.com/',
         repository: "https://github.com/Celinesco/RickAndMortyPage",
-        extralinks: [
-            ['react_icons', 'https://react-icons.github.io/react-icons/'],
-            ['react router', 'https://reactrouter.com/'],
-        ],
+        preview: previewRick,
         es: {
             title: "Rick & Morty",
             alt: "Siluetas de Rick y de Morty dibujadas imitando un electrocardiograma",
             description: "Esta página surgió como resultado de un ejercicio del bootcamp de ADA ITW en el que aprendimos el Hook useEffect para poder hacer fetchs a una API sin caer en un loop infinito. También aprendí a utilizar la librería react-router, lo que convirtió la app en una página mucho más cómoda de navegar para el usuario",
-
         },
         en: {
             title: "Rick & Morty",
@@ -161,17 +156,11 @@ export const projectDetails = [
         technologies: "React.js, SASS",
         repository: "https://github.com/Celinesco/buscador_de_peliculas",
         apiLink: 'https://www.themoviedb.org/?language=es',
-        extralinks: [
-            ['swiper', 'https://swiperjs.com/'],
-            ['react router', 'https://reactrouter.com/'],
-            ['react_icons', 'https://react-icons.github.io/react-icons/'],
-            ['Developer codes', 'https://github.com/wrongakram/sass-mediaqueries/blob/master/src/breakpoints/breakpoints.scss']
-        ],
+        preview: previewMovies,
         es: {
             title: "Películas",
             alt: "Claqueta de cine",
             description: "Este es mi último proyecto del Bootcamp ADA ITW. Como siempre, nos dieron una página de modelo con la posibilidad de cambiar los estilos. Implementé diferentes librerías como: swiper, react router, react icons y un código  fantástico de un desarrollador para los breakpoints con SASS",
-
         },
         en: {
             title: "Movies",
@@ -278,7 +267,7 @@ export const htmlTitles = {
 
     es: {
         intro: 'Desarrolladora Front-end',
-        presentation_text: `Hola! Soy`,
+        presentation_text: `Hola, soy`,
         button__contact: 'Contactame!',
         title_home: 'Inicio',
         title_projects: 'Proyectos',
@@ -288,7 +277,7 @@ export const htmlTitles = {
     },
     en: {
         intro: 'Front-end Developer',
-        presentation_text: `Hello! I'm`,
+        presentation_text: `Hello, I'm`,
         button__contact: 'Contact me!',
         title_home: 'Home',
         title_projects: 'Projects',
@@ -298,7 +287,7 @@ export const htmlTitles = {
     },
     de: {
         intro: 'Front-end Entwicklerin',
-        presentation_text: 'Servus! Ich bin',
+        presentation_text: 'Servus, Ich bin',
         button__contact: 'Contact me!',
         title_home: 'Start',
         title_projects: 'Projekte',

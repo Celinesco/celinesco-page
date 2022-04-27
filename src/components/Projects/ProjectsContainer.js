@@ -25,7 +25,8 @@ const ProjectsContainer = () => {
                         duration_aos="1000"
                         urlProject={project.link}
                         urlRepo={project.repository}
-                        img={!context.lightTheme ? project.img_dark_theme : project.img_white_theme}
+                        img={project.img_dark_theme}
+                        preview={project.preview}
                         alt={project[context.language].alt}
                         title={project[context.language].title} />
                 ))}

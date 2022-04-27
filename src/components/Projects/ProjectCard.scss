@@ -60,6 +60,8 @@
     .card__project-back {
       transform: rotateY(.5turn);
       transform-style: preserve-3d;
+      background-position: center;
+      background-size: cover;
         .link__card-project {
           transform: translateZ(40px);
       }
