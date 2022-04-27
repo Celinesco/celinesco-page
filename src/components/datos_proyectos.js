@@ -278,6 +278,8 @@ export const htmlTitles = {
 
     es: {
         intro: 'Desarrolladora Front-end',
+        presentation_text: `Hola! Soy`,
+        button__contact: 'Contactame!',
         title_home: 'Inicio',
         title_projects: 'Proyectos',
         title_skills: 'Tecnologías',
@@ -286,6 +288,8 @@ export const htmlTitles = {
     },
     en: {
         intro: 'Front-end Developer',
+        presentation_text: `Hello! I'm`,
+        button__contact: 'Contact me!',
         title_home: 'Home',
         title_projects: 'Projects',
         title_skills: 'Skills',
@@ -294,6 +298,8 @@ export const htmlTitles = {
     },
     de: {
         intro: 'Front-end Entwicklerin',
+        presentation_text: 'Servus! Ich bin',
+        button__contact: 'Contact me!',
         title_home: 'Start',
         title_projects: 'Projekte',
         title_skills: 'Skills',
