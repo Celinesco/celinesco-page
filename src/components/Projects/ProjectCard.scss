@@ -1,35 +1,69 @@
 @import '../../styles/variables';
 
-.card__project {
+.container__card-project {
     width: 300px;
-    border-radius: 10px;
-    padding: 20px;
     margin: 20px 15px;
-    background-color: $background-color-dark-mode;
-    border: 2px solid $secondary-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    transform: scale();
-    transition: 0.6s;
+    background-color: transparent;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    position: relative;
+    
     h3 {
         color: $main-color-dark-mode;
         text-align: center;
     }
-    .container__img-project {
+    .card__content-project {
+        height: 300px;
+        transition: transform 2s;
+        transform-style: preserve-3d;
+        position: relative;
+        padding: 5em;
+        border: 2px solid aquamarine;
+        border-radius: 10px;
+        background-color: rgb(6, 22, 17);
+        perspective:500px
+    }
+    .card__project-front, .card__project-back {
+        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 200px;
-        height: 250px;
-        margin-bottom: 15px;
-        img {
-            width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2em;
+        backface-visibility: hidden ;
+    }
+  
+    .card__project-front {
+        transform-style: preserve-3d;
+        justify-content: center;
+        .card__project-title {
+           transform: translateZ(60px);
+        }
+        .card__img-project {
+            padding: .8rem;
+            display: flex;
+            justify-content: center;
+            width: 180px;
+            transform: translateZ(40px);
+            img {
+                width: 100%;
+            }
         }
     }
-    .card__project:hover {
-        transform: scale(0.9)
+    .card__project-back {
+      transform: rotateY(.5turn);
+      transform-style: preserve-3d;
+        .link__card-project {
+          transform: translateZ(40px);
+      }
+
     }
     
     .card__project:active {
@@ -54,5 +88,8 @@
     
 }
 
-
-
+.container__card-project:hover {
+    .card__content-project {
+        transform: rotateY(.5turn)
+    }
+}

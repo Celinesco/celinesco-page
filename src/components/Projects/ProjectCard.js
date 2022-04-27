@@ -1,21 +1,33 @@
-import './ProjectCard.scss';
-import { Link } from 'react-router-dom';
+import LinksProjects from "./LinksProjects";
+import "./ProjectCard.scss";
 
-
-
-
-const ProjectCard = ({ img, title, alt, id, data_aos, duration_aos }) => {
-    
+const ProjectCard = ({ img, title, alt, data_aos, duration_aos, urlProject, urlRepo }) => {
     return (
-        <Link to={`/details/${id}`}  data-aos={data_aos} data-aos-duration={duration_aos}  id={id}>
-            <article className='card__project'>
-                <div className='container__img-project'>
-                    <img src={img} alt={alt}></img>
+        <article
+            className="container__card-project"
+            data-aos={data_aos}
+            data-aos-duration={duration_aos}
+        >
+            <div className="card__content-project">
+                <div className="card__project-front">
+                    <div className="card__img-project">
+                        <img src={img} alt={alt}></img>
+                    </div>
+                    <h3 className="card__project-title">{title}</h3>
                 </div>
-                <h3>{title}</h3>
-            </article>
-        </Link>
-    )
-}
+
+                <div className="card__project-back">
+                    <LinksProjects
+                        text="Demo"
+                        url={urlProject} />
+                    <LinksProjects
+                        text="Repo"
+                        url={urlRepo} />
+
+                </div>
+            </div>
+        </article>
+    );
+};
 
 export default ProjectCard;

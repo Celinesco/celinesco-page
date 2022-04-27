@@ -10,11 +10,11 @@ import { htmlTitles } from "../datos_proyectos";
 const ProjectsContainer = () => {
 
     const context = useContext(Context)
-    useEffect(()=> {
+    useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, [])
-    
+
     return (
         <section className="section__projects">
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_projects}</h2>
@@ -23,7 +23,8 @@ const ProjectsContainer = () => {
                     <ProjectCard key={project.id}
                         data_aos="zoom-in"
                         duration_aos="1000"
-                        id={project.id}
+                        urlProject={project.link}
+                        urlRepo={project.repository}
                         img={!context.lightTheme ? project.img_dark_theme : project.img_white_theme}
                         alt={project[context.language].alt}
                         title={project[context.language].title} />

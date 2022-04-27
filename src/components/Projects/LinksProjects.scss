@@ -1,0 +1,17 @@
+.link__card-project {
+    padding: .8rem;
+    background-color: #da4545;
+    border-radius: 10px;
+    margin: 1rem 0;
+    color: white;
+    transition: all .4s linear;
+}
+
+.link__url-project {
+    background-color: aquamarine;
+    color: black;
+}
+
+.link__card-project:hover {
+    letter-spacing: 5px;
+}
