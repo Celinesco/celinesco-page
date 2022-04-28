@@ -16,6 +16,14 @@
       font-style: italic;
     }
   }
+  .img__decorative-contact {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    opacity: .4;
+    height: 90%;
+    right:5rem;
+  }
   .container__form {
     display: flex;
     justify-content: center;
@@ -75,7 +83,18 @@
   }
   @media (min-width:1200px) {
     margin-left: 210px;
+    .img__decorative-contact {
+      width: 40%;
+      right:16rem;
+      height: 100%;
+    }
   }
+  @media(max-width: 767.98px) {
+    .img__decorative-contact {
+      display: none;
+    }
+  }
+
   @media(max-width:575.98px) {
     .container__form {
       max-width: 280px;

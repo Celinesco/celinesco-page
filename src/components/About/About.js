@@ -5,7 +5,8 @@ import { useContext, useEffect } from "react";
 import { htmlAboutme } from "../datos_proyectos";
 import mapaArg from '../../assets/mapaArg.png';
 import mapaDeutschland from '../../assets/mapaDeutschland.png'
-import { GiPaperPlane } from 'react-icons/gi'
+import { GiPaperPlane } from 'react-icons/gi';
+
 
 
 const About = () => {

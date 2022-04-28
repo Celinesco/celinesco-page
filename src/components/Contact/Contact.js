@@ -5,6 +5,7 @@ import Context from "../../Context/Context";
 import AOS from 'aos';
 import { useContext, useState, useEffect } from "react";
 import { htmlAboutme } from "../datos_proyectos";
+import imagenContacto from '../../assets/imagenContacto.svg'
 
 const Contact = () => {
     const context = useContext(Context);
@@ -45,6 +46,7 @@ const Contact = () => {
                 </h2>
                 <p>{htmlAboutme[context.language].form.requierd_message}</p>
             </div>
+            <img className="img__decorative-contact" src={imagenContacto} alt=""></img>
             <div className="container__form">
                 <form className="formular__contact" onSubmit={handleSubmit}>
                     <div className="row">
