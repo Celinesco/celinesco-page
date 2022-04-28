@@ -19,7 +19,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="section__about">
+        <section className="section__about sections">
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">
                 {htmlAboutme[context.language].title_about}
             </h2>

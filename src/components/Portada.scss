@@ -1,129 +1,143 @@
-@import '../styles/variables';
-
-.container__portada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@import "../styles/variables";
+.section__portada {
+  min-height: 100vh;
+  background-image: url(../assets/fondoPortada.png);
+  background-repeat: repeat;
+  .container__portada {
     span {
-        color: aquamarine;
+      color: aquamarine;
     }
     .tag__text {
-        color:rgb(155, 155, 155)
+      color: rgb(155, 155, 155);
     }
     p {
-        font-size: calc(3rem - 1vw);
+      font-size: calc(3rem - 1vw);
     }
     h1 {
-        color: white;
-        font-size: calc(5rem - .8vw);
+      color: white;
+      font-size: calc(5rem - 0.8vw);
     }
     .container__link {
-        margin-top: 30px;
+      margin-top: 30px;
     }
     .link__contact {
-        background-color: $secondary-color;
-        color:$main-color-white-mode;
-        padding: 15px;
-        border-radius: 10px;
-        font-size: 20px;
+      background-color: $secondary-color;
+      color: $main-color-white-mode;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 20px;
     }
-    @media (min-width: 1200px) { 
-        .box {
-            position: absolute;
-            border: 2px solid aquamarine;
-            transform-style: preserve-3d;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            transition: all 1s linear;
-        }
-        .cuadrado {
-            width: 180px;
-            height: 180px;
-            top:60px;
-            right: 110px;
-            animation-name: girar ;
-            animation-duration: 30s;
-        }
-        .cuadradito {
-            top:90px;
-            right: 140px;
-            width: 120px;
-            height: 120px;
-            animation-name: rotarY ;
-            animation-duration: 15s;
-        }
-        .cuadradito2 {
-            width: 70px;
-            height: 70px;
-            top:115px;
-            right: 165px;
-            animation-name: rotarX ;
-            animation-duration: 15s;
-        }
-        .cuadrado:hover, .cuadradito:hover  {
-            border: 2px solid #da4545;
-        }
-        .cuadrado:hover ~ .cuadradito2 {
-            border: 2px solid #da4545;
-        }
-        .cuadradito2:hover {
-            background-color: aquamarine;
-        }
-     }
-     @media (max-width: 1199.98px) {
-        h1 {
-            font-size: calc(4.5rem - 1vw);
-         }
-         p {
-            font-size: calc((2.3rem - 1vw));
-         }
-     }
-     @media (max-width: 991.98px) {
-         h1 {
-            font-size: calc(3.5rem - 1vw);
-         }
-         p {
-            font-size: calc((1.8rem - 1vw));
-         }
-     }
-     @media(max-width: 767.98px) {
-        width: 500px;
-        h1 {
-            font-size: calc(3rem - 1vw);
+    @media (min-width: 1200px) {
+      .box {
+        position: absolute;
+        border: 2px solid aquamarine;
+        transform-style: preserve-3d;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transition: all 1s linear;
+      }
+      .cuadrado {
+        width: 180px;
+        height: 180px;
+        top: 60px;
+        right: 110px;
+        animation-name: girar;
+        animation-duration: 30s;
+      }
+      .cuadradito {
+        top: 90px;
+        right: 140px;
+        width: 120px;
+        height: 120px;
+        animation-name: rotarY;
+        animation-duration: 15s;
+      }
+      .cuadradito2 {
+        width: 70px;
+        height: 70px;
+        top: 115px;
+        right: 165px;
+        animation-name: rotarX;
+        animation-duration: 15s;
+      }
+      .cuadrado:hover,
+      .cuadradito:hover {
+        border: 2px solid #da4545;
+      }
+      .cuadrado:hover ~ .cuadradito2 {
+        border: 2px solid #da4545;
+      }
+      .cuadradito2:hover {
+        background-color: aquamarine;
+      }
+    }
+    @media (min-width:1200px) {
+        .container__indication {
+            left: 212px;
         }
     }
-     @media(max-width: 575.98px) {
-        width: 300px
+  
+    @media (max-width: 1199.98px) {
+      h1 {
+        font-size: calc(4.5rem - 1vw);
+      }
+      p {
+        font-size: calc((2.3rem - 1vw));
+      }
     }
- 
-
+    @media (max-width: 991.98px) {
+      h1 {
+        font-size: calc(3.5rem - 1vw);
+      }
+      p {
+        font-size: calc((1.8rem - 1vw));
+      }
+    }
+    @media (max-width: 767.98px) {
+      width: 500px;
+      h1 {
+        font-size: calc(3rem - 1vw);
+      }
+    }
+    @media (max-width: 575.98px) {
+      width: 300px;
+    }
+  }
+  .container__indication {
+      position: absolute;
+      bottom:10px;
+      border-radius: 10px 0 10px 0;
+      left:0;
+      color: black;
+      background-color: #da4545;
+      writing-mode:vertical-lr;
+      padding: 10px 0;
+  }
 }
 
 @keyframes girar {
-    from {
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes rotarY {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(-360deg);
-    }   
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
 }
 
 @keyframes rotarX {
-    from {
-        transform: rotateX(0deg);
-    }
-    to {
-        transform: rotateX(-360deg);
-    }   
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(-360deg);
+  }
 }
-
-

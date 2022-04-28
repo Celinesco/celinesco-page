@@ -38,7 +38,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="section__contact">
+        <section className="section__contact sections">
             {displayModal && <ModalForm setDisplayModal={setDisplayModal} />}
             <div className="container__title-alert">
                 <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">

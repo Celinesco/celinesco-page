@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import Portada from "../Portada";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
-import Huellitas from "../Huellitas/Huellitas";
 
 const MainSection = () => {
     useEffect(() => {
@@ -19,21 +18,15 @@ const MainSection = () => {
 
     return (
         <>
-            <section className="section__main section__portada">
-                <Portada />
-            </section>
-            <section className="section__main">
-                <ProjectsContainer />
-            </section>
-            <section className="section__main">
-                <About />
-            </section>
-            <section className="section__main">
-                <TechnologiesContainer />
-            </section>
-            <section className="section__main">
-                <Contact />
-            </section>
+            <Portada />
+            <ProjectsContainer />
+            <div className="separador"></div>
+            <About />
+            <div className="separador"></div>
+            <TechnologiesContainer />
+            <div className="separador"></div>
+            <Contact />
+
         </>
     );
 };

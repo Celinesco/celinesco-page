@@ -16,7 +16,7 @@ const ProjectsContainer = () => {
     }, [])
 
     return (
-        <section className="section__projects">
+        <section className="section__projects sections">
             <h2 className="title__section" data-aos="flip-down" data-aos-duration="1000">{htmlTitles[context.language].title_projects}</h2>
             <div className="container__cards-projects">
                 {projectDetails.map((project) => (

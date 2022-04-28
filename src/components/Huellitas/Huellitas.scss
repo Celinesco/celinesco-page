@@ -2,11 +2,10 @@
 
 .container__steps {
   position: fixed;
-  height: 100vh;
   width: 50px;
-  left: 210px;
-  top:80%;
-  z-index: 5;
+  height:100px;
+  left: 200px;
+  bottom:90px;
   .container__step {
     position: absolute;
     color: rgb(255, 255, 255);
@@ -23,7 +22,6 @@
     left: 40px;
     animation-delay: 4.5s;
   }
-
   .step-2 {
     top: 90px;
     transform: rotateZ(-198deg);

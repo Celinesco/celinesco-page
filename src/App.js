@@ -21,11 +21,12 @@ const App = () => {
     setLanguage: setLanguage,
   }
 
-
-  console.log(window.innerHeight)
   window.onscroll = () => {
     if ((document.body.scrollHeight) - window.scrollY <= window.innerHeight) {
       setScrollAvailable(false)
+    }
+    else if (window.scrollY === 0) {
+      setScrollAvailable(true)
     }
   }
 
@@ -35,8 +36,8 @@ const App = () => {
     <Context.Provider value={context}>
       <BrowserRouter>
         <div className='App'>
-          <NavBar />
           {scrollAvailable && <Huellitas />}
+          <NavBar />
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/projects" element={<ProjectsContainer />} />

@@ -1,11 +1,8 @@
 @import "../../styles/variables";
 
 .section__contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  position: relative;
+  z-index: 1;
   .title__section {
     margin-bottom: 0;
   }
@@ -90,8 +87,10 @@
     }
   }
   @media(max-width: 767.98px) {
+    overflow: hidden;
     .img__decorative-contact {
-      display: none;
+      width:130%;
+      left:1rem
     }
   }
 
