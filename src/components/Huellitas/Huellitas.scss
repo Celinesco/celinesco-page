@@ -4,6 +4,9 @@
   position: fixed;
   height: 100vh;
   width: 50px;
+  left: 210px;
+  top:80%;
+  z-index: 5;
   .container__step {
     position: absolute;
     color: rgb(255, 255, 255);
@@ -43,37 +46,8 @@
     color: $main-color-dark-mode;
     animation-delay: 2s;
   }
-  @media (max-width: 575.98px) {
-    left: 0;
-  }
-}
-
-.section__main {
-  @media (min-width: 1200px) {
-    .container__steps {
-      left: 210px;
-    }
-  }
-  .container__steps {
-    top: 95%;
-  }
-  @media(max-width:991.98px) {
-    .container__steps{
-      left:0
-    }
-  }
-}
-
-.container__portada {
-  .container__steps {
-    top: 75%;
-    left: 0;
-  }
-  @media (min-width: 1200px) {
-    .container__steps {
-      left: 210px;
-      top: 85%;
-    }
+  @media (max-width: 1199px) {
+    left: -18px;
   }
 }
 

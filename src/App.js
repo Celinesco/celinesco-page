@@ -8,15 +8,25 @@ import { useState } from 'react';
 import About from './components/About/About';
 import SkillsContainer from './components/SkillsContainer/SkillsContainer';
 import Contact from './components/Contact/Contact'
+import Huellitas from './components/Huellitas/Huellitas';
 
 
 
 const App = () => {
   const [language, setLanguage] = useState('en');
+  const [scrollAvailable, setScrollAvailable] = useState(true)
 
   const context = {
     language: language,
     setLanguage: setLanguage,
+  }
+
+
+  console.log(window.innerHeight)
+  window.onscroll = () => {
+    if ((document.body.scrollHeight) - window.scrollY <= window.innerHeight) {
+      setScrollAvailable(false)
+    }
   }
 
   document.documentElement.lang = context.language;
@@ -26,6 +36,7 @@ const App = () => {
       <BrowserRouter>
         <div className='App'>
           <NavBar />
+          {scrollAvailable && <Huellitas />}
           <Routes>
             <Route path="/" element={<MainSection />} />
             <Route path="/projects" element={<ProjectsContainer />} />

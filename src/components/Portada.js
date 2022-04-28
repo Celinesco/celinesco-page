@@ -1,6 +1,5 @@
 import './Portada.scss'
 import { Link } from 'react-router-dom';
-import Huellitas from '../components/Huellitas/Huellitas';
 import { useContext } from 'react';
 import Context from "../Context/Context";
 import { htmlTitles } from './datos_proyectos';
@@ -9,8 +8,6 @@ import { htmlTitles } from './datos_proyectos';
 const Portada = () => {
 
     const context = useContext(Context);
-
-
 
     return (
         <div className="container__portada">
@@ -29,7 +26,7 @@ const Portada = () => {
             <div className='container__link'>
                 <Link to='/contact' className='link__contact'>{htmlTitles[context.language].button__contact}</Link>
             </div>
-            <Huellitas />
+
         </div >
     )
 }

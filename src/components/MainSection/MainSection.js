@@ -24,15 +24,12 @@ const MainSection = () => {
             </section>
             <section className="section__main">
                 <ProjectsContainer />
-                <Huellitas />
             </section>
             <section className="section__main">
                 <About />
-                <Huellitas />
             </section>
             <section className="section__main">
                 <TechnologiesContainer />
-                <Huellitas />
             </section>
             <section className="section__main">
                 <Contact />

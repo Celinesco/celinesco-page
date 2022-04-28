@@ -62,7 +62,9 @@
         }
         .cuadrado:hover, .cuadradito:hover  {
             border: 2px solid #da4545;
-           
+        }
+        .cuadrado:hover ~ .cuadradito2 {
+            border: 2px solid #da4545;
         }
         .cuadradito2:hover {
             background-color: aquamarine;
