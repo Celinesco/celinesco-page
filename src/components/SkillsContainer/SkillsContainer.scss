@@ -1,5 +1,5 @@
 @import "../../styles/variables";
-@import 'animate.css';
+@import "animate.css";
 
 .section__skills {
   height: 100vh;
@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     width: 900px;
     justify-content: center;
-}
+  }
 
 
   h3 {
@@ -23,21 +23,21 @@
     align-items: center;
     margin: 10px;
   }
-  @media(min-width: 1200px) {
+  @media (min-width: 1200px) {
     margin-left: 210px;
   }
-  @media (max-width:991.98px) {
+  @media (max-width: 991.98px) {
     .container__cards-skills {
       max-width: 600px;
-    } 
+    }
     .container__svg-skill {
-      width: 90px;
+      width: 80px;
     }
   }
-  @media(max-width: 767.98px) {
+  @media (max-width: 767.98px) {
     .container__cards-skills {
       max-width: 400px;
-    } 
+    }
     .container__svg-skill {
       width: 60px;
     }
@@ -45,7 +45,7 @@
   @media (max-width: 575.98px) {
     .container__cards-skills {
       max-width: 260px;
-    } 
+    }
   }
 }
 
@@ -53,11 +53,10 @@
   h3 {
     color: aquamarine;
   }
-  
 }
 
 .container__svg-skill {
-  width: 100px;
+  width: 80px;
   svg {
     padding: 10px;
     width: 100%;
@@ -69,4 +68,3 @@
     animation-duration: 1s;
   }
 }
-
