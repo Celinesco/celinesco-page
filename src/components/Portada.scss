@@ -34,6 +34,7 @@
             transform-style: preserve-3d;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
+            transition: all 1s linear;
         }
         .cuadrado {
             width: 180px;
@@ -58,6 +59,13 @@
             right: 165px;
             animation-name: rotarX ;
             animation-duration: 15s;
+        }
+        .cuadrado:hover, .cuadradito:hover  {
+            border: 2px solid #da4545;
+           
+        }
+        .cuadradito2:hover {
+            background-color: aquamarine;
         }
      }
      @media (max-width: 1199.98px) {
@@ -115,3 +123,5 @@
         transform: rotateX(-360deg);
     }   
 }
+
+
