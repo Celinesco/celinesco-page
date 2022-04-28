@@ -8,6 +8,7 @@ import Portada from "../Portada";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 
+
 const MainSection = () => {
     useEffect(() => {
         AOS.init();
@@ -26,6 +27,9 @@ const MainSection = () => {
             <TechnologiesContainer />
             <div className="separador"></div>
             <Contact />
+            <div className="container__indication indication-end">
+                ...and contact me
+            </div>
 
         </>
     );

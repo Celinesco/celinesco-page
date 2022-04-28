@@ -230,7 +230,7 @@ export const htmlAboutme = {
         Your questions, suggestions, and comments are always welcome and help me to grow both on personal level and professionally.`,
         title_contact: 'Contact',
         form: {
-            requierd_message: '(All fields requierd)',
+            requierd_message: '(All fields required)',
             name: 'First Name*',
             surname: 'Surname*',
             message: 'Message*',
