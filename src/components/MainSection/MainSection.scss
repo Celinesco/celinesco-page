@@ -15,10 +15,14 @@
 
 }
 
+@media (min-width:1200px) {
+    left:212px;
+}
+
 .container__indication {
     position: relative;
     border-radius: 10px 0 10px 0;
-    left:212px;
+    left:0;
     bottom: 10px;
     color: black;
     background-color: #da4545;
