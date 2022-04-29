@@ -15,25 +15,6 @@
 
 }
 
-@media (min-width:1200px) {
-    
-.container__indication {
-    left: 212px;
-}
-}
-
-.container__indication {
-    position: relative;
-    border-radius: 10px 0 10px 0;
-    left:0;
-    bottom: 10px;
-    color: black;
-    background-color: #da4545;
-    writing-mode:vertical-lr;
-    padding: 10px 0;
-}
-
-
 .separador {
     width: 100%;
     height: 5rem;

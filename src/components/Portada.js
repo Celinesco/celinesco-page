@@ -28,7 +28,7 @@ const Portada = () => {
                     </Link>
                 </div>
                 <div className="container__indication">
-                    follow the footsteps...
+                    follow the footprints...
                 </div>
             </div>
         </section>

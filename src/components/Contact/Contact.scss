@@ -6,6 +6,18 @@
   .title__section {
     margin-bottom: 0;
   }
+  .container__indication {
+    position:absolute;
+    border-radius: 10px 0 10px 0;
+    left:2px;
+    font-size: .8rem;
+    box-shadow: 0 0 4px 0.5px white;
+    bottom: 10px;
+    color: black;
+    background-color: #da4545;
+    writing-mode:vertical-lr;
+    padding: 10px 0;
+}
   .container__title-alert {
     text-align: center;
     margin-bottom: 50px;
@@ -37,12 +49,12 @@
         font-size: 15px;
         transition: all 0.7s;
         margin-top: 15px;
+        font-weight: 600;
         width: 100px;
       }
       .button__submit:hover {
-        color: $main-color-dark-mode;
         background-color: aquamarine;
-        border: 1px solid $main-color-dark-mode;
+        box-shadow: 0 0 0 2px white;
       }
       .button__submit:active {
         background-color: green;

@@ -70,11 +70,7 @@
         background-color: aquamarine;
       }
     }
-    @media (min-width:1200px) {
-        .container__indication {
-            left: 212px;
-        }
-    }
+
   
     @media (max-width: 1199.98px) {
       h1 {
@@ -107,11 +103,17 @@
       bottom:5px;
       border-radius: 10px 0 10px 0;
       left:0;
+      font-size: .8rem;
+      box-shadow: 0 0 4px 0.5px white;
       color: black;
       background-color: #da4545;
       writing-mode:vertical-lr;
       padding: 10px 0;
+      @media (min-width:1200px) {
+        left: 212px
   }
+  }
+
 }
 
 @keyframes girar {

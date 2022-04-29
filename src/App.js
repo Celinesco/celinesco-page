@@ -22,7 +22,7 @@ const App = () => {
   }
 
   window.onscroll = () => {
-    if ((document.body.scrollHeight) - window.scrollY - 200 <= window.innerHeight) {
+    if ((document.body.scrollHeight) - window.scrollY - 190 <= window.innerHeight) {
       setScrollAvailable(false)
     }
     else if (window.scrollY === 0) {

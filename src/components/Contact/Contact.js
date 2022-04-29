@@ -107,6 +107,9 @@ const Contact = () => {
                         {htmlAboutme[context.language].form.submit}
                     </button>
                 </form>
+                <div className="container__indication indication-end">
+                    ...and contact me
+                </div>
             </div>
         </section>
     );
