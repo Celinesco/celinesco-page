@@ -7,11 +7,12 @@ import { useContext, useState, useEffect } from "react";
 import { htmlAboutme } from "../datos_proyectos";
 import imagenContacto from '../../assets/imagenContacto.svg'
 
-const Contact = () => {
+const Contact = ({ indication }) => {
     const context = useContext(Context);
     const initialState = { name: "", surname: "", user_email: "", message: "" };
     const [datosFormulario, setDatosFormulario] = useState(initialState);
     const [displayModal, setDisplayModal] = useState(false);
+    const mainSectionLayout = indication
 
     useEffect(() => {
         AOS.init();
@@ -107,9 +108,9 @@ const Contact = () => {
                         {htmlAboutme[context.language].form.submit}
                     </button>
                 </form>
-                <div className="container__indication indication-end">
+                {mainSectionLayout && <div className="container__indication indication-end">
                     ...and contact me
-                </div>
+                </div>}
             </div>
         </section>
     );

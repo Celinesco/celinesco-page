@@ -26,11 +26,7 @@ const MainSection = () => {
             <div className="separador"></div>
             <TechnologiesContainer />
             <div className="separador"></div>
-            <Contact />
-            {/* <div className="container__indication indication-end">
-                ...and contact me
-            </div> */}
-
+            <Contact indication={true} />
         </>
     );
 };
