@@ -14,7 +14,6 @@ const NavBar = () => {
     const context = useContext(Context);
 
     const handleClickOpenMenu = () => {
-        console.log("funciono");
         setHamburguerMenu(true);
     };
 
@@ -140,10 +139,10 @@ const NavBar = () => {
                         <Link to="/about">
                             <li>{htmlTitles[context.language].title_about}</li>
                         </Link>
-                        <Link to="/skills" onClick={handleClickCloseMenu}>
+                        <Link to="/skills">
                             <li>{htmlTitles[context.language].title_skills}</li>
                         </Link>
-                        <Link to="/contact" onClick={handleClickCloseMenu}>
+                        <Link to="/contact">
                             <li>{htmlTitles[context.language].title_contact}</li>
                         </Link>
                     </ul>

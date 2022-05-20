@@ -1,5 +1,5 @@
 import "./MainSection.scss";
-import TechnologiesContainer from "../SkillsContainer/SkillsContainer";
+import SkillsContainer from "../SkillsContainer/SkillsContainer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ProjectsContainer from "../Projects/ProjectsContainer";
@@ -24,7 +24,7 @@ const MainSection = () => {
             <div className="separador"></div>
             <About />
             <div className="separador"></div>
-            <TechnologiesContainer />
+            <SkillsContainer indication={true} />
             <div className="separador"></div>
             <Contact indication={true} />
         </>

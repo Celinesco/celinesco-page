@@ -2,7 +2,6 @@
 @import "animate.css";
 
 .section__skills {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -12,8 +11,12 @@
     width: 900px;
     justify-content: center;
   }
-
-
+  .container__current-learning {
+    width: 500px;
+    img {
+      width: 100%;
+    }
+  }
   h3 {
     color: rgb(146, 146, 146);
   }
@@ -50,6 +53,10 @@
   }
 }
 
+.section__skills-100 {
+  min-height: 100vh;
+}
+
 .card__skill:hover {
   h3 {
     color: aquamarine;
@@ -68,4 +75,31 @@
     animation-name: jello;
     animation-duration: 1s;
   }
+}
+
+
+
+.shining-dot {
+  fill:#ffff00
+}
+
+.st3 {
+  fill:aquamarine
+}
+
+.st1 {
+  fill: rgb(11, 119, 83);
+}
+
+.st0 {
+  fill:none;
+  stroke:#504F4F;
+  stroke-width:0.5;
+  stroke-miterlimit:10
+}
+
+.st2 {
+  stroke-width: 0.5;
+  stroke:#B7B7B7;
+  stroke-miterlimit:10;
 }
